@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>免费电子书申领</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">图书分类</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Off-Canvas Mobile Menu-->
+    <div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+        <div class="user-ava"><img src="img/account/user.jpg" alt="头像">
+        </div>
+        <div class="user-info">
+          <h6 class="user-name">欢迎，姓名</h6><span class="text-sm text-white opacity-60">用户备注</span>
+        </div></a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+          <li class="has-children"><span><a href="#"><span>账户管理</span></a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的订单</a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的收藏</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者／出版社">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+            <div class="lang-currency-switcher-wrap">
+              <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">$ USD</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-profile.html"></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown">
+                <li class="sub-menu-user">
+                  <div class="user-info">
+                    <h6 class="user-name">昵称</h6>
+                  </div>
+                </li>
+                  <li><a href="account-profile.html">我的账户</a></li>
+                  <li><a href="account-orders.html">我的订单</a></li>
+                  <li><a href="account-wishlist.html">我的收藏</a></li>
+                <li class="sub-menu-separator"></li>
+                <li><a href="#"> <i class="icon-unlock"></i>退出账户</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title navbar-back">
+        <div class="container">
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">首页</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>免费电子书申领</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page Content-->
+      <div class="container padding-bottom-3x mb-1">
+        <div class="row">
+          <!-- 搜索提示文字 -->
+          <div class="col-md-10 padding-bottom-1x">
+            <h4>学术赠书项目说明</h4>
+            <span>近年来，香港及台湾两地以外的神学院经常难以找到教学所需的书籍。教材从两地寄出，邮资既昂贵，邮递时间亦很长。<br></span>
+            <span>经过长时间的祷告，恩道出版社决定推出“学术赠书”项目。恩道将翻译并出版高质量的教材，在指定的时间内，以ePub电子书的形式免费赠送神学院的教授和讲师。有兴趣的神学生、教牧弟兄姊妹，亦可以合宜的价格购买。<br></span>
+            <h5 class="pt-4">申请须知</h5>
+            <span>本项目旨在帮助神学院老师便捷地获取优质学术及教材资源，申请之前请您了解以下信息：</span>
+            <ol>
+              <li>申请条件：申请人须是<strong>神学院的教授或讲师</strong>（全球范围内，区域不限）</li>
+              <li>申请数量：每本书仅可申请一次，且只能为自己申请（同一书名的简体版和繁体版只选其一）</li>
+              <li>申请方式：点击书籍信息栏上的"申请免费电子书"按钮，填写相关信息并提交</li>
+              <li>赠书形式：赠书仅限电子版，若需纸书请前往恩道书房网站购买：book.endao.co</li>
+              <li>购书优惠：恩道出版图书在开放申请赠书阶段，购电子书/纸书单本可享55折，纸书10本以上可享5折；申请赠书截止后，购纸书10本以上可享75折，欢迎选购</li>
+              <li>联系我们：如有任何疑问，欢迎来信咨询：ebookservice@endao.co</li>
+            </ol>
+            <p> &#10045;以下可申请书目将不定期更新，敬请关注</p>
+          </div>
+        </div>
+        <div class="row padding-bottom-2x">
+          <div class="col-md-10">
+            <!-- Products 8-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1635494209923.png" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-321#">专文写作格式指南(简)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=埃里克· 約翰遜（Eric L. Johnson）">如云</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推荐理由</span>：本书旨在为华人神学学习者提供一个专文写作的格式规范，帮助大家在专文写作时有规则可循，有范例可鉴。本书聚焦于专文写作格式，最大的特色是：每种引注情况都归纳了引注"公式"，也列举了实例，学员结合公式和例子，便于更好地理解和记忆。此外，本书亦增加了如何使用电子书和手机APP内文的引注说明。 </p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-danger" href="./shop-list-free_ebook-zh-Hans.html">申请免费电子书</a> &nbsp;
+                  <span>申请截止：2021年12月31日</span>
+                </div>
+              </div>
+            </div>
+            <!-- Products 7-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1635494192600.png" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-332#">專文寫作格式指南(繁)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=埃里克· 約翰遜（Eric L. Johnson）">如雲</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推荐理由</span>：本書旨在為華人神學學習者提供一個專文寫作的格式規範，幫助大家在專文寫作時有規則可循，有範例可鑒。本書聚焦於專文寫作格式，最大的特色是：每種引註情況都歸納了引註"公式"，也列舉了實例，學員結合公式和例子，便於更好地理解和記憶。此外，本書亦增加了如何使用電子書和手機APP內文的引註說明。 
+                  
+                  </p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-danger" href="./shop-list-free_ebook-zh-Hant.html">申请免费电子书</a> &nbsp;
+                  <span>申请截止：2021年12月31日</span>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div> 
+        <div class="row padding-bottom-2x">
+          <div class="col-md-10">
+            <!-- Products 8-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1601343400267.png" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-118#">心理学与基督教：五种观点(简)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=埃里克· 約翰遜（Eric L. Johnson）">埃里克· 约翰逊（Eric L. Johnson） 编</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推荐理由</span>：二十一世纪心理学对普罗大众的影响已经深入教会，面对这场“心理学”冲击，以关怀牧养灵魂为己任的基督徒当如何看待心理学与基督教信仰的关系？ 
+
+                  本书邀请的心理学界和辅导界的基督徒代表了福音派在此问题上的五种立场。他们不但将各自观点诉诸笔端，而且彼此追问、互相应答，诚实而谦卑地交流所思所见。 
+                  
+                  这是一次聆听对话的机会，更是一次接受挑战、更新认识的机遇。在这个相对主义甚嚣尘上的世代，我们蒙召以更宏大的视角去认识世界和自我，然后才能自由而坚定地侍奉真神、关顾灵魂。 
+                  
+                  《心理学与基督教》自第一版（英文）问世以来便受到广泛欢迎，已经成为教科书级别的读本。本书为第二版的中译本，未来亦将顺应学术和实践的最新动向译介第三版，读者敬请期待。 </p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-secondary" href="#">申请免费电子书</a> &nbsp;
+                  <span>申请截止：2021年11月30日</span>
+                </div>
+              </div>
+            </div>
+            <!-- Products 7-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1601343361371.png" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-119#">心理學與基督教：五種觀點(繁)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=埃里克· 約翰遜（Eric L. Johnson）">埃里克· 約翰遜（Eric L. Johnson） 编</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推荐理由</span>：二十一世紀心理學對普羅大眾的影響已經深入教會，面對這場「心理學」衝擊，以關懷牧養靈魂為己任的基督徒當如何看待心理學與基督教信仰的關係？ 
+
+                  本書邀請的心理學界和輔導界的基督徒代表了福音派在此問題上的五種立場。他們不但將各自觀點訴諸筆端，而且彼此追問、互相應答，誠實而謙卑地交流所思所見。 
+                  
+                  這是一次聆聽對話的機會，更是一次接受挑戰、更新認識的機遇。在這個相對主義甚囂塵上的世代，我們蒙召以更宏大的視角去認識世界和自我，然後才能自由而堅定地侍奉真神、關顧靈魂。 
+                  
+                  《心理學與基督教》自第一版（英文）問世以來便受到廣泛歡迎，已經成為教科書級別的讀本。本書為第二版的中譯本,未來亦將順應學術和實踐的最新動向譯介第三版，讀者敬請期待。 
+                  
+                  </p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-secondary" href="#">申请免费电子书</a> &nbsp;
+                  <span>申请截止：2021年11月30日</span>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="row padding-bottom-2x">
+          <div class="col-md-10">
+            <!-- Products 6-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1604549905783.png" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-126#">神学阅读入门(简)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=乌切·阿尼索（Uche Anizor）">乌切·阿尼索（Uche Anizor）</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推荐理由</span>：如果想透过一本书了解如何阅读神学书籍，请不要错过这本书。本书作者阿尼索透过神学的四个经典来源（“卫斯理神学四边形 Wesleyan Quadrilateral”）帮助我们讨论和思考神：圣经、传统、理性和经验。 这不仅是一套神学思考的方法，更是开启神学阅读之旅的钥匙。范胡泽教授对这本书的评价：“神学阅读的旅程可能会令人振奋，但当新奇的想法似乎在挑战我们最真实的信仰和信念时，这旅程又变得危险可怕。阿尼索明智地鼓励读者，不要出于恐惧而对所读的东西作出反应，而要在爱中聆听真理……先凭爱心阅读，再慎思明辨地阅读。”本书每一章以故事为引，严谨有序地阐明阅读神学书籍的态度和原则，带领读者在阅读神学时，更好地理解所读内容的含义，最终学习如何“用爱心说诚实话”来评估神学。这是一场头脑和心灵共同参与的神学阅读之旅，愿我们一同起航。</p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-secondary" href="#">申请免费电子书</a> &nbsp;
+                  <span>申请截止：2021年10月31日</span>
+                </div>
+              </div>
+            </div> 
+            <!-- Product 5-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html"><img src="https://ehome.endao.co/book_image/detail/1604549881510.png" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-125#">神學閱讀入門(繁)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=烏切·阿尼索（Uche Anizor）">烏切·阿尼索（Uche Anizor）</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推薦理由</span>：如果想透過一本書了解如何閱讀神學書籍，請不要錯過這本書。本書作者阿尼索透過神學的四個經典來源（“衛斯理神學四邊形 Wesleyan Quadrilateral”）幫助我們討論和思考神：聖經、傳統、理性和經驗。 這不僅是一套神學思考的方法，更是開啟神學閱讀之旅的鑰匙。範胡澤教授對這本書的評價：“神學閱讀的旅程可能會令人振奮，但當新奇的想法似乎在挑戰我們最真實的信仰和信念時，這旅程又變得危險可怕。阿尼索明智地鼓勵讀者，不要出於恐懼而對所讀的東西作出反應，而要在愛中聆聽真理……先憑愛心閱讀，再慎思明辨地閱讀。”本書每一章以故事為引，嚴謹有序地闡明閱讀神學書籍的態度和原則，帶領讀者在閱讀神學時，更好地理解所讀內容的含義，最終學習如何“用愛心說誠實話”來評估神學。這是一場頭腦和心靈共同參與的神學閱讀之旅，願我們一同起航。</p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-secondary" href="#">申請免費電子書</a> &nbsp;
+                  <span>申請截止：2021年10月31日</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row padding-bottom-2x">
+          <div class="col-md-10">
+            <!-- Products 4-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1598845495773.jpg" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-111#">耶稣就是基督——约翰福音神学研究(简)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=罗伯特‧特雷纳（Robert A. Traina）">里昂·莫里斯（Leon Morris）</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推荐理由</span>：如果想透过一本书了解约翰福音的主要神学，请不要错过这本书。
+                  卡森博士对本书不吝赞誉：<strong>“作者虽在讨论深刻的神学，却能写得非常简明，这一点令人钦佩”</strong> 。本书语言表达深入浅出，章节内容精辟有理，带领读者研读约翰福音的同时，更好地理解约翰如何实现了写作目的——叫人相信“耶稣就是基督”。</p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-secondary" href="#">申请免费电子书</a> &nbsp;
+                  <span>申请截止：2021年9月26日</span>
+                </div>
+              </div>
+            </div> 
+            <!-- Product 3-->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html"><img src="https://ehome.endao.co/book_image/detail/1598845467827.jpg" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="https://ebook.endao.co/book-110#">耶穌就是基督——約翰福音神學研究(繁)</a></h3>
+                <div>
+                  <strong class="d-inline">作 者 :</strong>
+                  <div class="d-inline text-muted">
+                    <a class="navi-link" href="searchBook?searchText=里昂·莫里斯（Leon Morris）">里昂·莫里斯（Leon Morris）</a>
+                  </div>
+                </div>
+                <p class="hidden-xs-down pt-2"><span class="text-danger">推薦理由</span>：如果想透過一本書了解約翰福音的主要神學，請不要錯過這本書。
+                  卡森博士對本書不吝讚譽：<strong>“作者雖在討論深刻的神學，卻能寫得非常簡明，這一點令人欽佩”</strong>。本書語言表達深入淺出，章節內容精辟有理，帶領讀者研讀約翰福音的同時，更好地理解約翰如何實現了寫作目的——叫人相信“耶穌就是基督”。</p>
+                <div class="product-buttons">
+                  <a class="btn btn-sm btn-secondary" href="#">申請免費電子書</a> &nbsp;
+                  <span>申請截止：2021年9月26日</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2--> 
+        <div class="row ">
+          <div class="col-md-10">
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+              <img src="https://ehome.endao.co/book_image/detail/1617086123486.png" alt="Product"></a>
+            <div class="product-info">
+              <h3 class="product-title"><a href="shop-single.html">归纳式研经：全方位释经指南(简)</a></h3>
+              <div>
+                <strong class="d-inline">作 者 :</strong>
+                <div class="d-inline text-muted">
+                  <a class="navi-link" href="searchBook?searchText=罗伯特‧特雷纳（Robert A. Traina）">罗伯特‧特雷纳（Robert A. Traina）</a>
+                  <a class="navi-link" href="searchBook?searchText=大卫‧鲍尔（David R. Bauer）">大卫‧鲍尔（David R. Bauer）</a>
+                </div>
+              </div>
+              <div>
+                <strong class="d-inline">译 者 :</strong>
+                <div class="d-inline text-muted"><a class="navi-link" href="#">刘兵</a></div>
+              </div>
+              <div>
+                <strong class="d-inline">出版社 :</strong>
+                <div class="d-inline text-muted"><a class="navi-link" href="category-0-grid-0-1-0-0-0">恩道出版社</a></div>
+              </div>
+              <p class="hidden-xs-down istext-overflow">如何进行归纳式研经？ 本书以详细的说明、丰富的实例， 循序渐进地指导读者以归纳式进路去观察、解释、应用圣经。 无论您是圣经研习者还是普通读者， 若循此道，将各种研经方法融会贯...</p>
+              <div class="product-buttons">
+                <a class="btn btn-sm btn-secondary" href="#">申请免费电子书</a> &nbsp;
+                <span>申请截止：2021年9月5日</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product 1-->
+          <div class="product-card product-list"><a class="product-thumb" href="shop-single.html"><img src="https://ehome.endao.co/book_image/detail/1617086174710.png" alt="Product"></a>
+            <div class="product-info">
+              <h3 class="product-title"><a href="shop-single.html">歸納式研經：全方位釋經指南(繁)</a></h3>
+              <div>
+                <strong class="d-inline">作 者 :</strong>
+                <div class="d-inline text-muted">
+                  <a class="navi-link" href="searchBook?searchText=羅伯特·特雷納（Robert A. Traina）">羅伯特·特雷納（Robert A. Traina）</a>
+                  <a class="navi-link" href="searchBook?searchText=大衛·鮑爾（David R. Bauer）">大衛·鮑爾（David R. Bauer）</a>  
+                </div>
+              </div>
+              <div>
+                <strong class="d-inline">译 者 :</strong>
+                <div class="d-inline text-muted"><a class="navi-link" href="#">劉兵</a></div>
+              </div>
+              <div>
+                <strong class="d-inline">出版社 :</strong>
+                <div class="d-inline text-muted"><a class="navi-link" href="category-0-grid-0-1-0-0-0">恩道出版社</a></div>
+              </div>
+              <p class="hidden-xs-down istext-overflow">如何進行歸納式研經？本書以詳細的說明、豐富的實例，循序漸進地指導讀者以歸納式進路去觀察、解釋、應用聖經。無論您是聖經研習者還是普通讀者，若循此道，將各種研經方法融會貫通，必能更準確、深入、全面地理解聖經的信息。</p>
+              <div class="product-buttons">
+                <a class="btn btn-sm btn-secondary" href="#">申請免費電子書</a> &nbsp;
+                <span>申請截止：2021年9月5日</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <!-- 客户服务 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">客户服务</h3>
+                <ul>
+                  <li><a href="faq.html">常见问题</a></li>
+                  <li><a href="refund-policy.html">退款政策</a></li>
+                  <li><a href="publisher.html">出版合作</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 相关信息 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">相关信息</h3>
+                <ul>
+                  <li><a href="conditions.html">使用条款</a></li>
+                  <li><a href="privacy-policy.html">隐私策略</a></li>
+                  <li><a href="copyright.html">版权申明</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 友情连接 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">友情链接</h3>
+                <ul>
+                  <li><a href="http://book.endao.co/">恩道书房</a></li>
+                  <li><a href="#">恩道读书</a></li>
+                  <li><a href="http://ebook.endao.co/">恩道电子书</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 关于我们-->
+              <section class="widget widget-light-skin">
+                <h3 class="widget-title">关于我们</h3>
+                <p class="text-white">恩道电子书是恩道出版（香港）有限公司旗下的基督教电子书阅读平台，旨在通过与主内的出版机构合作，协力促进华文基督教资源电子化，帮助中国乃至全球华人基督徒，更加便捷地获取并阅读基督教图书。</p>
+              </section>
+            </div>
+          </div>
+          <hr class="hr-light mt-2 margin-bottom-2x">
+          <!-- Copyright-->
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

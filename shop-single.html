@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>商品</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+     <!-- 弹出窗 -->
+     <div class="modal fade" id="modal-give" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title  w-100">赠送电子书</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body padding-top-2x">
+            <div>
+                <span>请选择赠送数量</span>
+                <div style="display: inline-block;margin-left:1em;">
+                  <button type="button" class="btn btn-outline-secondary btn-sm btn-counter" data-inc="-1" disabled="true">-</button>
+                  <span id="count" class="align-middle" style="padding-right: 18px;">1</span>
+                  <button type="button" class="btn btn-outline-secondary btn-sm btn-counter" data-inc="1">+</button>
+                </div>
+                <p>说明：<br/>
+                  1.支付成功后，请于"我的赠书记录"查看详情并填写赠送对象的邮箱，对方即可收到赠书通知邮件；<br/>
+                  2.赠送形式为兑换码，兑换码无使用期限，每个兑换码仅限兑换一次，兑换成功后即失效；<br/>
+                  3.获赠电子书需通过恩道电子书网站兑换，并仅限于恩道电子书App内阅读；<br/>
+                  4.兑换码一经购买，不作退换，请确认您的购买数量。<br/>
+                  </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">取消</button>
+            <a class="btn btn-primary btn-sm" href="buy-1.html" id="btn-buy">确认</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">图书分类</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Off-Canvas Mobile Menu-->
+    <div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+        <div class="user-ava"><img src="img/account/user.jpg" alt="头像">
+        </div>
+        <div class="user-info">
+          <h6 class="user-name">欢迎，姓名</h6><span class="text-sm text-white opacity-60">用户备注</span>
+        </div></a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+          <li class="has-children"><span><a href="#"><span>账户管理</span></a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的订单</a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的收藏</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者／出版社">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+            <div class="lang-currency-switcher-wrap">
+              <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">$ USD</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown w-110">
+                <li><a href="account-register.html">注&nbsp;册</a></li>
+                <li><a href="account-login.html">登&nbsp;录</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title navbar-back">
+        <div class="container">
+          <div class="column">
+            <h1>以弗所书 • 歌罗西书 • 腓利门书</h1>
+          </div>
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">首页</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li><a href="shop-grid-ls.html">全部书目</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>以弗所书 • 歌罗西书 • 腓利门书</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content-->
+      <div class="container padding-bottom-1x mb-1">
+        <div class="row">
+          <!-- Poduct -->
+          <div class="col-md-4 offset-lg-1">
+            <div class="product-gallery">
+              <!-- 产品图片 -->
+              <div class="product-carousel owl-carousel"><a class="product-thumb" href="shop-single.html">
+                <div class="product-single" data-hash="one"><div class="product-badge text-danger text-left">40% OFF <br />PRE-ORDER</div><img src="img/shop/single/06.jpg" alt="Product"></div></a>
+              </div>
+              <!-- 增加试读 -->
+              <div class="text-center mt-3">
+                <a class="text-decoration-none" href="shop-single.html" target="_blank"><i class="icon-paper"></i><small>&nbsp;试读</small></a>
+              </div>
+            
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <!-- Product Info -->
+          <div class="col-md-6">
+            <div class="padding-top-2x mt-2 hidden-md-up"></div>
+            <h3 class="text-normal">以弗所书 • 歌罗西书 • 腓利门书</h3>
+            <div class="mt-4 mb-4">
+              <span class="h3 text-center">
+                <del class="text-muted text-normal">¥88.00</del>&nbsp; <span class="text-primary">¥50.00</span>
+              </span>
+            </div>
+            <!-- 增加N件折 -->
+            <div class="d-inline">
+              <div class="text-decoration-none"><span class="red-bg">N件折</span><a class="navi-link text-danger" href="#">1件9折 2件8折 3件6折</a><div>
+            </div>
+            <div>
+              <strong class="d-inline">作 者:</strong>
+              <div class="d-inline text-muted"><a class="navi-link" href="arthor.html">盖瑞·史密斯</a></div>
+            </div>
+            <div>
+              <strong class="d-inline">译 者:</strong>
+              <div class="d-inline text-muted"><a class="navi-link" href="#">林心怡</a></div>
+            </div>
+            <div>
+              <strong class="d-inline">出版社:</strong>
+              <div class="d-inline text-muted"><a class="navi-link" href="press.html">恩道出版社</a></div>
+            </div>
+            <!-- <div class="sp-buttons mt-4 mb-4">
+              <a class="btn btn-primary btn-sm scale-up" href="#.pdf">&nbsp;在线试读&nbsp;</a>
+            </div> -->
+            <div class="sp-buttons mt-4 mb-4 padding-bottom-1x">
+              <a class="btn btn-primary btn-sm" href="account-cart.html">立即购买</a>
+              <a class="btn btn-outline-primary btn-sm"  data-toggle="modal" data-target="#modal-give">赠送</a>
+              <a class="btn btn-outline-primary btn-sm" href="account-cart.html">加入购物车</a>&nbsp;&nbsp;
+              <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏" onclick="javascript:window.location.href='/login'"><i class="icon-heart"></i></button>
+            </div>
+            <div class="sp-buttons">
+              <a class="text-medium text-decoration-none" href="#">阅读本书需下载，了解详情  &nbsp;&gt;&gt;</a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="sp-buttons">
+                <div class="d-inline text-muted go-menu">
+                  <ul class="list-unstyled">
+                    <li><a class="text-medium text-decoration-none" href="">购买纸版书 &nbsp;&gt;&gt;</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">邮寄到大陆地区</a></li>
+                        <li><a class="dropdown-item" href="#">邮寄到香港地区</a></li>
+                        <li><a class="dropdown-item" href="#">邮寄到美国</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Product Tabs-->
+        <div class="row padding-top-3x mb-3">
+          <div class="col-lg-10 offset-lg-1">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#description" data-toggle="tab" role="tab">图书简介</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tableofcontent" data-toggle="tab" role="tab">图书目录</a></li>
+              <li class="nav-item"><a class="nav-link" href="#info" data-toggle="tab" role="tab">基本信息</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#reviews" data-toggle="tab" role="tab">图书评论</a></li> -->
+            </ul>
+            <div class="tab-content">
+              <!-- 图书简介-->
+              <div class="tab-pane fade show active" id="description" role="tabpanel">
+                <p>以斯拉记-尼希米记讲到希伯来民自公元前538年起从被掳之地巴比伦返回耶路撒冷，重建圣殿和耶路撒冷城墙（公元前445年），并继续在犹大共同生活。这不是在记录枯燥乏味的古代事件，而是在见证神如何为立约的子民成就了至高计划，并全能地掌管以色列历史的各个层面。这段以色列历史甚为艰苦，却又振奋人心，显出神如何在各样事上完全掌权，如何带领立约之民离开不洁，专心敬拜神并信守律法。以斯拉和尼希米的祷告也堪称典范，让人看到棘手情形、困难处境中合神心意祷告的力量。</p>
+                <p class="mb-30">以斯帖记始终未提神的名字，却显明隐藏的神拥有引导世上万民生活的主权。无论是人们日复一日的活动，还是他们在危机时刻的英勇之举，其背后都是神在依其旨意在作工，为要看顾他的百姓。以斯帖记采用悬念、反讽等手法精妙铺陈，展现以斯帖的生命历程和犹大人所经历的那段历史，令我们体察到事件背后神那看不见的大能之手。</p>
+              </div>
+              <!-- 图书目录 -->
+              <div class="tab-pane fade" id="tableofcontent" role="tabpanel">
+                <p class="mb-30">图书目录</p>
+                <p class="mb-30">第一章</p>
+                <p class="mb-30">第二章</p>
+              </div>
+              <!-- 基本信息 -->
+              <div class="tab-pane fade" id="info" role="tabpanel">
+                <p class="mb-title"><strong>ISBN:</strong>9789888285181</p>
+                <p class="mb-title"><strong>语言文字</strong>简体中文</p>
+                <p class="mb-title"><a class="text-medium navi-link" href="http://cbcs.endao.co">产品网站</a></p>
+              </div>
+              <div class="tab-pane fade" id="reviews" role="tabpanel">
+                <!-- 图书评论 -->
+                <div class="comment">
+                  <div class="comment-author-ava"><img src="img/reviews/01.jpg" alt="Review author"></div>
+                  <div class="comment-body">
+                    <div class="comment-header d-flex flex-wrap justify-content-between">
+                      <h4 class="comment-title">丁道尔出版社的《房角石圣经注释丛书》</h4>
+                      <div class="mb-2">
+                          <div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i><i class="icon-star"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
+                    <div class="comment-footer"><span class="comment-meta">昵称</span></div>
+                  </div>
+                </div>
+                <!-- 评论 -->
+                <h5 class="mb-30 padding-top-1x">写评论</h5>
+                <form class="row" method="post">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="review_name">昵称</label>
+                      <input class="form-control form-control-rounded" id="review_name">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="review_rating">评分</label>
+                      <select class="form-control form-control-rounded" id="review_rating">
+                        <option>5 星</option>
+                        <option>4 星</option>
+                        <option>3 星</option>
+                        <option>2 星</option>
+                        <option>1 星</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="review_text">您的评论</label>
+                      <textarea class="form-control form-control-rounded" id="review_text" rows="8" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 text-right">
+                    <button class="btn btn-outline-primary" type="submit">发表评论</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 新书上架 -->
+
+      </div>
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <!-- 客户服务 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">客户服务</h3>
+                <ul>
+                  <li><a href="faq.html">常见问题</a></li>
+                  <li><a href="refund-policy.html">退款政策</a></li>
+                  <li><a href="publisher.html">出版合作</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 相关信息 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">相关信息</h3>
+                <ul>
+                  <li><a href="conditions.html">使用条款</a></li>
+                  <li><a href="privacy-policy.html">隐私策略</a></li>
+                  <li><a href="copyright.html">版权申明</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 友情连接 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">友情链接</h3>
+                <ul>
+                  <li><a href="http://book.endao.co/">恩道书房</a></li>
+                  <li><a href="#">恩道读书</a></li>
+                  <li><a href="http://ebook.endao.co/">恩道电子书</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 关于我们-->
+              <section class="widget widget-light-skin">
+                <h3 class="widget-title">关于我们</h3>
+                <p class="text-white">恩道电子书是恩道出版（香港）有限公司旗下的基督教电子书阅读平台，旨在通过与主内的出版机构合作，协力促进华文基督教资源电子化，帮助中国乃至全球华人基督徒，更加便捷地获取并阅读基督教图书。</p>
+              </section>
+            </div>
+          </div>
+          <hr class="hr-light mt-2 margin-bottom-2x">
+          <!-- Copyright-->
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/giftcode.js"></script>
+  </body>
+</html>

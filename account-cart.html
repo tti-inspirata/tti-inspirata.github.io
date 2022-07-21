@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>购物车</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- 弹出窗 -->
+    <div class="modal fade" id="modalCannel" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body padding-top-2x">
+            <p>您确认要从购物车中删除该商品吗？</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">取消</button>
+            <a class="btn btn-primary btn-sm" href="#">确认</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">图书分类</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Off-Canvas Mobile Menu-->
+    <div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+        <div class="user-info">
+          <h6 class="user-name">昵称</h6>
+        </div></a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+          <li class="has-children"><span><a href="#"><span>账户管理</span></a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的订单</a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的收藏</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者／出版社">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+            <div class="lang-currency-switcher-wrap">
+              <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">$ USD</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-profile.html"></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown">
+                <li class="sub-menu-user">
+                  <div class="user-info">
+                    <h6 class="user-name">昵称</h6>
+                  </div>
+                </li>
+                  <li><a href="account-profile.html">我的账户</a></li>
+                  <li><a href="account-orders.html">我的订单</a></li>
+                  <li><a href="account-wishlist.html">我的收藏</a></li>
+                <li class="sub-menu-separator"></li>
+                <li><a href="#"> <i class="icon-unlock"></i>退出账户</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title">
+        <div class="container">
+          <div class="column">
+            <h1>购物车</h1>
+          </div>
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">首页</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li><a href="account-orders.html">个人中心</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>购物车</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- 我的账户侧边栏 -->
+            <nav class="list-group navbar-back">
+              <a class="list-group-item" href="#"><h4>个人中心</h4></a>
+              <a class="list-group-item" href="account-profile.html"><i class="icon-head"></i>我的账户</a>
+              <a class="list-group-item with-badge" href="account-orders.html"><i class="icon-bag"></i>我的订单</a>
+              <a class="list-group-item with-badge" href="account-wishlist.html"><i class="icon-heart"></i>我的收藏</a>
+              <a class="list-group-item with-badge  active" href="account-cart.html"><i class="icon-tag"></i>购物车</a>
+            </nav>
+          </div>
+          <div class="col-lg-9">
+            <div class="padding-top-2x mt-2 hidden-lg-up"></div>
+            <div class="table-responsive shopping-cart sp-buttons">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" id="cb_all" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </th>
+                    <th>图书名称</th>
+                    <th class="text-center">金额</th>
+                    <th class="text-center">操作</th>
+                    <th class="text-center"></th>
+                  </tr>
+                </thead>
+                <tbody id="ckb">
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><span><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><span><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-control custom-radio">
+                        <input class="custom-control-input" type="checkbox" name="radio"><span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书</a></h4><span><em>作 者:</em>盖瑞·史密斯</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center text-lg text-medium">¥50.00</td>
+                    <td class="text-center"><button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button></td>
+                    <td class="text-center"><a class="remove-from-cart" data-toggle="modal" data-target="#modalCannel"><span class="remove-from-cart" data-toggle="tooltip" title="删除"><i class="icon-cross"></i></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr class="mb-4  padding-bottom-3x">
+          </div>
+        </div>
+      </div>
+
+      <!-- 购物车底部悬浮 -->
+      <nav class="navbar navbar-cart">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-lg-3"></div> 
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-sm-6 navbar-back">
+                  <label class="custom-control custom-radio">
+                    <input class="custom-control-input" type="checkbox" id="cb_all">
+                    <span class="custom-control-indicator"></span>
+                    <span>全选 &nbsp; &nbsp; 已选<span class="text-danger">4</span>件商品</span>
+                  </label>
+                  <div class="column"><a class="btn btn-sm btn-outline-secondary" href="shop-grid-ls.html" data-toast-position="topRight"><i class="icon-arrow-left"></i>&nbsp;返回继续购物</a></div>
+                </div>
+                <div class="col-sm-6 col-xs-6"> 
+                  <ul class="list-unstyled text-sm text-right" style="position: absolute; left: 36px;">
+                    <li>总计： <span class="text-medium">HK$100.00</span></li>
+                    <li><span class="text-sm">折扣金额（2件8折）：-HK$100.00 </span></li>
+                    <li><span class="text-medium text-danger">应付：HK$100.00(RMB¥100.00)</span></li>
+                  </ul>
+                  <div class="text-right mt-2">
+                    <div class="column"><a class="btn btn-primary" href="checkout.html">去结算</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+    <!-- Back To Top Button 隐藏-->
+    <!--a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a-->
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/checkbox.js"></script>
+  </body>
+</html>

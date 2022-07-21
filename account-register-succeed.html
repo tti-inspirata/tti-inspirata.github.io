@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>用户注册</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">图书分类</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Off-Canvas Mobile Menu-->
+    <div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+        <div class="user-ava"><img src="img/account/user.jpg" alt="头像">
+        </div>
+        <div class="user-info">
+          <h6 class="user-name"><a class="navi-link" href="account-login.html">个人中心</a></h6>
+        </div></a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+          <li class="has-children"><span><a href="#"><span>账户管理</span></a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的订单</a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的收藏</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者／出版社">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+            <div class="lang-currency-switcher-wrap">
+              <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">$ USD</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown w-110">
+                <li><a href="account-register.html">注&nbsp;册</a></li>
+                <li><a href="account-login.html">登&nbsp;录</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title">
+        <div class="container">
+          <div class="column">
+            <h1>用户注册</h1>
+          </div>
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">首页</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li><a href="account-orders.html">个人中心</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>用户注册</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content-->
+      <div class="container padding-bottom-3x mb-2">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-10 text-center">
+            <!-- 已成功发送验证邮件！ -->
+            <form class="login-box padding-bottom-2x" method="post">
+              <h4 class="margin-bottom-2x">用户注册</h4>
+              <p class="text-lg text-bold">已成功发送验证邮件!</p>
+              <p class="card-text">请在1小时内前往邮箱点击验证连接，否者无法成功注册。</p>
+              <p class="margin-top-1x text-lg text-bold">一直没收到验证邮件？</p>
+              <p class="card-text">请先检查是否在垃圾邮件中，未收到请点击:<a class="text-medium text-decoration-none" href="#">重新发送邮件</a></p>
+            </form>
+            <!-- 已成功验证邮箱！去登录 -->
+            <form class="login-box padding-bottom-2x" method="post">
+              <h4 class="margin-bottom-2x">用户注册</h4>
+              <p class="text-lg card-text">已成功验证邮箱：<a class="text-medium text-decoration-none" href="account-login.html">去登录</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <!-- 客户服务 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">客户服务</h3>
+                <ul>
+                  <li><a href="faq.html">常见问题</a></li>
+                  <li><a href="refund-policy.html">退款政策</a></li>
+                  <li><a href="publisher.html">出版合作</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 相关信息 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">相关信息</h3>
+                <ul>
+                  <li><a href="conditions.html">使用条款</a></li>
+                  <li><a href="privacy-policy.html">隐私策略</a></li>
+                  <li><a href="copyright.html">版权申明</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 友情连接 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">友情链接</h3>
+                <ul>
+                  <li><a href="http://book.endao.co/">恩道书房</a></li>
+                  <li><a href="#">恩道读书</a></li>
+                  <li><a href="http://ebook.endao.co/">恩道电子书</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 关于我们-->
+              <section class="widget widget-light-skin">
+                <h3 class="widget-title">关于我们</h3>
+                <p class="text-white">恩道电子书是恩道出版（香港）有限公司旗下的基督教电子书阅读平台，旨在通过与主内的出版机构合作，协力促进华文基督教资源电子化，帮助中国乃至全球华人基督徒，更加便捷地获取并阅读基督教图书。</p>
+              </section>
+            </div>
+          </div>
+          <hr class="hr-light mt-2 margin-bottom-2x">
+          <!-- Copyright-->
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
