@@ -108,8 +108,9 @@ video{
     height: 100%; 
     object-fit: fill;
 }
-
-
+.card-deck .card {
+    margin-bottom: 1px;
+}
 
 
 .main h3 {
@@ -211,12 +212,6 @@ img{
 .txt-gray{
     color: #ddd !important;
 }
-/* .wrap{
-    text-indent: -20px;
-    padding-left: 20px;
-    margin: 5px 0;
-} */
-
 
 
 a {
