@@ -11,8 +11,8 @@ body {
     line-height: 1.5;
 }
 p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.8;
     text-align: justify;
 }
 p a {
@@ -33,7 +33,7 @@ h6 {
     font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
 }
 .h4, h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .indent {
     text-indent: 2em;
@@ -42,7 +42,7 @@ h6 {
     margin-top: -12em;
     background: #FFFFFF;
     padding: 30px 28px;
-    border-radius: 7px;
+    border-radius: 0px;
     -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.2);
 }
@@ -108,11 +108,6 @@ video{
     height: 100%; 
     object-fit: fill;
 }
-.card-deck .card {
-    margin-bottom: 1px;
-}
-
-
 .main h3 {
     width: fit-content;
     position: relative;
@@ -584,7 +579,7 @@ footer {
 
 .card{
     background-color: #FFFFFF;
-    padding: 10px 0 20px;
+    /* padding: 10px 0 20px; */
     width: 100%;
 }
 .card h3{
@@ -1016,9 +1011,6 @@ a:link {
 .promo-box .promo-box-content {
     position: relative;
     z-index: 5;
-}
-.promo-box p{
-    font-size: 13px;
 }
 .text-bold {
     font-weight: bold !important;
