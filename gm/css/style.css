@@ -167,6 +167,7 @@ img{
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
     background-color: #FFFFFF;
+    border-right: transparent;
 }
 
 .table-striped > tbody > tr> td, .table-striped > tbody > tr> th {
@@ -175,11 +176,13 @@ img{
     border-top-color: #6F4D46;
     text-align: center;
     vertical-align: middle;
+    border-right: transparent;
 }
 
 .table-striped > thead > tr> th {
     border-bottom-color: #6F4D46; 
-    border-right: dashed #8F736D;
+    border-right: 1px solid #8F736D;
+    border-top: 1px solid #8F736D;
     text-align: center;
     font-size: 16px;
 }
