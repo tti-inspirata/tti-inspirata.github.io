@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>订单详情</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- 弹出窗 -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body padding-top-1x padding-bottom-1x">
+            <h6>正在验证支付 。。。。。。</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function () { $('#myModal').modal('show')});  // show
+      // $(function () { $('#myModal').modal('show')}); // hide
+    </script>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">图书分类</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Off-Canvas Mobile Menu-->
+    <div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+        <div class="user-info">
+          <h6 class="user-name">欢迎，姓名</h6>
+        </div></a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="shop-grid-ls.html"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+          <li class="has-children"><span><a href="#"><span>账户管理</span></a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的订单</a></span></li>
+          <li class="has-children"><span><a href="#">&nbsp;&nbsp;我的收藏</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者／出版社">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+            <div class="lang-currency-switcher-wrap">
+              <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">$ USD</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-profile.html"></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown">
+                <li class="sub-menu-user">
+                  <div class="user-info">
+                    <h6 class="user-name">昵称</h6>
+                  </div>
+                </li>
+                  <li><a href="account-profile.html">我的账户</a></li>
+                  <li><a href="account-orders.html">我的订单</a></li>
+                  <li><a href="account-wishlist.html">我的收藏</a></li>
+                <li class="sub-menu-separator"></li>
+                <li><a href="#"> <i class="icon-unlock"></i>退出账户</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span>
+              <div class="toolbar-dropdown">
+                <div class="dropdown-product-item"><a class="dropdown-product-thumb" href="shop-single.html"><img src="img/cart-dropdown/01.jpg" alt="Product"></a>
+                  <div class="dropdown-product-info"><a class="dropdown-product-title" href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书[房角石卷16上]</a><span class="dropdown-product-details">¥50</span></div>
+                </div>
+                <div class="dropdown-product-item"><a class="dropdown-product-thumb" href="shop-single.html"><img src="img/cart-dropdown/02.jpg" alt="Product"></a>
+                  <div class="dropdown-product-info"><a class="dropdown-product-title" href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书[房角石卷16上]</a></div>
+                </div>
+                <div class="toolbar-dropdown-group">
+                  <div class="column"><span class="text-lg">订单总额:</span></div>
+                  <div class="column text-right"><span class="text-lg text-medium">¥100.00&nbsp;</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title">
+        <div class="container">
+          <div class="column">
+            <h1>订单详情</h1>
+          </div>
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">首页</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li><a href="account-orders.html">个人中心</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li><a href="account-profile.html">我的账户</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>订单详情</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content-->
+      <!-- 订单信息 -->
+      <div class="container padding-bottom-3x mb-1">
+        <div class="row mt-3">
+          <div class="col-sm-12">
+            <!-- 订单支付时间提示 -->
+            <h6>该订单已成功提交！请在 <span class="text-danger">02时00分</span> 内完成支付，超时订单将自动关闭</h6><br />
+            <ol class="list-unstyled">
+              <li><span class="text-muted">订单编号:</span> 218928287282828</li>
+              <li><span class="text-muted">下单日期:</span> 2018-5-24</li>
+              <li><span class="text-muted">支付方式:</span> 支付宝</li>
+            </ol>
+          </div>
+        </div>
+        <!-- 图书列表-->
+        <div class="table-responsive shopping-cart">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>图书名称</th>
+                <th class="text-center">型号</th>
+                <th class="text-center">单价</th>
+                <th class="text-center">数量</th>
+                <th class="text-center">小计</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                    <div class="product-info">
+                      <h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书[房角石卷16上]</a></h4><span><em>作 者:</em>盖瑞·史密斯</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center text-lg text-medium">eIP021</td>
+                <td class="text-center text-lg text-medium">¥50.00</td>
+                <td class="text-center text-lg text-medium">1</td>
+                <td class="text-center text-lg text-medium">¥50.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                    <div class="product-info">
+                      <br /><h4 class="product-title"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书[房角石卷16上]</a></h4><span><em>作 者:</em>盖瑞·史密斯</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center text-lg text-medium">eIP021</td>
+                <td class="text-center text-lg text-medium">¥50.00</td>
+                <td class="text-center text-lg text-medium">1</td>
+                <td class="text-center text-lg text-medium">¥50.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="shopping-cart-footer">
+          <div class="column text-lg text-right">
+            <!-- 订单剩余时间 -->
+            <h6 class="padding-bottom-1x">剩余支付时间：<span class="text-danger">1小时20分</span></h6>
+            <ol class="list-unstyled">
+              <li>总计: <span class="text-medium">¥100.00</span></li>
+              <li>应付金额: <span class="text-medium">¥100.00</span></li>
+            </ol>
+          </div>
+          <div class="column text-lg"><br /><br /></div>
+        </div>
+        <!-- 支付方式-->
+        <div class="col-xl-8 col-lg-8 padding-top-1x">
+          <h4>支付方式</h4>
+          <hr class="padding-bottom-1x">
+          <div class="accordion" role="tablist">
+            <div class="card">
+              <div class="collapse show" role="tabpanel">
+                <div class="card-body" style="padding-bottom: 0;">
+                  <!-- checked 默认勾选 -->
+                  <label class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="card_check" checked><span class="custom-control-indicator"></span><span class="custom-control-description">使用支付宝(中国)付款: &nbsp;<img class="d-inline-block align-middle" src="img/credit-alipay.png" style="width: 75px;" alt="支付宝"></span>
+                  </label>
+                </div>
+                <div class="card-body" style="padding: 0.9rem 1.25rem;">
+                  <!-- alipayHK -->
+                  <label class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="card_check"><span class="custom-control-indicator"></span><span class="custom-control-description">使用AlipayHK付款: &nbsp;<img class="d-inline-block align-middle" src="img/alipayHK.svg" style="width: 110px;" alt="AlipayHK"></span>
+                  </label>
+                </div>
+                <div class="card-body" style="padding: 0 1.25rem;">
+                  <label class="custom-control custom-radio">
+                    <input id="card_check" class="custom-control-input" type="radio" name="card_check"><span class="custom-control-indicator"></span><span class="custom-control-description">使用信用卡付款: &nbsp;<img class="d-inline-block align-middle" src="img/credit-cards.png" style="width: 160px;" alt="信用卡"></span>
+                  </label>
+                  <div class="card-wrapper"></div>
+                  <fieldset class="card-info">
+                    <form class="interactive-credit-card row">
+                      <div class="form-group col-sm-12">
+                        <input class="form-control" type="text" name="number" placeholder="Card Number 信用卡号码" required>
+                      </div>
+                      <div class="form-group col-sm-8">
+                        <div class="row">
+                          <label class="col-form-label" >有效期至</label>
+                          <div class="col-sm-4">
+                            <select class="form-control input-lg" name="month" id="month" required>
+                              <option value = "1">01</option>
+                              <option value = "2">02</option>
+                              <option value = "3">03</option>
+                              <option value = "4">04</option>
+                              <option value = "5">05</option>
+                              <option value = "6">06</option>
+                              <option value = "7">07</option>
+                              <option value = "8">08</option>
+                              <option value = "9">09</option>
+                              <option value = "10">10</option>
+                              <option value = "11">11</option>
+                              <option value = "12">12</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-4">
+                            <select class="form-control input-lg" name="year" id="year" required>
+                              <option value = "18">2018</option>
+                              <option value = "19">2019</option>
+                              <option value = "20">2020</option>
+                              <option value = "21">2021</option>
+                              <option value = "22">2022</option>
+                              <option value = "23">2023</option>
+                              <option value = "24">2024</option>
+                              <option value = "25">2025</option>
+                              <option value = "26">2026</option>
+                              <option value = "27">2027</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <input class="form-control" type="text" name="cvc" placeholder="CVC" required>
+                      </div>
+                    </form>
+                  </fieldset>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        
+        <div class="shopping-cart-footer">
+          <div class="column text-left">
+            <div class="row">
+              <div class="col-lg-12 col-md-8">
+                <p>温馨提醒：</p>
+                <ol class="list-unstyled">
+                  <li><span class="text-medium">1. </span>您所购买的是电子书而非纸质书，无需邮寄，购买成功后不可进行退换或申请退款；</li>
+                  <li><span class="text-medium">2. </span>该电子书已经过DRM加密，需在恩道电子书App内阅读；</li>
+                  <li><span class="text-medium">3. </span>恩道电子书App已从苹果应用商店的中国大陆区下架，<span class="text-primary">使用iOS设备的恩道新注册用户仅可通过非中国大陆苹果ID下载App</span>，<a href="index-note.html" target="_blank">点击了解详情</a>。</li>
+                </ol>
+              </div>
+            </div>
+            <label class="custom-control custom-checkbox d-block">
+              <input class="custom-control-input" type="checkbox" checked><span class="custom-control-indicator"></span><span class="custom-control-description">我已知悉上述提醒事项，并已阅读和接受恩道电子书的<a class="text-medium text-decoration-none" href="conditions.html">《使用条款》</a>与<a class="text-medium text-decoration-none" href="refund-policy.html">《退款政策》</a></span>
+              <div class="padding-top-1x">
+                <p class="text-medium text-danger">您需要接受以上条款，方能进行支付</p>
+              </div>
+            </label>
+            <a class="btn btn-primary" data-toggle="modal" data-target="#modalPay">立即支付</a>
+            <a class="btn btn-outline-secondary" href="account-orders.html" data-toast-position="topRight">返回</a>
+          </div>
+          <!-- <div class="column"><a class="btn btn-outline-secondary" href="account-orders.html" data-toast-position="topRight">返回</a><a class="btn btn-primary" href="checkout-complete.html">立即支付</a></div> -->
+        </div>
+      </div>
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <!-- 客户服务 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">客户服务</h3>
+                <ul>
+                  <li><a href="faq.html">常见问题</a></li>
+                  <li><a href="refund-policy.html">退款政策</a></li>
+                  <li><a href="publisher.html">出版合作</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 相关信息 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">相关信息</h3>
+                <ul>
+                  <li><a href="conditions.html">使用条款</a></li>
+                  <li><a href="privacy-policy.html">隐私策略</a></li>
+                  <li><a href="copyright.html">版权申明</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 友情连接 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">友情链接</h3>
+                <ul>
+                  <li><a href="http://book.endao.co/">恩道书房</a></li>
+                  <li><a href="#">恩道读书</a></li>
+                  <li><a href="http://ebook.endao.co/">恩道电子书</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 关于我们-->
+              <section class="widget widget-light-skin">
+                <h3 class="widget-title">关于我们</h3>
+                <p class="text-white">恩道电子书是恩道出版（香港）有限公司旗下的基督教电子书阅读平台，旨在通过与主内的出版机构合作，协力促进华文基督教资源电子化，帮助中国乃至全球华人基督徒，更加便捷地获取并阅读基督教图书。</p>
+              </section>
+            </div>
+          </div>
+          <hr class="hr-light mt-2 margin-bottom-2x">
+          <!-- Copyright-->
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
