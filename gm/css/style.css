@@ -186,8 +186,6 @@ img{
     text-align: center;
     font-size: 16px;
 }
-
-
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
     border-bottom-width: 1px;
 }
@@ -890,8 +888,22 @@ footer {
     border-bottom-right-radius:  36px 16px;
 }
 a:link {
-    color: rgba(0, 0, 0, 255);
+    color: rgba(255, 255, 255, 255);
     text-decoration: none;
+}
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
 }
 .media-row {
     display: -webkit-flex;
