@@ -60,7 +60,7 @@ ul, ol {
     line-height: 1.8;
 }
 .list-1 td {
-    padding: 10px 0; 
+    padding: 12px 0; 
     border-bottom: 16px solid #FFFFFF;
 }
 .table td, .table th {
@@ -876,7 +876,7 @@ footer {
     }
 }
 .order {
-    width: 38px;
+    width: 48px;
     font-size: 12spx;
     text-align: center;
     background-color: #884F42;
