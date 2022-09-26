@@ -5,13 +5,13 @@ body {
     background-size: cover;
     color: #606975;
     font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     text-transform: none;
     line-height: 1.5;
 }
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     text-align: justify;
 }
@@ -228,7 +228,7 @@ blockquote {
   margin-top: 60px; }
 
 .caption {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   display: block;
   margin: 0;
@@ -429,7 +429,7 @@ header.masthead {
     font-size: 36px; } }
 
 .floating-label-form-group {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
@@ -484,12 +484,12 @@ footer {
     margin: 0;
     padding: 0; }
   footer .copyright {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0;
     text-align: center; }
 
 .btn {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   padding: 15px 25px;
   letter-spacing: 1px;
@@ -749,7 +749,7 @@ footer {
     text-shadow: 0 0 0;
 }
 .parallax-pro .motto .square{
-       padding: 7px 14px;
+       padding: 7px 16px;
     height: auto;
     width: auto;
     line-height: inherit;
