@@ -1010,3 +1010,6 @@ a:hover {
 .padding-bottom-1x {
     padding-bottom: 32px !important;
 }
+.bar-color {
+    background-color: #ECA845 !important;
+}
