@@ -33,7 +33,7 @@ h6 {
     font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
 }
 .h4, h4 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .indent {
     text-indent: 2em;
@@ -216,7 +216,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #0085A1; }
+    color: #AC8E8E; }
 
 blockquote {
   font-style: italic;
@@ -239,12 +239,12 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #0085A1;
+  background: #AC8E8E;
   text-shadow: none; }
 
 ::selection {
   color: #fff;
-  background: #0085A1;
+  background: #AC8E8E;
   text-shadow: none; }
 
 img::selection {
@@ -256,7 +256,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #0085A1; }
+  -webkit-tap-highlight-color: #AC8E8E; }
 
 #mainNav {
   position: absolute;
@@ -287,7 +287,7 @@ body {
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: rgba(255, 255, 255, 0.8); }
       #mainNav .navbar-nav > li.nav-item > a {
-        padding: 10px 20px;
+        padding: 10px 12px;
         color: #fff; }
         #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
           color: rgba(255, 255, 255, 0.8); } }
@@ -315,11 +315,11 @@ body {
         #mainNav.is-fixed .navbar-brand {
           color: #212529; }
           #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-            color: #0085A1; }
+            color: #AC8E8E; }
         #mainNav.is-fixed .navbar-nav > li.nav-item > a {
           color: #212529; }
           #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-            color: #0085A1; }
+            color: #AC8E8E; }
       #mainNav.is-visible {
         /* if the user changes the scrolling direction, we show the header */
         -webkit-transform: translate3d(0, 100%, 0);
@@ -403,7 +403,7 @@ header.masthead {
   color: #212529; }
   .post-preview > a:focus, .post-preview > a:hover {
     text-decoration: none;
-    color: #0085A1; }
+    color: #AC8E8E; }
   .post-preview > a > .post-title {
     font-size: 30px;
     margin-top: 30px;
@@ -422,7 +422,7 @@ header.masthead {
     color: #212529; }
     .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
       text-decoration: underline;
-      color: #0085A1; }
+      color: #AC8E8E; }
 
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
@@ -473,7 +473,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #0085A1; }
+  color: #AC8E8E; }
 
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6; }
@@ -498,8 +498,8 @@ footer {
   font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif; }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1; }
+  background-color: #AC8E8E;
+  border-color: #AC8E8E; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
     background-color: #00657b !important;
@@ -1012,4 +1012,17 @@ a:hover {
 }
 .bar-color {
     background-color: #ECA845 !important;
+}
+.btn-info-b.focus, .btn-info-b:focus {
+    box-shadow: 0 0 0 0.1rem rgb(255 255 255 / 100%);
+}
+.btn-info-b {
+    color: #fff;
+    background-color: #6F4D46;
+    border-color: #6F4D46;
+}
+a:hover {
+    background-color: #513c37;
+    color: rgb(255 255 255 / 100%);
+    text-decoration: none;
 }
