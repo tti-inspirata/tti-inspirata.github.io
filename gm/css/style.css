@@ -39,7 +39,7 @@ h6 {
     text-indent: 2em;
 }
 .templateux-overlap {
-    margin-top: -12em;
+    margin-top: -9em;
     background: #FFFFFF;
     padding: 30px 28px;
     border-radius: 0px;
@@ -55,8 +55,8 @@ h6 {
     text-align: center;
 }
 ul, ol {
-    margin-top: 20px;
-    margin-bottom: 16px;
+    margin-top: 1px;
+    margin-bottom: 10px;
     line-height: 1.8;
 }
 .list-1 td {
@@ -273,7 +273,7 @@ body {
     text-transform: uppercase;
     color: #343a40; }
   #mainNav .navbar-nav > li.nav-item > a {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase; }
@@ -427,7 +427,7 @@ header.masthead {
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px; } }
-
+        
 .floating-label-form-group {
   font-size: 16px;
   position: relative;
@@ -930,7 +930,7 @@ a:hover {
     padding: 1rem;
     padding-bottom: 1rem;
 }
-.item-caption h4:before {
+/* .item-caption h4:before {
     position: absolute;
     content: '';
     top: 2;
@@ -940,7 +940,7 @@ a:hover {
     background: currentColor;
     margin-left: -0.6em;
     margin-top: 0.5em;
-}
+} */
 .align-left {
     text-align: left;
 }
@@ -1025,4 +1025,31 @@ a:hover {
     background-color: #513c37;
     color: rgb(255 255 255 / 100%);
     text-decoration: none;
+}
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+}
+.btn-sm, .btn-group-sm > .btn {
+    --bs-btn-padding-y: 0.55rem;
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-font-size: 0.925rem;
+    --bs-btn-border-radius: 0.425rem;
+}
+.btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon).btn-sm, .btn-group-sm > .btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
+    padding: calc(0.3rem + 1px) calc(1rem + 1.2px);
+
+}
+.btn.btn-icon.btn-sm, .btn-group-sm > .btn.btn-icon {
+    height: calc(1.5em + 1.1rem + 2px);
+    width: calc(1.5em + 1.1rem + 2px);
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 24px;
 }
