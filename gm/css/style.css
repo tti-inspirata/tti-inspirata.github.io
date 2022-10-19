@@ -177,7 +177,7 @@ img{
     text-align: center;
     vertical-align: middle;
     border-right: transparent;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .table-striped > thead > tr> th {
@@ -490,7 +490,7 @@ footer {
     text-align: center; }
 
 .btn {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   padding: 15px 25px;
   letter-spacing: 1px;
