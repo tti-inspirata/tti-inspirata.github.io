@@ -935,8 +935,8 @@ a:hover {
 
 
 .item-caption {
-    padding: 1rem;
-    padding-bottom: 1rem;
+    padding: 0.6rem;
+    padding-bottom: 0.6rem;
 }
 /* .item-caption h4:before {
     position: absolute;
