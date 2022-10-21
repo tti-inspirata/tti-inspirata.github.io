@@ -212,12 +212,12 @@ img{
 
 
 a {
-  color: #212529;
+  /* color: #fff; */
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #AC8E8E; }
+    color: #f40606; }
 
 blockquote {
   font-style: italic;
