@@ -190,6 +190,15 @@ img{
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
     border-bottom-width: 1px;
 }
+@media screen and (min-width: 767px){
+    .table-striped > thead > tr> th {
+        font-size: 16px;
+    }
+    .table-striped > tbody > tr> td, .table-striped > tbody > tr> th {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
 .main{
     background-color: #FFFFFF;
     /* position: relative; */
