@@ -1,0 +1,72 @@
+/* It is recommended to place all your extra/additional CSS rules here */
+body {
+    font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+    color: #F7CFA5;
+    line-height: 1.5;
+
+}
+p {
+    line-height: 1.8; 
+}
+
+@media (min-width: 767px) {
+    #main-content .grid .icon {
+        margin: 0 0 0 90px;
+    }
+}
+
+@media (min-width: 767px) {
+    #tabs .grid .icon {
+        margin: 0 0 0 240px;
+    }
+}
+
+img.logo {
+    /* height: 80px; */
+}
+
+.txt-white {
+    color: rgba(255,255,255,0.8);
+}
+
+.text-left {
+    text-align: left !important;
+}
+.space {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.space2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg-content {
+    background-color: #000;
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: 0 2px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 40px rgba(0,0,0,0.3);
+    background-clip: padding-box;
+}
+
+.bg-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.bg-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
