@@ -52,7 +52,7 @@ a:hover {
 
 p a {
     padding-bottom:1px;
-    border-bottom:1px dotted rgba(255,255,255,0.4);
+    /* border-bottom:1px dotted rgba(255,255,255,0.4); */
     font-family: 'open_sansregular', sans-serif;
 }
 p a:hover {
@@ -702,7 +702,7 @@ h6 {
 }
 
     @media (min-width: 768px) {
-        h1 { font-size:2.5em; }
+        h1 { font-size:2.0em; }
         h2 { font-size:1.95em; }
         h3 { font-size:1.65em; }
         h4 { font-size:1.28em; }
@@ -710,7 +710,7 @@ h6 {
         h6 { font-size:1.05em; }
     }
     @media (min-width: 992px) {
-        h1 { font-size:3.1em; }
+        h1 { font-size:2.8em; }
         h2 { font-size:2.4em; }
         h3 { font-size:2em; }
         h4 { font-size:1.6em; }
