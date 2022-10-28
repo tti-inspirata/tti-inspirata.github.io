@@ -9,6 +9,9 @@ p {
     line-height: 1.8;
 }
 
+/* 小屏幕隐藏 */
+/* .tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > span { display:none; } */
+
 
 h2 {
     color: #F7CFA5 !important;
@@ -19,9 +22,6 @@ h2 {
     color: #F7CFA5 !important; 
 }
 
-.in-color {
-    color: #F7CFA5 !important; 
-}
 
 @media (min-width: 767px) {
     #main-content .grid .icon {
@@ -53,7 +53,7 @@ img.logo {
     display: block;
     position: relative;
     width: 100%;
-    padding: 18px 16px 30px 18px;
+    padding: 28px 36px 38px 36px;
     border: 1px solid #e1e7ec;
     background-color: transparent;
 }
@@ -65,13 +65,13 @@ img.logo {
 
 
 
-.space {
-    padding-top: 80px;
+.space-1 {
+    padding-top: 60px;
     padding-bottom: 10px;
 }
 
-.space2 {
-    padding-top: 20px;
+.space-2 {
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 
