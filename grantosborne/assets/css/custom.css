@@ -9,6 +9,10 @@ p {
     line-height: 1.8;
 }
 
+body{
+    font-variant-east-asian: traditional;
+    font-variant-east-asian: traditional;
+  } 
 /* 小屏幕隐藏 */
 /* .tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > span { display:none; } */
 
@@ -16,6 +20,7 @@ p {
 h2 {
     color: #F7CFA5 !important;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .in-color {
@@ -54,10 +59,27 @@ img.logo {
     /* height: 80px; */
 }
 
-.icon img {
-    width: 60px; 
-    padding-top:1rem;
-    padding-bottom: 6rem;
+ .icon img {
+    width: 90px; 
+    /* padding-top:.8rem; */
+}
+
+.map {
+    padding-top: 20px;
+}
+
+.padding-top-1 {
+    padding-top: 30px;
+}
+
+
+.padding-top-2 {
+    padding-top: 40px;
+}
+
+
+.padding-top-3 {
+    padding-top: 60px;
 }
 
 .txt-white {
@@ -73,12 +95,42 @@ img.logo {
     background-color: transparent;
 }
 
+#main-content .carousel .icon {
+    display: block;
+    position: relative;
+    width: 24%;
+    height: auto;
+    float: left;
+    padding: 10px 2%;
+}
+
+#main-content .carousel .icon:after {
+    position: absolute;
+    content: '';
+    right: -2%;
+    top: 4%;
+    margin: auto;
+    bottom: 0;
+    width: 2px;
+    height: 38px;
+    background: currentColor;
+}
+
+#main-content .carousel .text-content {
+    display: block;
+    padding-left: 28%;
+}
+
+#main-content .carousel .item p {
+    line-height: 1.6;
+    margin: 1.6em 0;
+    font-size: 1.8rem;
+}
 
 .text-left {
     text-align: left !important;
 }
-
-
+                    
 
 .space-1 {
     padding-top: 60px;
