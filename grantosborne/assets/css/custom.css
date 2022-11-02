@@ -7,12 +7,9 @@ body {
 }
 p {
     line-height: 1.8;
+    font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
 }
 
-body{
-    font-variant-east-asian: traditional;
-    font-variant-east-asian: traditional;
-  } 
 /* 小屏幕隐藏 */
 /* .tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > span { display:none; } */
 
@@ -23,6 +20,9 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    color: #F7CFA5 !important; 
+}
 .in-color {
     color: #F7CFA5 !important; 
 }
@@ -37,12 +37,6 @@ h2 {
    
 }
 
-
-@media (max-width: 767px) {
-    
-} 
-
-
 @media (min-width: 767px) {
     #main-content .grid .icon {
         margin: 0 0 0 90px;
@@ -55,13 +49,75 @@ h2 {
     }
 }
 
+
+@media (max-width: 768px) { 
+    .content-wrapper .icon img {
+        display: none;
+    }
+    #main-content .carousel .icon:after {
+        display: none;
+    }
+    #main-content .carousel .text-content p{
+        display: none;
+    }
+    #main-content .carousel .txt-card {
+        display: none;        
+    }
+    #main-content .carousel .carousel-control {
+        top: 20%;
+        bottom: 0;
+        width: 6%;
+    }
+    #main-content .carousel .carousel-inner {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+@media (min-width: 767px) {
+    .content-wrapper h3 {
+        display: none;
+    }
+    .years img {
+        display: none;
+    }  
+} 
+
+.years img {
+    width: auto; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+
+.padding-top-0 {
+    padding-top: 3rem;
+}
+
 img.logo {
     /* height: 80px; */
 }
 
- .icon img {
+.icon-logo img {
+    width: 50px; 
+}
+
+.icon img {
     width: 90px; 
     /* padding-top:.8rem; */
+}
+
+.icon-1 {
+    margin-left: -60px;
+}
+
+
+.icon-1 img {
+    width: 52px; 
+    position: relative;
+    bottom: 22px;
+    left: 20px;
 }
 
 .map {
@@ -108,11 +164,11 @@ img.logo {
     position: absolute;
     content: '';
     right: -2%;
-    top: 4%;
+    top: 1%;
     margin: auto;
     bottom: 0;
     width: 2px;
-    height: 38px;
+    height: 42px;
     background: currentColor;
 }
 
