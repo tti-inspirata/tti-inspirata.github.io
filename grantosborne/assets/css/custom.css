@@ -78,10 +78,11 @@ h3 {
     .content-wrapper h3 {
         display: none;
     }
-    .years img {
+    /* .years img {
         display: none;
-    }  
+    }   */
 } 
+
 
 .years img {
     width: auto; 
