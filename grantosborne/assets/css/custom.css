@@ -20,7 +20,7 @@ h2 {
     font-weight: 400;
 }
 
-h3 {
+h3, h4 {
     color: #F7CFA5 !important; 
 }
 .in-color {
@@ -33,6 +33,9 @@ h3 {
     }
     p {
         font-size: 18px;
+    }
+    h4 {
+        font-size: 1.45em;
     }
     #main-content {
         margin-top: -10px;
@@ -118,7 +121,7 @@ img.logo {
 }
 
 .icon img {
-    width: 90px; 
+    width: 64px; 
     /* padding-top:.8rem; */
 }
 
@@ -163,6 +166,10 @@ img.logo {
     padding: 28px 36px 42px 36px;
     border: 1px solid #e1e7ec;
     background-color: transparent;
+}
+
+.txt-card p {
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -314,9 +321,13 @@ ul {
     /* border-bottom: 2px solid gray; */
     color: #999;
 }
+.modal .modal-content {
+    background-color: rgba(0,0,0,0.9);
+}
 
-
-
+.modal .modal-content .modal-body p {
+    line-height: 2.0;
+}
 
 
 
