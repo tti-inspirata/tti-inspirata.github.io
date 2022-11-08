@@ -654,7 +654,7 @@ table {
             padding:0;
             background:none;
         }
-        #main-content .section-wrapper .content-wrapper:first-of-type { padding-top:400px; }
+        #main-content .section-wrapper .content-wrapper:first-of-type { padding-top:100px; }
         #main-content .section-wrapper .content-wrapper:last-of-type { padding-bottom:0; } 
 
         #main-content .section-wrapper .content-wrapper.mid-vertical-positioning {
