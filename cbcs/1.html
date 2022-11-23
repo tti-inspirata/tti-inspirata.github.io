@@ -1,58 +1,81 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-	<!--begin::Head-->
-	<head><base href=""/>
-		<title>测试</title>
-		<meta charset="utf-8" />
-		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-		<!--begin::Fonts-->
-		<!--end::Fonts-->
-		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Global Stylesheets Bundle-->
-	</head>
-	<!--end::Head-->
-	<!--begin::Body-->
-	<body id="kt_body">
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>偶像崇拜究竟是怎么一回事？</title>
+        <meta name="description" content="">
+    </head>
+    <style>
+        html {
+/*
+        background: #e6e9e9;
+        background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+*/
+        -webkit-font-smoothing: antialiased;
+        }
 
+        body {
+            background: #fff;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.06);
+            color: #000;
+            font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 auto;
+            max-width: 640px;
+            padding: 2em 2em 4em;
+        }
 
-		<header id="site_header" class="header " style="background-color: #DCDCDC;">
-			<div class="container d-flex justify-content-between justify-content-lg-start align-items-stretch">
-				<div class="d-flex align-items-center" style="padding: 16px;">
-					
-					<a href="#" class="header-brand">
-						<img alt="logo" src="https://endao.co/assets/img/logo.png" class="logo-default h-40px h-md-40px">
-					</a>
-					
-				</div>
+        h1, h2, h3, h4, h5, h6 {
+            color: #222;
+            font-weight: 700;
+            line-height: 1.3;
+        }
 
-				
-			</div>
-		</header>
+        h2 {
+            margin-top: 1.3em;
+        }
 
+        a {
+            color: #0083e8;
+        }
 
+        b, strong {
+            font-weight: 700;
+        }
 
+        samp {
+            display: none;
+        }
 
+        img {
+            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            background: transparent;
+            border: 10px solid rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+            display: block;
+            margin: 1.3em auto;
+            max-width: 95%;
+        }
 
-
-
-
-
-
-
-
-
-
-		<div class="container padding-bottom-3x mb-1 padding-top-2x" style="padding-top: 60px;">
-			<div class="row justify-content-center">
-				<!--  Content -->
-				<div class="container padding-bottom-3x mb-2 padding-top-1x">
-					<div class="row justify-content-center">
-						<!--  名称 -->
-						<div class="col-lg-7">
-							
-							<section style="box-sizing: border-box; text-align: justify; font-size: 16px;">
+        @keyframes colorize {
+            0% {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            100% {
+                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+            }
+        }
+    </style>
+    <body>
+        
+        
+        <section style="box-sizing: border-box; text-align: justify; font-size: 16px;">
 	<section powered-by="xiumi.us" style="margin: 10px 0px; text-align: left; justify-content: flex-start; display: flex; flex-flow: row nowrap; position: static; box-sizing: border-box;">
 	<section style="display: inline-block; vertical-align: bottom; width: auto; min-width: 10%; max-width: 100%; flex: 0 0 auto; height: auto; align-self: flex-end; margin: 0px -20px 0px 0px; box-sizing: border-box;">
 	<section powered-by="xiumi.us" style="text-align: center; margin: 0px; position: static; box-sizing: border-box;">
@@ -390,17 +413,6 @@
 	<p style="margin: 0px; padding: 0px; box-sizing: border-box;">&nbsp;</p>
 	</section>
 	</section>
-	
-					<!-- 点赞 -->
-					<div class="entry-navigation padding-top-2x">
-						<div class="column"><button class="btn btn-outline-secondary view-all" href="#" onclick="like()" id="blogLikeBtn"><i class="icon-heart"></i></button><br><br><span id="blogLikes">0</span> 赞</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-		
-	</body>
-	<!--end::Body-->
+        
+    </body>
 </html>
