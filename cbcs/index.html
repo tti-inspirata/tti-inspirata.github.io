@@ -24,7 +24,7 @@
     <header class="wrapper bg-soft-primary">
       <nav class="navbar navbar-expand-lg classic transparent position-absolute navbar-dark">
         <div class="container flex-lg-row flex-nowrap align-items-center">
-          <div class="navbar-brand w-100">
+          <div class="navbar-brand w-100 ms-lg-10">
             <a href="./index.html">
               <img class="logo-dark" src="./assets/img/logo-1x.png" srcset="./assets/img/logo-1x.png 2x" alt="" />
               <img class="logo-light" src="./assets/img/logo-2x.png" srcset="./assets/img/logo-2x.png 2x" alt="" />
@@ -39,27 +39,26 @@
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">首页</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">购买电子书</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">购买纸板书</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">购买纸版书</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="./1.html">寄往大陆</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="./2.html">寄往美国</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="./2.html">寄往香港或其他地区</a></li>
+                  </ul>
+                </li> 
                 <li class="nav-item"><a class="nav-link" href="#">先睹为快</a></li> 
                 <li class="nav-item"><a class="nav-link" href="#">走近作者</a></li> 
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">首页</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="./1.html">1</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="./2.html">2</a></li>
-                  </ul>
-                </li> --> 
               </ul>
             </div>
             <!-- /.offcanvas-body -->
           </div>
           <!-- /.navbar-collapse -->
-          <div class="navbar-other ms-lg-4 d-flex ms-auto">
+          <div class="navbar-other ms-lg-10 me-lg-10 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <li class="nav-item dropdown language-select text-uppercase">
-                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">简体</a>
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">简体</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="dropdown-item" href="#">简体</a></li>
                   <li class="nav-item"><a class="dropdown-item" href="#">繁體</a></li>
                 </ul>
               </li>
@@ -77,17 +76,17 @@
       <div class="container pt-18 pb-16" style="z-index: 5; position:relative">
         <div class="row gx-0 gy-12 align-items-center">
           <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 mx-auto content text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
-            <p class="lead fs-lg lh-sms pe-xl-10">房角石圣经注释丛书</p>
-            <h1 class="display-2 mb-5">人人都能读的高品质释经书</h1>
-            <p class="lead fs-sm lh-sm mb-12 pe-xl-10"><i class="uil uil-check-circle"></i>个人灵修  &nbsp; <i class="uil uil-check-circle"></i>小组查经  &nbsp; <i class="uil uil-check-circle"></i>预备讲章</p>
+            <p class="lead fs-xl lh-sms pe-xl-10">房角石圣经注释丛书</p>
+            <h1 class="display-2 mb-5"><span class="link-yellow">人人</span>都能读的高品质释经书</h1>
+            <p class="lead fs-md lh-sm mb-12 pe-xl-10"><i class="uil uil-check-circle"></i>个人灵修  &nbsp; <i class="uil uil-check-circle"></i>小组查经  &nbsp; <i class="uil uil-check-circle"></i>预备讲章</p>
             <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
               <span><a href="#" class="btn btn-sm btn-red rounded-pill me-2">购买电子书</a></span>
-              <span><a href="#" class="btn btn-sm btn-red rounded-pill">购买纸板书</a></span>
+              <span><a href="#" class="btn btn-sm btn-red rounded-pill">购买纸版书</a></span>
             </div>
           </div>
           <!--/column -->
-          <div class="col-lg-4">
-            <figure><img class="w-auto" src="./assets/img/i1.png" srcset="./assets/img/i1.png 2x" alt=""></figure>
+          <div class="col-lg-4 mx-auto position-relative">
+            <figure><img class="mx-auto" src="./assets/img/i1.png" srcset="./assets/img/i1.png 2x" alt=""></figure>
           </div>
           <!-- /column -->
         </div>
@@ -100,7 +99,7 @@
       <div class="container py-14">
         <!-- /.row -->
         <div class="position-relative">
-          <div class="row gx-xl-10 gy-10 text-center">
+          <div class="row gx-xl-2 gy-10 text-center">
             <div class="col-lg-4 col-md-6 col-xl-3 mx-auto">
               <div class="card shadow-lg">
                 <div class="card-body">
@@ -154,7 +153,7 @@
         <!-- /.row -->
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mb-14 mb-md-17">
           <div class="col-lg-8 mx-auto">
-            <div data-vjs-player="true" id="vjs_video_1" class="video-js vjs-paused vjs-fluid vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active" tabindex="-1" lang="zh-hk" translate="no" role="region" aria-label="Video Player" style="padding-top: 56.25%;">
+            <div data-vjs-player="true" id="vjs_video_1" class="video-js vjs-paused vjs-fluid vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active shadow-lg" tabindex="-1" lang="zh-hk" translate="no" role="region" aria-label="Video Player" style="padding-top: 56.25%;">
               <video controls preload="none" poster="https://dl.endao.co/video/cbcs.jpg" data-setup="{}">
                 <source src="https://dl.endao.co/video/cbcs.mp4" type="video/mp4">
               </video>
@@ -173,12 +172,12 @@
             <h3 class="display-4 mb-4 px-xl-10"><span class="underline-2 yellow">先睹为快</span></h3>
             <p class="lead mb-0 px-xl-10 px-xxl-13 mb-10">书卷导读、编辑分享、精彩试读… <br>一睹房角石的优质内容</p>
           </div>
-          <div class="col-lg-6 position-relative">
-            <a href="#media/movie.mp4"><figure class="rounded"><img src="./assets/img/new.png" alt=""></figure></a>
+          <div class="col-lg-4 offset-lg-2 position-relative">
+            <a href="#media/movie.mp4"><figure class="rounded"><img src="./assets/img/nt.png" alt=""></figure></a>
           </div>
           <!--/column -->
-          <div class="col-lg-6">
-            <a href="#media/movie.mp4"><figure class="rounded"><img src="./assets/img/old.png" alt=""></figure></a> 
+          <div class="col-lg-4">
+            <a href="#media/movie.mp4"><figure class="rounded"><img src="./assets/img/ot.png" alt=""></figure></a> 
           </div>
           <!-- /column -->
         </div>
@@ -195,8 +194,8 @@
           </div>
         </div>
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mb-md-4">
-          <div class="col-lg-12">
-            <div class="swiper-container text-center swiper-container-4" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1" data-margin="5" data-nav="true" data-dots="true">
+          <div class="col-lg-10 mx-auto">
+            <div class="swiper-container text-center swiper-container-4" data-margin="30" data-dots="true" data-items-xl="4" data-items-md="3" data-items-xs="1" data-margin="5" data-nav="true" data-dots="true">
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -213,6 +212,9 @@
                   <!--/.swiper-slide -->
                   <div class="swiper-slide">
                     <img class="mx-auto" src="./assets/img/a3.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="mx-auto" src="./assets/img/a4.png" alt="" />
                   </div>
                 </div>
                 <!--/.swiper-wrapper -->
@@ -239,48 +241,48 @@
         </div>
         <div class="row">
           <div class="col-xl-8 mx-auto mb-6 mb-lg-n6">
-            <div class="card">
-              <img src="./assets/img/icons/book.svg" class="shape rellax w-16 h-16" style="bottom: 0.1rem; right: 0rem; z-index: 0;">
+            <div class="card shadow-lg">
               <!-- <div class="shape bg-dot primary rellax w-14 h-14" data-rellax-speed="1" style="bottom: 0.6rem; right: 0rem; z-index: 0;"></div> -->
               <div class="card-body p-9 p-xl-9">
+                <img src="./assets/img/icons/book.svg" class="shape rellax w-16 h-16" style="bottom: -0.1rem; right: 0rem; z-index: 0;">
                 <div class="row gx-0">
                   <div class="col-xxl-11 mx-auto">
-                    <div class="swiper-container dots-closer nav-bottom swiper-container-4" data-margin="5" data-nav="true" data-margin="30" data-dots="true">
+                    <div class="swiper-container dots-closer nav-bottom swiper-container-4" data-margin="5" data-margin="30" data-dots="true">
                       <div class="swiper">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">张弟兄 | 牧者 </h6>
-                            <p class="mb-2 text-lg-start">《房角石圣经注释丛书》学术水平较高，释经严谨，有自己的特色，如书中的注解是以经节为单位，详细解释了核心词，帮助我们在正确的语义范围内去“挖掘”词语的含义。另外，本书的注释是以文学单元为单位，让我们在上下文中获取经文的真实信息，避免抽离语境而产生错误的解释。这套书是不可多得的释经工具，建议牧者、查经组长、主日学教师收藏使用，以帮助我们准确获取、传递神话语的信息！ </p>
+                            <p class="lead mb-2 text-lg-start">《房角石圣经注释丛书》学术水平较高，释经严谨，有自己的特色，如书中的注解是以经节为单位，详细解释了核心词，帮助我们在正确的语义范围内去“挖掘”词语的含义。另外，本书的注释是以文学单元为单位，让我们在上下文中获取经文的真实信息，避免抽离语境而产生错误的解释。这套书是不可多得的释经工具，建议牧者、查经组长、主日学教师收藏使用，以帮助我们准确获取、传递神话语的信息！ </p>
                           </div>
                           <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">陈姊妹 | 敬拜主领  </h6>
-                            虽然我使用过的房角石释经书并不多，书架上仅有两本，但在我预备服侍以及写作专文时给了我极大帮助，尤其是书中详细又深刻的字词、句义、背景背后的意义阐释，让我对经文有了多维度甚至不断更新的思考。准确地说这类释经书不仅是工具书而已，它们更像是一辆好的马车带我起步，奔跑更进深的生命旅程。我愿推荐这套房角石注释书给所有服侍人员和神学生们！
+                            <p class="lead mb-2 text-lg-start"></p>虽然我使用过的房角石释经书并不多，书架上仅有两本，但在我预备服侍以及写作专文时给了我极大帮助，尤其是书中详细又深刻的字词、句义、背景背后的意义阐释，让我对经文有了多维度甚至不断更新的思考。准确地说这类释经书不仅是工具书而已，它们更像是一辆好的马车带我起步，奔跑更进深的生命旅程。我愿推荐这套房角石注释书给所有服侍人员和神学生们！</p>
                           </div>
                           <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">耿弟兄 | 同工</h6>
-                            《房角石圣经注释丛书》的释义部分内容翔实，不仅将经文解释和现实应用结合起来，还讨论了一些关键的神学议题，引发读者的思考，帮助我们更好地应用。翻译也是一大亮点，译文符合中文语言习惯，使读者能够顺畅地理解。我推荐盼望更深认识经文背景和意义的弟兄姐妹阅读这套书，对于牧者、同工而言，这套书也是很好的释经材料，部分章节的释义部分还可以直接用作读书小组、查经小组的阅读材料。
+                            <p class="lead mb-2 text-lg-start">《房角石圣经注释丛书》的释义部分内容翔实，不仅将经文解释和现实应用结合起来，还讨论了一些关键的神学议题，引发读者的思考，帮助我们更好地应用。翻译也是一大亮点，译文符合中文语言习惯，使读者能够顺畅地理解。我推荐盼望更深认识经文背景和意义的弟兄姐妹阅读这套书，对于牧者、同工而言，这套书也是很好的释经材料，部分章节的释义部分还可以直接用作读书小组、查经小组的阅读材料。</p>
                           </div>
                           <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">景弟兄 | 同工</h6>
-                            这是我的第一套覆盖整本新旧约圣经的中文注释书，所以我在准备查经和讲道的时候都会用到，很有帮助。我推荐预备带领查经和参加话语服侍的弟兄姊妹阅读这套书，因为它难度适中，有一定的学术性，又不过于偏重学术研究，作为解经入门书籍比较合适。
+                            <p class="lead mb-2 text-lg-start">这是我的第一套覆盖整本新旧约圣经的中文注释书，所以我在准备查经和讲道的时候都会用到，很有帮助。我推荐预备带领查经和参加话语服侍的弟兄姊妹阅读这套书，因为它难度适中，有一定的学术性，又不过于偏重学术研究，作为解经入门书籍比较合适。</p>
                           </div>
                           <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">高姊妹 | 同工</h6>
-                            很感恩有房角石注释丛书相伴，我几乎入手了全套。这套书的学术水平很高，解经忠实、严谨、结构清晰、难度适中，此外，还很注重联系生活实际。丛书翻译得也很好，行文流畅，清晰易懂。我几乎每周都要用到这套书，它是我预备讲章必读的参考书，非常受益。
+                            <p class="lead mb-2 text-lg-start">很感恩有房角石注释丛书相伴，我几乎入手了全套。这套书的学术水平很高，解经忠实、严谨、结构清晰、难度适中，此外，还很注重联系生活实际。丛书翻译得也很好，行文流畅，清晰易懂。我几乎每周都要用到这套书，它是我预备讲章必读的参考书，非常受益。</p>
                           </div>
                           <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">张弟兄 | 牧者</h6>
-                            房角石注释书作者研究的深度、广度都使我对于圣经有了更多认识。作者的解经基于原文，扎实严谨，综述各家之言，也有自己独到的见解，鼓励读者形成自己的思考和实践。对于讲章预备、灵修、小组查经等，这套丛书都是不错的参考资料。
+                            <p class="lead mb-2 text-lg-start">房角石注释书作者研究的深度、广度都使我对于圣经有了更多认识。作者的解经基于原文，扎实严谨，综述各家之言，也有自己独到的见解，鼓励读者形成自己的思考和实践。对于讲章预备、灵修、小组查经等，这套丛书都是不错的参考资料。</p>
                           </div>
                           <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h6 class="mb-2 mb-md-4 text-center">张弟兄 | 传道</h6>
-                            《房角石圣经注释丛书》的解经忠实，有一定的深度，对于我预备讲章、完成神学功课有很大的帮助。我读过的两卷书对于经文的诠释都十分透彻，为读者提供了开阔的视野和思路。这套书是非常好的参考资料，我推荐神学生和传道人阅读，对于学习和服侍都有益处。
+                            <p class="lead mb-2 text-lg-start">《房角石圣经注释丛书》的解经忠实，有一定的深度，对于我预备讲章、完成神学功课有很大的帮助。我读过的两卷书对于经文的诠释都十分透彻，为读者提供了开阔的视野和思路。这套书是非常好的参考资料，我推荐神学生和传道人阅读，对于学习和服侍都有益处。</p>
                           </div>
                           <!--/.swiper-slide -->
                         </div>

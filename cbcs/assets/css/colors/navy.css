@@ -67,7 +67,7 @@ a.text-reset:hover,
 .plyr__control--overlaid:focus,
 .plyr__control--overlaid:hover,
 .navbar.navbar-light.fixed .btn.btn-outline-primary:not(:hover) {
-  color: #343f52 !important;
+  color: #FFAA02 !important;
 }
 .form-control:focus {
   border-color: #9a9fa9;
