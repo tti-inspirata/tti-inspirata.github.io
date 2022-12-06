@@ -566,7 +566,7 @@ table {
 #main-content {
     display:block;
     position: relative;
-    margin:60px 5%;
+    margin:10px 5%;
     overflow: visible;
     min-height:1px;
     font-family: 'open_sanslight', sans-serif;
@@ -654,8 +654,8 @@ table {
             padding:0;
             background:none;
         }
-        #main-content .section-wrapper .content-wrapper:first-of-type { padding-top:100px; }
-        #main-content .section-wrapper .content-wrapper:last-of-type { padding-bottom:0; } 
+        #main-content .section-wrapper .content-wrapper:first-of-type { padding-top:10px; }
+        /* #main-content .section-wrapper .content-wrapper:last-of-type { padding-bottom:0; }  */
 
         #main-content .section-wrapper .content-wrapper.mid-vertical-positioning {
             min-height: 60%;
@@ -663,10 +663,13 @@ table {
     }
     @media (min-width: 992px) {
         #main-content .section-wrapper .content-wrapper { 
+            position: static;
         }
     }
     @media (min-width: 1200px) {
-
+        #main-content .section-wrapper .content-wrapper { 
+            position: static;
+        }
     }    
 
 /* General Heading Styles */
