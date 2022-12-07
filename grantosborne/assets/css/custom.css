@@ -296,7 +296,7 @@ ul {
 
     @media (min-width: 767px) {
         .navbar-collapse {
-            padding: 5% 12%; 
+            padding: 5% 12% 0 50%; 
         }
     }
     @media (max-width: 767px) {
