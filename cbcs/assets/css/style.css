@@ -91,7 +91,7 @@ Author:		elemis
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-heading-color: #000000;
-  --bs-link-color: #FFAA02;
+  --bs-link-color: #000000;
   --bs-link-hover-color: #FFAA02;
   --bs-code-color: #60697b;
   --bs-highlight-bg: #fef1de;
@@ -5885,6 +5885,11 @@ fieldset:disabled .btn {
   .card-group>.card:not(:first-child) .card-img-bottom,
   .card-group>.card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
+  }
+  figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
   }
 }
 .pagination {
@@ -22750,9 +22755,9 @@ figure {
   padding: 0;
 }
 figure img {
-  width: 100%;
-  max-width: 100%;
-  height: auto !important;
+  /* width: 100%;
+  max-width: 100%; */
+  height: 80px;
 }
 .img-mask img {
   -webkit-mask-position: center center;
