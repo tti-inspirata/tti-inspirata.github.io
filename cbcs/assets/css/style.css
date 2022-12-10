@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*!
-Theme Name: Sandbox - Modern & Multipurpose Bootstrap 5 Template
-Theme URI:	https://sandbox.elemisthemes.com/
-Version:	3.2.2
-Author:		elemis
-*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
 :root {
   --bs-gray-100: #fefefe;
@@ -22755,8 +22749,11 @@ figure {
   padding: 0;
 }
 figure img {
-  /* width: 100%;
-  max-width: 100%; */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.card-body figure img {
   height: 80px;
 }
 .img-mask img {
