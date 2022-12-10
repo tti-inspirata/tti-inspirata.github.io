@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN" >
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
   <link rel="shortcut icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/colors/navy.css">
   <link href="video-js/videojs.css" rel="stylesheet" type="text/css">
   <link href="video-js/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -22,8 +20,8 @@
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100 ms-lg-10">
             <a href="./index.html">
-              <img class="logo-dark" src="./assets/img/logo-1x.png" srcset="./assets/img/logo-1x.png 2x" alt="" />
-              <img class="logo-light" src="./assets/img/logo-2x.png" srcset="./assets/img/logo-2x.png 2x" alt="" />
+              <img class="logo-dark" src="./assets/img/logo-1x.png" srcset="./assets/img/logo-1x.png 2x" alt="img" />
+              <img class="logo-light" src="./assets/img/logo-2x.png" srcset="./assets/img/logo-2x.png 2x" alt="img" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -48,9 +46,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">&VerticalSeparator;</a></li> 
               </ul>
             </div>
-            <!-- /.offcanvas-body -->
           </div>
-          <!-- /.navbar-collapse -->
           <div class="navbar-other ms-lg-4 me-lg-10 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <li class="nav-item dropdown language-select text-uppercase">
@@ -60,15 +56,10 @@
                 <a class="dropdown-item" href="index-zh.html">繁</a>
               </li>
             </ul>
-            <!-- /.navbar-nav -->
           </div>
-          <!-- /.navbar-other -->
         </div>
-        <!-- /.container -->
       </nav>
-      <!-- /.navbar -->
     </header>
-    <!-- /header -->
     <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 bg-content" data-image-src="./assets/img/bg.jpg">
       <div class="container pt-18 pb-16" style="z-index: 5; position:relative">
         <div class="row gx-0 gy-12 align-items-center">
@@ -78,20 +69,24 @@
             <p class="lead fs-md lh-sm mb-12 pe-xl-10"><i class="uil uil-check-circle"></i>个人灵修  &nbsp; <i class="uil uil-check-circle"></i>小组查经  &nbsp; <i class="uil uil-check-circle"></i>预备讲章</p>
             <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
               <span><a href="https://ebook.endao.co/category-5-grid-0-1-0-0-0-0-0-0" class="btn btn-sm btn-red rounded-pill me-2">购买电子书</a></span>
-              <span><a href="https://book.endao.co" class="btn btn-sm btn-red rounded-pill">购买纸质书</a></span>
+              <ul class="navbar-nav flex-row">
+                <li class="dropdown">
+                  <a class="btn btn-sm btn-red rounded-pill" href="#" data-bs-toggle="dropdown">购买纸质书</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="https://book.endao.co/cn/index.php?route=product/category&path=82" target="_blank">寄往大陆</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="https://book.endao.co/us/index.php?route=product/category&path=205" target="_blank">寄往美国</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="https://book.endao.co/hk/index.php?route=product/category&path=205" target="_blank">寄往香港或其他地区</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
-          <!--/column -->
           <div class="col-lg-4 mx-auto position-relative">
-            <figure><img class="mx-auto" src="./assets/img/i1.png" srcset="./assets/img/i1.png 2x" alt=""></figure>
+            <figure><img class="mx-auto" src="./assets/img/i1.png" srcset="./assets/img/i1.png 2x" alt="img"></figure>
           </div>
-          <!-- /column -->
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /section -->
     <section class="wrapper bg-light">
       <div class="container py-14">
         <!-- /.row -->
@@ -100,44 +95,34 @@
             <div class="col-lg-4 col-md-6 col-xl-3 mx-auto">
               <div class="card shadow-lg">
                 <div class="card-body">
-                  <img src="./assets/img/icons/s1.svg" class="icon-svg icon-svg-lg-1 text-primary mb-1" alt="">
+                  <img src="./assets/img/icons/s1.svg" class="icon-svg icon-svg-lg-1 text-primary mb-1" alt="img">
                   <h2 class="card-title mb-6">全面翔实</h2>
                   <p class="card-text mb-2 text-lg-start">历时十数年打磨出品，全套34册涵盖66卷圣经，引领你体会圣经世界的精彩。&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;</p> 
                 </div>
-                <!--/.card-body -->
               </div>
-              <!--/.card -->
-            </div>
-            <!--/column -->
+             </div>
             <div class="col-lg-4 col-md-6 col-xl-3 mx-auto">
               <div class="card shadow-lg">
                 <div class="card-body">
-                  <img src="./assets/img/icons/s2.svg" class="icon-svg icon-svg-lg-1 text-primary mb-1" alt="">
+                  <img src="./assets/img/icons/s2.svg" class="icon-svg icon-svg-lg-1 text-primary mb-1" alt="img">
                   <h2 class="card-title mb-6">平衡严谨 </h2>
                   <p class="card-text mb-2 text-lg-start">40位一流福音派圣经学者，既紧贴经文挖掘深意，又着眼当下联系实际，拓展你的神学知与行。 </p> 
                 </div>
-                <!--/.card-body -->
               </div>
             </div>
-            <!--/column -->
             <div class="col-lg-4 col-md-6 col-xl-3 mx-auto">
               <div class="card shadow-lg">
                 <div class="card-body">
-                  <img src="./assets/img/icons/s3.svg" class="icon-svg icon-svg-lg-1 text-primary mb-1" alt="">
+                  <img src="./assets/img/icons/s3.svg" class="icon-svg icon-svg-lg-1 text-primary mb-1" alt="img">
                   <h2 class="card-title mb-6">适中适用 </h2>
                   <p class="card-text mb-2 text-lg-start">灵修、查经、写讲章…不同的研经层次和场景中，房角石都是您的得力好伙伴。 &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;</p> 
                 </div>
-                <!--/.card-body -->
               </div>
             </div>
-            <!--/column -->
           </div>
-          <!--/.row -->
         </div>
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /section -->
     <section class="wrapper bg-light">
       <div class="container mt-10">
         <div class="row text-center">
@@ -145,9 +130,7 @@
             <h3 class="display-4 mb-4 px-xl-10"><span class="underline-2 yellow">学者荐语</span></h3>
             <p class="lead px-xl-10 px-xxl-13 mb-12">我们为何向中文读者引进房角石？</p>
           </div>
-          <!-- /column -->
         </div>
-        <!-- /.row -->
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mb-14 mb-md-17">
           <div class="col-lg-8 mx-auto">
             <div data-vjs-player="true" id="vjs_video_1" class="video-js vjs-paused vjs-fluid vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active shadow-lg" tabindex="-1" lang="zh-hk" translate="no" role="region" aria-label="Video Player" style="padding-top: 56.25%;">
@@ -156,11 +139,8 @@
               </video>
             </div>
           </div>
-          <!--/column -->
         </div>
-        <!--/.row -->
       </div>
-      <!-- /.container -->
     </section>
     <section class="wrapper bg-light">
       <div class="container py-4 mb-8">
@@ -170,18 +150,14 @@
             <p class="lead mb-0 px-xl-10 px-xxl-13 mb-10">书卷导读、编辑分享、精彩试读… <br>一睹房角石的优质内容</p>
           </div>
           <div class="col-lg-5 px-10 offset-lg-1 position-relative">
-            <a href="ot.html"><figure class="rounded"><img src="./assets/img/ot.png" alt=""></figure></a> 
+            <a href="ot.html"><figure class="rounded"><img src="./assets/img/ot.png" alt="img"></figure></a> 
           </div>
-          <!-- /column -->
           <div class="col-lg-5 px-10">
-            <a href="nt.html"><figure class="rounded"><img src="./assets/img/nt.png" alt=""></figure></a>
+            <a href="nt.html"><figure class="rounded"><img src="./assets/img/nt.png" alt="img"></figure></a>
           </div>
-          <!--/column -->
         </div>
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /section -->
     <section class="wrapper bg-light">
       <div class="container pt-10 py-10">
         <div class="row text-center">
@@ -197,37 +173,27 @@
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <a href="Andrew.html"><img class="mx-auto" src="./assets/img/a1.png" alt="" /></a>
+                    <a href="./about-the-author/AndrewE_Hill.php"><img class="mx-auto" src="./assets/img/a1.png" alt="img" /></a>
                     <!-- <h4 class="mb-1">作者名称</h4>
                     <div class="meta mb-2">Englist name</div>
-                    <p class="mb-2">学校</p> -->
-                    <!-- /.social -->
-                  </div>
-                  <!--/.swiper-slide -->
-                  <div class="swiper-slide">
-                    <a href="Tremper.html"><img class="mx-auto" src="./assets/img/a2.png" alt="" /></a>
-                  </div>
-                  <!--/.swiper-slide -->
-                  <div class="swiper-slide">
-                    <a href="John.html"><img class="mx-auto" src="./assets/img/a3.png" alt="" /></a>
+                    <p class="mb-2">教授</p> -->
                   </div>
                   <div class="swiper-slide">
-                    <a href="August.html"><img class="mx-auto" src="./assets/img/a4.png" alt="" /></a>
+                    <a href="./about-the-author/TremperLongmanIII.php"><img class="mx-auto" src="./assets/img/a2.png" alt="img" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./about-the-author/JonhN_Oswalt.php"><img class="mx-auto" src="./assets/img/a3.png" alt="img" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./about-the-author/AugustH_Konkel.php"><img class="mx-auto" src="./assets/img/a4.png" alt="img" /></a>
                   </div>
                 </div>
-                <!--/.swiper-wrapper -->
               </div>
-              <!-- /.swiper -->
             </div>
-            <!-- /.swiper-container -->
           </div>
-          <!--/column -->
         </div>
-        <!--/.row -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /section -->
     <section class="wrapper bg-light">
       <div class="container py-10 pb-md-17">
         <div class="row text-center">
@@ -235,7 +201,6 @@
             <h3 class="display-4 mb-4 px-xl-10"><span class="underline-2 yellow">读者评语</span></h3>
             <p class="lead mb-0 px-xl-10 px-xxl-13 mb-12">每一位有意钻研圣经的读者<br>都能在房角石中找到营养</p>
           </div>
-          <!-- /column -->
         </div>
         <div class="row">
           <div class="col-xl-8 mx-auto mb-6 mb-lg-n6">
@@ -252,61 +217,42 @@
                             <h5 class="mb-2 mb-md-4 text-center">张弟兄 | 牧者 </h5>
                             <p class="lead mb-2 text-lg-start">《房角石圣经注释丛书》学术水平较高，释经严谨，有自己的特色，如书中的注解是以经节为单位，详细解释了核心词，帮助我们在正确的语义范围内去“挖掘”词语的含义。另外，本书的注释是以文学单元为单位，让我们在上下文中获取经文的真实信息，避免抽离语境而产生错误的解释。这套书是不可多得的释经工具，建议牧者、查经组长、主日学教师收藏使用，以帮助我们准确获取、传递神话语的信息！ </p>
                           </div>
-                          <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h5 class="mb-2 mb-md-4 text-center">陈姊妹 | 敬拜主领  </h5>
                             <p class="lead mb-2 text-lg-start">虽然我使用过的房角石释经书并不多，书架上仅有两本，但在我预备服侍以及写作专文时给了我极大帮助，尤其是书中详细又深刻的字词、句义、背景背后的意义阐释，让我对经文有了多维度甚至不断更新的思考。准确地说这类释经书不仅是工具书而已，它们更像是一辆好的马车带我起步，奔跑更进深的生命旅程。我愿推荐这套房角石注释书给所有服侍人员和神学生们！</p>
                           </div>
-                          <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h5 class="mb-2 mb-md-4 text-center">耿弟兄 | 同工</h5>
                             <p class="lead mb-2 text-lg-start">《房角石圣经注释丛书》的释义部分内容翔实，不仅将经文解释和现实应用结合起来，还讨论了一些关键的神学议题，引发读者的思考，帮助我们更好地应用。翻译也是一大亮点，译文符合中文语言习惯，使读者能够顺畅地理解。我推荐盼望更深认识经文背景和意义的弟兄姐妹阅读这套书，对于牧者、同工而言，这套书也是很好的释经材料，部分章节的释义部分还可以直接用作读书小组、查经小组的阅读材料。</p>
                           </div>
-                          <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h5 class="mb-2 mb-md-4 text-center">景弟兄 | 同工</h5>
                             <p class="lead mb-2 text-lg-start">这是我的第一套覆盖整本新旧约圣经的中文注释书，所以我在准备查经和讲道的时候都会用到，很有帮助。我推荐预备带领查经和参加话语服侍的弟兄姊妹阅读这套书，因为它难度适中，有一定的学术性，又不过于偏重学术研究，作为解经入门书籍比较合适。</p>
                           </div>
-                          <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h5 class="mb-2 mb-md-4 text-center">高姊妹 | 同工</h5>
                             <p class="lead mb-2 text-lg-start">很感恩有房角石注释丛书相伴，我几乎入手了全套。这套书的学术水平很高，解经忠实、严谨、结构清晰、难度适中，此外，还很注重联系生活实际。丛书翻译得也很好，行文流畅，清晰易懂。我几乎每周都要用到这套书，它是我预备讲章必读的参考书，非常受益。</p>
                           </div>
-                          <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h5 class="mb-2 mb-md-4 text-center">张弟兄 | 牧者</h5>
                             <p class="lead mb-2 text-lg-start">房角石注释书作者研究的深度、广度都使我对于圣经有了更多认识。作者的解经基于原文，扎实严谨，综述各家之言，也有自己独到的见解，鼓励读者形成自己的思考和实践。对于讲章预备、灵修、小组查经等，这套丛书都是不错的参考资料。</p>
                           </div>
-                          <!--/.swiper-slide -->
                           <div class="swiper-slide">
                             <h5 class="mb-2 mb-md-4 text-center">张弟兄 | 传道</h5>
                             <p class="lead mb-2 text-lg-start">《房角石圣经注释丛书》的解经忠实，有一定的深度，对于我预备讲章、完成神学功课有很大的帮助。我读过的两卷书对于经文的诠释都十分透彻，为读者提供了开阔的视野和思路。这套书是非常好的参考资料，我推荐神学生和传道人阅读，对于学习和服侍都有益处。</p>
                           </div>
-                          <!--/.swiper-slide -->
                         </div>
-                        <!--/.swiper-wrapper -->
                       </div>
-                      <!-- /.swiper -->
                     </div>
-                    <!-- /.swiper-container -->
                   </div>
-                  <!-- /column -->
                 </div>
-                <!-- /.row -->
               </div>
-              <!--/.card-body -->
             </div>
-            <!--/.card -->
           </div>
-          <!-- /column -->
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /section -->
   </div>
-  <!-- /.content-wrapper -->
   <footer class="bg-navy bg-image bg-overlay bg-content" data-image-src="./assets/img/bg.jpg">
     <div class="container py-13 py-md-15">
       <div class="row gy-6 gy-lg-0">
@@ -316,7 +262,14 @@
             <ul class="list-unstyled  mb-0">
               <li><a href="https://ebook.endao.co/xzhm" target="_blank">先租后买 </a></li>
               <li><a href="https://ebook.endao.co/searchBook?searchText=房角石 " target="_blank">购买电子书 </a></li>
-              <li><a href="#">购买纸质书 </a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">购买纸质书</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="dropdown-item" href="https://book.endao.co/cn/index.php?route=product/category&path=82" target="_blank">寄往大陆</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="https://book.endao.co/us/index.php?route=product/category&path=205" target="_blank">寄往美国</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="https://book.endao.co/hk/index.php?route=product/category&path=205" target="_blank">寄往香港或其他地区</a></li>
+                </ul>
+              </li> 
             </ul>
           </div>
         </div>
@@ -347,5 +300,4 @@
   <script src="./assets/js/theme.js"></script>
   <script src="video-js/video.min.js"></script>
 </body>
-
 </html>
