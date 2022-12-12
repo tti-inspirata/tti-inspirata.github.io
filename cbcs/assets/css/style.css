@@ -22750,11 +22750,18 @@ figure {
 }
 figure img {
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
+@media (max-width: 576px){
+  .author-info figure img {
+    height: auto;
+    width: 100px !important;
+  }
+}
 .card-body figure img {
-  height: 80px;
+  height: auto;
+  width: 170px;
 }
 .img-mask img {
   -webkit-mask-position: center center;
