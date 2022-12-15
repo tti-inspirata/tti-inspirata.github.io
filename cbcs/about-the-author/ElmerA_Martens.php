@@ -53,7 +53,7 @@
 	</p>
 	<section style="text-align: center; margin: -40px 0px 10px; line-height: 0; position: static; box-sizing: border-box;" class="_135editor">
 		<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 50%; height: auto; border-style: solid; border-width: 6px; border-radius: 6px; border-color: rgba(248, 208, 95, 0.61); overflow: hidden;">
-			<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670319607346.png?x-oss-process=style/xm" draggable="false" data-ratio="1" data-w="1080"/>
+			<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670827622949.png" draggable="false" data-ratio="1" data-w="1080"/>
 		</section>
 	</section>
 	<p style=" margin: 0px; padding: 0px; box-sizing: border-box;" class="_135editor">

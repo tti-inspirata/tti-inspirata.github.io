@@ -120,7 +120,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -153,7 +153,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -192,7 +192,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -272,7 +272,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -311,7 +311,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -344,7 +344,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>

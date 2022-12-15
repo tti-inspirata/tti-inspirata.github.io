@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="房角石圣经注释丛书">
-  <meta name="keywords" content="房角石圣经注释丛书">
-  <title>每个信徒都应该被这⼏卷书所激励-房角石圣经注释丛书</title>
+  <meta name="description" content="房角圣经石注释丛书">
+  <meta name="keywords" content="房角圣经石注释丛书">
+  <title>每个信徒都应该被这⼏卷书所激励-房角圣经石注释丛书</title>
   <link rel="shortcut icon" href="../assets/img/favicon.png">
   <link rel="stylesheet" href="../assets/css/styles.css">
 
@@ -18,7 +18,7 @@
         <div class="col-xl-6 col-md-10 col-lg-6 order-xl-2 mx-auto">
           <!-- 内容开始 -->
 
-          <section style="font-size: 15px; color: rgb(0, 0, 0); letter-spacing: 0.4px; line-height: 1.8; padding-right: 12px; box-sizing: border-box;   text-align: justify;">
+     <section style="font-size: 15px; color: rgb(0, 0, 0); letter-spacing: 0.4px; line-height: 1.8; padding-right: 12px; box-sizing: border-box;   text-align: justify;">
 	<section style="margin: 10px 0px; text-align: left; justify-content: flex-start; display: flex; flex-flow: row nowrap; position: static; box-sizing: border-box;" class="_135editor">
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; min-width: 10%; max-width: 100%; flex: 0 0 auto; height: auto; align-self: flex-end; margin: 0px -20px 0px 0px;">
 			<section style="text-align: center; margin: 0px; position: static; box-sizing: border-box;">
@@ -126,7 +126,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -159,7 +159,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -198,7 +198,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -231,7 +231,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -261,7 +261,7 @@
 		<section style="box-sizing:border-box;display: inline-block; vertical-align: bottom; width: auto; flex: 0 0 auto; align-self: flex-end; min-width: 10%; max-width: 100%; height: auto;">
 			<section style="text-align: center; margin: 0px 0%; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 40px; height: auto; border-radius: 90px; overflow: hidden; box-shadow: transparent 1px 0px 2px;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://img.xiumi.us/xmi/ua/3O1Ws/i/0afcf238821f9b1ee70a805e60b15d5d-sz_12142.png" draggable="false" data-ratio="1" data-w="400"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670939039847.png" draggable="false" data-ratio="1" data-w="400"/>
 				</section>
 			</section>
 		</section>
@@ -318,7 +318,7 @@
 	</section>
 	<section style="margin: 10px 0%; text-align: left; justify-content: flex-start; display: flex; flex-flow: row nowrap; position: static; box-sizing: border-box;" class="_135editor">
 		<section style="box-sizing:border-box;max-width: 100% !important;display: inline-block; width: 100%; vertical-align: top; background-position: 0% 0%; background-repeat: repeat; background-size: 167.836%; background-attachment: scroll; padding: 15px; align-self: flex-start; flex: 0 0 auto; background-image: url(&quot;https://statics.xiumi.us/stc/images/templates-assets/tpl-paper/image/a9e61c889c8828ad7d9f74ddf2b76e9b-sz_6849.png&quot;);">
-			<section style="text-align: justify; font-size: 16px; color: rgb(0, 0, 0); line-height: 1.9; letter-spacing: 0.4px; padding: 0px 12px; box-sizing: border-box;" class="_135editor">
+			<section style="text-align: justify; font-size: 16px; color: rgb(0, 0, 0); line-height: 1.9; padding: 0px 12px; box-sizing: border-box;" class="_135editor">
 				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
 					盖瑞·史密斯博士现为伯特利神学院（St Paul, MN）教授。此前，他是联合大学（Jackson, Tennessee）的基督教研究教授。他于2004－2010年间任教于联合大学，1998－2004年间任教于中西部浸信会神学院（Kansas City, Missouri），教授旧约和希伯来文，其间曾任代理教务长两年。史密斯博士1983－1998年间在伯特利神学院教授旧约，1973－1983年间在温尼伯神学院教授旧约和希伯来文，其间亦曾任代理教务长两年。史密斯博士1965年获惠顿学院人类学专业文学学士学位，1968年获三一福音神学院文学硕士学位，1973年获卓西学院希伯来语及同源语方面的哲学博士学位。他曾在以色列耶路撒冷及英国剑桥做学术研究。
 				</p>
@@ -332,19 +332,10 @@
 					<br/>
 				</p>
 				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
-					<span style="letter-spacing: 0.4px; box-sizing: border-box;">史密斯博士出版的著作有：《阿摩司书》（</span><em style="letter-spacing: 0.4px; box-sizing: border-box;">Christian Focus</em><span style="letter-spacing: 0.4px; box-sizing: border-box;">, 1989）、《拓展圣经眼界》（</span><em style="letter-spacing: 0.4px; box-sizing: border-box;">BroadeningYour Biblical Horizons</em><span style="letter-spacing: 0.4px; box-sizing: border-box;">, ATA, 1991）、《希伯来先知导论：传道的先知》（</span><em style="letter-spacing: 0.4px; box-sizing: border-box;">An Introduction to the Hebrew Prophets:The Prophets as Preachers</em><span style="letter-spacing: 0.4px; box-sizing: border-box;">,</span>
+					史密斯博士出版的著作有：《阿摩司书》（Christian Focus, 1989）、《拓展圣经眼界》（<em style="box-sizing: border-box;">Broadening Your Biblical Horizons</em>, ATA, 1991）、《希伯来先知导论：传道的先知》（<em style="box-sizing: border-box;">An Introduction to the Hebrew Prophets: The Prophets as Preachers</em>, Broadman and Holman, 1994）、《国际释经应用系列：何西阿书、阿摩司书、弥迦书》（Zondervan, 2001）、《理解圣经先知书实用指南》（<em style="box-sizing: border-box;">Guia Practica para Entender a los Profetas de la Biblia,</em> Broadman and Holman, 2007）、《新美国圣经注释：以赛亚书 1－&nbsp;39》（<em style="box-sizing: border-box;">Isaiah 1-39 in New American Commentary</em>, B&amp;H, 2007）、《 以赛亚书 40 － 66》（B&amp;H, 2009）、<span style="color: #FF8124; box-sizing: border-box;">《房角石圣经注释丛书：以斯拉记 - 尼希米记·以斯帖记》</span>（Tyndale, 2010）、《阐释先知书》（<em style="box-sizing: border-box;">Interpreting the Prophetic Books, Kregel,</em><span style="letter-spacing: 0.4px; box-sizing: border-box;">2014）。</span>
 				</p>
 				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
-					Broadman and Holman, 1994）、《国际应用释经系列：何西阿书、阿摩司书、弥迦
-				</p>
-				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
-					书》（Zondervan, 2001）、《理解圣经先知书实用指南》（<em style="box-sizing: border-box;">Guia Practicapara</em>
-				</p>
-				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
-					<em style="box-sizing: border-box;">Entender a los Profetas de la Biblia</em>, Broadman and Holman, 2007）、《新美国圣经 注 释 ： 以 赛 亚 书 1－39 》 （ <em style="box-sizing: border-box;">Isaiah 1-39 inNew American Commentary</em>, B&amp;H, 2007）、《以赛亚书40－66》（B&amp;H,2009）、<span style="color: #FF8124; box-sizing: border-box;">《房角石圣经注释丛书：以斯拉记 、 尼 希 米 记 、 以 斯 帖 记 》</span> （ Tyndale, 2010） 、 《 阐 释 先 知 书 ： 解 经 手 册 》<span style="letter-spacing: 0.4px; box-sizing: border-box;">（ <em style="box-sizing: border-box;">Interpreting the Prophetic Books: An Exegetical Handbook</em>, Kregel, 2015） 、《基督徒宣告圣经神学丛书：历代志注释》（<em style="box-sizing: border-box;">Commentary on 1 and 2 Chronicles in the Biblical Theology for ChristianProclamation</em>,B&amp;H,2016）。</span>
-				</p>
-				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
-					<br style="box-sizing: border-box;"/>
+					<span style="letter-spacing: 0.4px; box-sizing: border-box;"><br style="box-sizing: border-box;"/></span>
 				</p>
 				<p style=" margin: 0px; padding: 0px; box-sizing: border-box;">
 					史密斯博士与妻子苏珊现居于明尼苏达州圣保罗。他们有儿女二人，孙辈五人。
@@ -376,6 +367,11 @@
 		</section>
 	</section>
 </section>
+<section data-role="paragraph" class="_135editor">
+	<p >
+		<br/>
+	</p>
+</section>     
 
           
           <!-- 内容结束 -->

@@ -163,7 +163,7 @@
 		<section style="box-sizing:border-box;max-width: 100% !important;display: inline-block; width: 100%; vertical-align: top; padding: 20px; align-self: flex-start; flex: 0 0 auto; background-image: linear-gradient(to top, rgb(255, 243, 173) 0%, rgba(255, 243, 173, 0) 100%);">
 			<section style="text-align: center; margin: 0px 0% 20px; line-height: 0; position: static; box-sizing: border-box;">
 				<section style="box-sizing:border-box;max-width: 100%; vertical-align: middle; display: inline-block; line-height: 0; width: 60%; height: auto;">
-					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1670333574922.jpg" draggable="false" data-ratio="0.873" data-w="3000"/>
+					<img class="raw-image" style="max-width: 100% !important;box-sizing:border-box;vertical-align: middle; width: 100%;" _width="100%" src="https://ehome.endao.co/book_image/detail/1669887987892.png" draggable="false" data-ratio="0.873" data-w="3000"/>
 				</section>
 			</section>
 			<section style="color: rgb(0, 0, 0); text-align: justify; font-size: 16px; letter-spacing: 0.4px; line-height: 1.9; padding: 0px 12px; box-sizing: border-box;">
