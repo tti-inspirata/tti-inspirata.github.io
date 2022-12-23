@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>读书会 - 恩道电子书</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title text-white">网站导航</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="index.html">首页</a></span></li>
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 手持设备菜单栏，未登录状态 -->
+    <div class="offcanvas-container" id="mobile-menu">
+      <nav class="offcanvas-menu">
+        <ul>
+          <li><a href="account-login.html"><span class="text-lg">注册&nbsp;/&nbsp;登录</span></a></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">网站导航</h6>
+        </div>
+      </a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li><span><a href="index.html"><span>首页</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">货币种类</h6>
+        </div>
+      </a>
+      <!-- 货币切换 -->
+      <div class="column text-center padding-top-1x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">$ USD</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;¥ CNY</a>
+          </div>
+        </div>
+      </div>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">界面语言</h6>
+        </div>
+      </a>
+      <!-- 语言切换 -->
+      <div class="column text-center padding-top-1x padding-bottom-10x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">简体</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;繁体</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo hidden-md-down" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+          <!-- Site Logo(mobilbe)--><a class="site-logo hidden-lg-up" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+          <!-- 货币切换 -->
+          <!-- <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">$ HKD</a>
+            </div>
+          </div> -->
+          <!-- 货币与语言切换合并 -->
+          <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="img/flags/CN.png"></span><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <div class="currency-select">
+                <select class="form-control form-control-rounded form-control-sm">
+                  <option value="usd">¥ CNY</option>
+                  <option value="usd">$ HKD</option>
+                </select>
+              </div><a class="dropdown-item" href="#"><img src="img/flags/CN.png" alt="zh-CN">简体</a><a class="dropdown-item" href="#"><img src="img/flags/HK.png" alt="zh-HK">繁体</a>
+            </div>
+          </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
+              <!-- 修改宽度支持英文 -->
+              <ul class="toolbar-dropdown w-150">
+                <li><a href="account-register.html">Sign up</a></li>
+                <li><a href="account-login.html">Sign in</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 开始页面 -->
+    <div class="offcanvas-wrapper">
+      <section class="container">
+        <div class="owl-carousel" data-owl-carousel="{ &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;data-wrap&quot;: true, &quot;autoplayTimeout&quot;: 4000 }">
+          <figure><img src="https://ehome.endao.co/book_image/detail/1669886678429.png" alt="Image"></figure>
+          <figure><img src="https://ehome.endao.co/book_image/detail/1669886678429.png" alt="Image"></figure>
+          <figure><img src="https://ehome.endao.co/book_image/detail/1669886678429.png" alt="Image"></figure>
+        </div>
+      </section>
+
+      <!-- 奔走灵程 -->
+      <section class="container padding-top-3x padding-bottom-3x">
+        <h3 class="text-center mb-30 hidden-md-down">奔走灵程<span><a class="btn" href="#">2023年主题阅读 >></a></span></h3>
+        <div class="row card-deck">
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-94#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1603888226217.jpg" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-94#">屬靈的秘訣——戴德生信心之旅(繁)</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">戴存義夫婦 盧逸斯</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">海外基督使团</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>犹如圣经中如云彩般的见证，戴德生的信心之旅能够激励我们“存心忍耐，奔那摆在我们前头的路程”（来12:1）。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="屬靈的秘訣——戴德生信心之旅(繁)" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="屬靈的秘訣——戴德生信心之旅(繁)" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-95#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1661830806806.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-95#">《寬廣的心：打開靈性成長的空間》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">唐‧克萊默（Donald Clymer） 雪倫‧克萊默（Sharon Clymer Landis）</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">橄榄出版社</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>让我们一起检视自己的生命，学习“放下各样的重担，脱去容易缠累我们的罪”，为灵命成长腾出空间。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="《寬廣的心：打開靈性成長的空間》" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="《寬廣的心：打開靈性成長的空間》" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row card-deck">
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-96#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1664533233622.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-96#">《与我同行：爱中进深&跟随耶稣》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">珍妮·麦吉尔（Jenny McGill）</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">恩道出版社</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>本书用书信形式，娓娓道出基督教信仰全貌。从对三位一体的认识到知行合一的操练，是初信到门徒训练的佳作。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="与我同行：爱中进深&跟随耶稣" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="与我同行：爱中进深&跟随耶稣" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-97#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1655968795910.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-97#">《当他沉默时》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">杰瑞·席哲（Jerry Sittser）</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">PO Media</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>这是一本专注在祷告上的书，帮助读者操练在逆境中的祷告。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="当他沉默时" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="当他沉默时" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row card-deck">
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-96#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1604022835584.jpg" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-96#">《天路历程》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">约翰·班扬（John Bunyan）</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">橡树文字工作室</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>教会经典著作，生动展示基督徒奔走天路时在挣扎和挑战中得胜的经历。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="天路历程" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="天路历程" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-99#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1650855936898.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-99#">《天路客之歌》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">郭振游</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">基督使者协会</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>作者以教会经典著作《天路历程》为蓝本，总结出合乎圣经的生命成长的功课。跟《天路历程》组合在一起，是有趣且有效的门训工具。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="天路客之歌" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="天路客之歌" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row card-deck">
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-100#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1658910159440.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-100#">《心灵如何得安息？》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break">理查德·艾华柏（Richard E. Averbeck）</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">恩道出版社</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>短小精悍的神学著作，可让读者一探究竟何为 神在圣经中究竟应许了我们怎样的安息。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="心灵如何得安息？" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="心灵如何得安息？" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-101#">
+              <div class="product-badge text-danger text-left"></div><img src="https://ehome.endao.co/book_image/detail/1645939400370.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-101#">《揮霍的上帝：恢復基督教信仰的核心》</a></h3><br>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break"> 提摩太·凱勒（Timothy Keller）</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link">希望之声</a></span>
+                </p>
+                <p><span class="text-danger">推荐理由：</span>作为本次主题阅读的最后一站，本书能帮助我们处理奔走灵程时的怀疑与自义，并归回这位挥霍恩典的神。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="揮霍的上帝：恢復基督教信仰的核心" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="揮霍的上帝：恢復基督教信仰的核心" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+              
+            </div>
+          </div>
+          <!-- Copyright-->
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
