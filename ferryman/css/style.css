@@ -175,9 +175,9 @@ html,body{
   -webkit-background-attachment: fixed;
   -moz-background-size: 100% 100%; 
   -o-background-size: 100% 100%; 
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size:1 00% 100%;
+  -o-background-size: 100% 100%;
 }
 
 @media (min-width: 767px) {
