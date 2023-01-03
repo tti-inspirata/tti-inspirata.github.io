@@ -173,7 +173,6 @@ html,body{
   -webkit-background-size: 100% 100%;
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
-  position: absolute; 
   background-size: cover;
 }
 
