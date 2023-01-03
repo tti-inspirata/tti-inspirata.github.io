@@ -1,0 +1,200 @@
+body {
+  background-position: center;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #606975;
+  font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5;
+}
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+p a {
+  text-decoration: underline; 
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
+  
+  font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 800;
+  font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+}
+.h4, h4 {
+  font-size: 1.3rem;
+}
+ul, ol {
+  margin-top: 1px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+ul, ol{
+  margin-top: 1px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+ul li{
+  margin-top: 1px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #DDD;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.item {
+  -webkit-flex: 1 100%;
+  -ms-flex: 1 100%;
+  float: left;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: -4px;
+  /* height: 200px; */
+  background: gray;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  visibility: hidden;
+}
+
+.item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.item.slide-from-bottom,
+.item.slide-from-top {
+  visibility: visible;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.item.slide-from-bottom {
+  -webkit-animation-name: slide-from-bottom;
+  animation-name: slide-from-bottom;
+}
+
+.item.slide-from-top {
+  -webkit-animation-name: slide-from-top;
+  animation-name: slide-from-top;
+}
+
+@media (max-width: 400px) {
+  .item {
+    -webkit-flex: 1 100%;
+    -ms-flex: 1 100%;
+    margin-right: 0;
+  }
+}
+@-webkit-keyframes slide-from-bottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0%, 200%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slide-from-top {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0%, -200%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-from-bottom {
+  from {
+    opacity: 0;
+    transform: translate3d(0%, 200%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-from-top {
+  from {
+    opacity: 0;
+    transform: translate3d(0%, -200%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+/*兼容安卓手机没有高度导致无法显示背景图片*/
+html,body{
+  width:100%;
+  height:100%;
+}
+.bg-m {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+}
+
+@media (min-width: 767px) {
+  .bg-m {
+      display: none;
+  }
+  .navbar-brand img {
+      display: none; 
+  }
+  
+} 
+@media (max-width: 767px) {
+  .item {
+      display: none;
+  }
+  .dt {
+      display: none; 
+  }
+  section {
+    padding: 8rem 0; 
+  }
+}
