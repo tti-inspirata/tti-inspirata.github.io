@@ -182,8 +182,8 @@ html,body{
   .bg-m {
       display: none;
   }
-  .navbar-brand img {
-      display: none; 
+  .navbar {
+      display: none !important;
   }
   
 } 
