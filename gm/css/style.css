@@ -5,13 +5,13 @@ body {
     background-size: cover;
     color: #606975;
     font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     text-transform: none;
     line-height: 1.5;
 }
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     text-align: justify;
 }
