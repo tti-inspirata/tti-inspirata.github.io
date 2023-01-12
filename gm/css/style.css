@@ -35,6 +35,12 @@ h6 {
 .h4, h4 {
     font-size: 1.3rem;
 }
+hr {
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
 .indent {
     text-indent: 2em;
 }
@@ -54,10 +60,19 @@ h6 {
     margin-bottom: 46px;
     text-align: center;
 }
-ul, ol {
+ul {
     margin-top: 1px;
     margin-bottom: 10px;
     line-height: 1.8;
+}
+ol {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    line-height: 1.6;
+}
+ol li{
+    margin-bottom: 10px; 
 }
 .list-1 td {
     padding: 8px 0; 
