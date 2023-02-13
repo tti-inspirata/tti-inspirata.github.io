@@ -1,0 +1,89 @@
+body {
+  font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #cc4646;
+}
+
+.text-medium {
+  font-weight: 500 !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.accordion {
+  margin-top: 1.875rem;
+}
+.accordion-title {
+  margin-top: 36px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.accordion .accordion-item {
+  background-color: white;
+  color: #374250;
+  border-radius: 0.5rem;
+  /* border: 1px solid #f7f7f7;
+  margin-bottom: 1.875rem; */
+}
+/* .accordion .accordion-item.active {
+  box-shadow: 0 0.0625rem 0.9375rem 0 rgba(27, 29, 33, 0.15);
+} */
+.accordion .accordion-item.active .accordion-body {
+  max-height: max-content;
+}
+.accordion .accordion-item.active .accordion-header::after {
+  transform: rotate(90deg);
+}
+.accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.accordion .accordion-item .accordion-header {
+  padding: 1.5625rem;
+  padding-bottom: 1.2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion .accordion-item .accordion-header::after {
+  content: "";
+  font-size: 2rem;
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(0deg);
+}
+.accordion .accordion-item .accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.accordion .accordion-item .accordion-body .accordion-body-content {
+  margin: 0 1.5rem;
+  /* font-size: 0.875rem; */
+  font-size: 15px;
+  line-height: 2rem;
+}
+.accordion .accordion-item.active .accordion-body .accordion-body-content {
+  background-color: rgba(96,105,117,0.05);
+  padding: 1.4rem 1.2rem;
+}
