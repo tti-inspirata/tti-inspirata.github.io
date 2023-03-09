@@ -328,7 +328,60 @@ ul {
 .modal .modal-content .modal-body p {
     line-height: 2.0;
 }
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+    flex-direction: row;
+}
+.navbar-collapse {
+    display: block;
+    position: relative;
+    padding: 0 12%;
+    overflow: visible;
+    min-height: 1px;
+    font-family: 'open_sanslight', sans-serif;
+    -webkit-transform: translate3d(0,0,0);
+}
+.navbar-nav a{
+    margin: ;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 24px;
+}
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .4rem;
+    padding-left: .4rem;
+    margin: 4px 2px;
+}
+.navbar-expand-lg .navbar-collapse .navbar-nav > a:hover {
+    color: #999;
+}
+@media (min-width: 767px) {
+    .navbar-collapse {
+        padding: 0 22% 0 71%; 
+    }
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin: 1px 5px;
+    }
+    .navbar-collapse {
+        padding: 0 4%;
+    }
+}
 
 
 

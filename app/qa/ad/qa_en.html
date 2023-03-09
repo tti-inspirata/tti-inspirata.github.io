@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    body {
+    font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    a {
+    color: #cc4646;
+    }
+    .text-medium {
+    font-weight: 500 !important;
+    }
+    .text-decoration-none {
+    text-decoration: none !important;
+    }
+    .text-center {
+    text-align: center !important;
+    }
+    .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    }
+    .accordion {
+    margin-top: 1.875rem;
+    }
+    .accordion-title {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    line-height: 1.2;
+    }
+    .accordion .accordion-item {
+    background-color: white;
+    color: #000000;
+    border-radius: 0.5rem;
+    }
+    .accordion .accordion-item.active .accordion-body {
+    max-height: max-content;
+    }
+    .accordion .accordion-item.active .accordion-header::after {
+    transform: rotate(0deg);
+    }
+    .accordion .accordion-item:last-child {
+    margin-bottom: 0;
+    }
+    .accordion .accordion-item .accordion-header {
+    padding: 0.68rem 20px;
+    font-size: 15px;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    }
+    .accordion .accordion-item .accordion-header::after {
+    content: "";
+    flex-shrink: 0;
+    width: 1.0rem;
+    aspect-ratio: 1;
+    margin-left: auto;
+    background: url(./icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(-90deg);
+    }
+    .accordion .accordion-item .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    }
+    .accordion .accordion-item .accordion-body .accordion-body-content {
+    margin: 0 0.5rem;
+    font-size: 15px;
+    line-height: 1.6rem;
+    }
+    .accordion .accordion-item.active .accordion-body .accordion-body-content {
+    background-color: rgba(96,105,117,0.05);
+    padding: 1.4rem 1.2rem;
+    }
+    .accordion .accordion-item p {
+    margin: 1.0rem 1.4rem;
+    font-size: 15px;
+    line-height: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="accordion">
+            <!-- 图书购买相关 -->
+            <div class="accordion-title text-center">Book Purchase Related</div>
+            <div class="accordion-item">
+                <div class="accordion-header">1.  In what ways may I purchase e-books？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        （1）Inspirata eBooks platform: <a class="text-medium text-decoration-none" href="https://ebook.endao.co">ebook.endao.co</a><br>
+                        （2）Android App supports in-app purchase, please <a class="text-medium text-decoration-none" href="index-Reader">click here</a> to download<br>
+                        &nbsp; Note: Inspirata eBooks App installed through Apple App Store does not support book purchase at the moment.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">2. What payment options are available to me when purchasing books？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">Inspirata eBooks supports Alipay and credit card payment, and Alipay payment is currently only available for users in mainland China.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">3. Can I request a return/refund for a purchased e-book？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">Unfortunately, you are purchasing a digital reading product and cannot apply for a refund or exchange after a successful purchase.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">4. How to read purchased e-books？Can I read them through a Kindle reader?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        4.1. You can download the Inspirata eBooks App on iOS, Android, PC and Mac to read e-books, <a class="text-medium text-decoration-none" href="#">click here</a> for details.<br>
+                        4.2. Kindle users can only read e-books purchased on the Amazon platform or e-books that are not protected by DRM copyright. Please understand that our e-books are protected by DRM copyright and cannot be read on Kindle.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">5. What type of book am I purchasing？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You are purchasing an EPUB formatted, DRM protected e-book from Inspirata eBooks.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">6. Can I buy an e-book as a gift to a friend？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Yes. Click the "Gift" button on the “book details” page to purchase the book as a gift to someone else. After successful payment, you can fill in the email address of the recipient in "Me > My gift history”. The other party can redeem the book in their "Me > Use redeem code" after receiving the book redemption code.
+                    </div>
+                </div>
+            </div>
+            <!-- 图书管理相关 -->
+            <div class="accordion-title text-center">Library Management Related</div>
+            <div class="accordion-item">
+                <div class="accordion-header">1. I have already purchased e-books, why does the library show empty after I sign in to the App？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Your purchased e-books will be displayed in "Me > Books" by default. If you want to add some or all of your purchased books to your library, please go to the "Me > Books" page and complete this operation through the "Download" button.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">2. How can I manage the e-books in the library?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Long click on the cover of the e-books or click on the "Edit" icon at the top right corner of the library to enter the management mode, where you can remove or group e-books in batches. "Remove download" will delete the local files of the corresponding e-books, but will not delete the notes/underlines you have made.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">3. How do I continue to read a book after I have removed a purchased e-book from the library?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        The e-books removed from the library will still appear in "Me > Books". You just need to go to this page and download the book again.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">4. Can I sign in to the App and read purchased e-books on multiple devices with the same Inspirata account?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Yes. The same Inspirata account can be signed in a maximum of 5 devices at the same time, but the sixth device will not be able to sign in successfully. This means that you can read purchased e-books on up to 5 devices. You can manage your bundled devices through "Me > My devices" on the website.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">5. When I read an e-book in one device, can my reading/devotional progress, grouping information, notes, underlines, and bookmarks be synchronized to other devices?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Yes. You only need to use the same Inspirata account to sign in to the App, and the above data will be automatically synchronized and updated when the network connection is normal. However, in the new device, you still need to manually download these e-books to the library.
+                    </div>
+                </div>
+            </div>
+            <!-- 图书阅读相关 -->
+            <div class="accordion-title text-center">Book Reading Related</div>
+            <div class="accordion-item">
+                <div class="accordion-header">1. Can I read the e-book I have purchased offline?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Yes. Simply download it to your library and the e-book data will be saved locally. However, if the e-book is updated when you read the book offline, the update cannot be downloaded.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">2. How can I view the paperback page numbers in the e-book?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Click on the "AA" icon in the top right corner of the reading interface, and turn on "Page numbers" at the bottom of the pop-up menu bar. The orange tabs that appear in the reading interface are the paper book page numbers (for example, the content between tabs 7 and 8 belongs to page 7)
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">3. What if I can't open a e-book on the library?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You can remove the e-book from the library and download it again.
+                    </div>
+                </div>
+            </div>
+            <!-- 先租后买相关 -->
+            <div class="accordion-title text-center">Rent-to-own Related</div>
+            <div class="accordion-item">
+                <div class="accordion-header">1. Which e-books are available for rent-to-own service?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Only the Cornerstone Biblical Commentary e-books (in both Simplified and Traditional Chinese) are currently available for rent-to-own service.<br>
+                        Find out more at: <a class="text-medium text-decoration-none" href="https://ebook.endao.co/rent-to-own">https://ebook.endao.co/rent-to-own</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">2. How can I read the e-books after subscribing to the rent-to-own service?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You need to download the Inspirata eBooks App and download the e-books to your library under "My Subscription/Set" to read them.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">3. How can I renew, unsubscribe or use special offers to buy the eBooks I have subscribed to?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You can do so by signing in to ebook.endao.co and going to "My > My Subscription".
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">4. I forgot to renew my subscription manually, what should I do?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You will receive an email reminder 5 days before your subscription expires, please check your Inspirata account email.<br>
+                        If you have not renewed your subscription and it expires, you will be given a 3-day grace period to renew your subscription. If your subscription has not been renewed at the end of the grace period, you will not be able to renew your subscription, but you can re-subscribe.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">5. What e-books can I purchase with my accumulated monthly fee?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        The cumulative monthly fee can only be used to purchase the e-books in your subscription package.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">6. Can I see the notes I made in the e-books I have previously subscribed to after my subscription has expired?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        Your notes will be retained and can be viewed after you have purchased the e-book or re-subscribed to a set containing the e-book.
+                    </div>
+                </div>
+            </div>
+            <!-- 灵修功能相关 -->
+            <div class="accordion-title text-center">Devotional Functions Related</div>
+            <div class="accordion-item">
+                <div class="accordion-header">1. How to use devotional functions？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You can select the devotional/bible reading materials you are interested in from the App "Devotional > All Devotionals". Click "Subscribe" to receive daily devotions/readings online in "My Devotionals", write notes on your feelings and punch in when you are done
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">2. Why can I only read the devotional plan for the day？</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        If you have not purchased the book, you will only be able to view the day's devotions and will not be able to catch up on the reading or preview other content. After purchasing the book, you can read all the contents and jump to the unpunched date through the calendar function to "catch up".
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">3. Can I export my devotional notes?</div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        You can go to "Me> Notes>Devotionals" in the App to enter the details of the notes corresponding to the spirituality material. Click the "Export" button in the upper right corner to export your devotional notes in bulk.<br>  
+                    </div>
+                </div>
+            </div> 
+            <div class="accordion-item">
+                <p>If there are any problems not mentioned here but need to be solved, you can submit your feedback in the "Help & Support" section of the App or send an email to Customer Service at <a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=feedback">ebookservice@endao.co </a>. Please describe in detail the problems you encounter. Our customer service will respond as soon as possible.</p>
+            </div> 
+        </div>
+    </div>
+    <script>
+        const accSingleTriggers = document.querySelectorAll(".accordion-header");
+        accSingleTriggers.forEach((trigger) =>
+        trigger.addEventListener("click", toggleAccordion)
+        );
+        function toggleAccordion() {
+        const items = document.querySelectorAll(".accordion-item");
+        const thisItem = this.parentNode;
+        items.forEach((item) => {
+            if (thisItem == item) {
+            thisItem.classList.toggle("active");
+            return;
+            }
+            item.classList.remove("active");
+        });
+        }
+    </script>
+</body>
+</html>
