@@ -66,9 +66,9 @@
     width: 1.0rem;
     aspect-ratio: 1;
     margin-left: auto;
-    background-color: #000;
-    -webkit-mask-image: url("./icon.png");
-    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background: url(./iconDown.svg) no-repeat;
+    width: 12px;
+    height: 12px;
     transition: transform 0.2s ease-in-out;
     transform: rotate(-90deg);
     }
@@ -90,6 +90,20 @@
     margin: 1.0rem 1.4rem;
     font-size: 15px;
     line-height: 1.6rem;
+    }
+    .accordion .accordion-item .accordion-header:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    }
+    * {
+        -webkit-touch-callout:none;
+        -webkit-text-size-adjust:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -webkit-user-select:none;
     }
   </style>
 </head>
