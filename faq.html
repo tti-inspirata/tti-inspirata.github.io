@@ -16,7 +16,7 @@
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.css">
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
-    <style>.accordion{margin-top:1.875rem}.accordion-title{font-size:18px;line-height:1.35;margin-top:36px;margin-bottom:36px;font-weight:500 !important;color:#000000}.accordion .accordion-item{background-color:white;color:#000000;border-radius:0.5rem}.accordion .accordion-item.active .accordion-body{max-height:max-content}.accordion .accordion-item.active .accordion-header::after{transform:rotate(0deg)}.accordion .accordion-item:last-child{margin-bottom:0}.accordion .accordion-item .accordion-header{padding:0.68rem 0px;font-size:15px;line-height:1.6rem;display:flex;align-items:center;position:relative;cursor:pointer}.accordion .accordion-item .accordion-header::after{content:"";flex-shrink:0;width:1.0rem;aspect-ratio:1;margin-left:auto;background:url(./img/iconDown.svg) no-repeat;width:12px;height:12px;transition:transform 0.2s ease-in-out;transform:rotate(-90deg)}.accordion .accordion-item .accordion-body{max-height:0;overflow:hidden;transition:max-height 0.3s ease-in-out}.accordion .accordion-item .accordion-body .accordion-body-content{margin:0 0.5rem;font-size:15px;line-height:1.6rem}.accordion .accordion-item.active .accordion-body .accordion-body-content{background-color:rgba(96,105,117,0.05);padding:1.4rem 1.2rem}.accordion .accordion-item p{margin:1.0rem 1.4rem;font-size:15px;line-height:1.6rem}.accordion .accordion-item .accordion-header:active{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-user-select:none;-moz-user-focus:none;-moz-user-select:none}*{-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none}</style>
+    <style>.accordion{margin-top:1.875rem}.accordion-title{font-size:18px;line-height:1.35;margin-top:36px;margin-bottom:36px;font-weight:500 !important;color:#000000}.accordion .accordion-item{background-color:white;color:#000000;border-radius:0.5rem}.accordion .accordion-item.active .accordion-body{max-height:max-content}.accordion .accordion-item.active .accordion-headerc{transform:rotate(0deg)}.accordion .accordion-item:last-child{margin-bottom:0}.accordion .accordion-item .accordion-header{padding:0.68rem 0px;font-size:15px;line-height:1.6rem;display:flex;align-items:center;position:relative;cursor:pointer}.accordion .accordion-item .accordion-header::after{content:"";flex-shrink:0;width:1.0rem;aspect-ratio:1;margin-left:auto;background:url(./img/iconDown.svg) no-repeat;width:12px;height:12px;transition:transform 0.2s ease-in-out;transform:rotate(-90deg)}.accordion .accordion-item .accordion-header span{padding-right: 16px;}.accordion .accordion-item .accordion-body{max-height:0;overflow:hidden;transition:max-height 0.3s ease-in-out}.accordion .accordion-item .accordion-body .accordion-body-content{margin:0 0.5rem;font-size:15px;line-height:1.6rem}.accordion .accordion-item.active .accordion-body .accordion-body-content{background-color:rgba(96,105,117,0.05);padding:1.4rem 1.2rem}.accordion .accordion-item p{margin:1.0rem 1.4rem;font-size:15px;line-height:1.6rem}.accordion .accordion-item .accordion-header:active{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-user-select:none;-moz-user-focus:none;-moz-user-select:none}*{-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none}</style>
   </head>
   <!-- Body-->
   <body>
@@ -117,12 +117,13 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10">
             <h2 class="text-center">常见问题</h2>
-            <!-- 简体、繁体、英文内容替换 -->
+            
+            <!-- 简体 -->
             <div class="accordion">
               <!-- 图书购买相关 -->
               <div class="accordion-title text-center">图书购买相关</div>
               <div class="accordion-item">
-                  <div class="accordion-header">1. 如何购买电子书？</div>
+                  <div class="accordion-header"><span>1. 如何购买电子书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           （1）网页端购书网址：<a class="text-medium text-decoration-none" href="https://ebook.endao.co">ebook.endao.co</a><br>
@@ -132,19 +133,19 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">2. 购书时我可以选择哪些支付方式？</div>
+                  <div class="accordion-header"><span>2. 购书时我可以选择哪些支付方式？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">恩道电子书支持支付宝及信用卡付款，支付宝付款目前仅面向中国大陆用户。</div>
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">3. 已购买的电子书是否可以申请退换/退款？</div>
+                  <div class="accordion-header"><span>3. 已购买的电子书是否可以申请退换/退款？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">非常抱歉，电子书是数字阅读产品，购买成功后不可申请退换或退款。</div>
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">4. 如何阅读已经购买的电子书？可以使用Kindle阅读吗？</div>
+                  <div class="accordion-header"><span>4. 如何阅读已经购买的电子书？可以使用Kindle阅读吗？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           （1）您可以在iOS/安卓移动端、PC/Mac电脑端下载安装恩道电子书App阅读已购图书，<a class="text-medium text-decoration-none" href="#">点击这里</a>了解详情。<br>
@@ -153,7 +154,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">5. 我购买的是什么类型的电子书？</div>
+                  <div class="accordion-header"><span>5. 我购买的是什么类型的电子书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您购买的是恩道提供的EPUB格式、受DRM版权保护的电子书。
@@ -161,7 +162,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">6. 我可以购买电子书送给朋友吗？</div>
+                  <div class="accordion-header"><span>6. 我可以购买电子书送给朋友吗？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           在书籍详情页点击“赠送”按钮，即可购书赠友；付款成功后，您可以在“我的>赠书管理”中填写受赠对象的邮箱，对方收到赠书兑换码后可在其“我的>使用兑换码”中兑换赠书。
@@ -171,7 +172,7 @@
               <!-- 图书管理相关 -->
               <div class="accordion-title text-center">图书管理相关</div>
               <div class="accordion-item">
-                  <div class="accordion-header">1. App书架上为何看不到我购买的电子书？</div>
+                  <div class="accordion-header"><span>1. App书架上为何看不到我购买的电子书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           App书架仅展示您已经下载的书籍。您可以在App“我的>图书”中找到已购买的电子书，点击“加入书架”即可下载。
@@ -179,15 +180,15 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">2. 如何管理书架中的电子书？</div>
+                  <div class="accordion-header"><span>2. 如何管理书架中的电子书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
-                          长按电子书封面或点击书架右上角“编辑”图标，即可进入书架管理模式，您可以对图书进行批量移出或分组操作。“移出图书”将删除相应电子书的本地文件，但不会删除您所做的笔记/划线。
+                        长按电子书封面或点击书架右上角“编辑”图标（电脑端请点击书封右下角图标），即可进入书架管理模式，您可以对图书进行批量移出或分组操作。“移出图书”将删除相应电子书的本地文件，但不会删除您所做的笔记/划线。
                       </div>
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">3. 我将已经购买的电子书从书架移出后，如何继续阅读这本书？</div>
+                  <div class="accordion-header"><span>3. 我将已经购买的电子书从书架移出后，如何继续阅读这本书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           从书架移出的电子书仍然会显示在“我的>图书”当中，您只需前往该页面，重新将此书添加至书架即可。
@@ -195,7 +196,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">4. 我可以在多台设备上用同一恩道账号登录App并阅读已经购买的电子书吗？</div>
+                  <div class="accordion-header"><span>4. 我可以在多台设备上用同一恩道账号登录App并阅读已经购买的电子书吗？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           同一恩道账号最多可同时在5台设备中登录，超过5台设备将无法成功登录；也就是说，您最多可以在5台设备中阅读已经购买的电子书；您可通过网页端“我的>我的设备”来管理您绑定的设备。
@@ -203,7 +204,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">5. 在一台设备中阅读电子书时，我的阅读/灵修进度、书架分组以及所做的笔记、划线、书签，是否可以同步到其他设备当中？</div>
+                  <div class="accordion-header"><span>5. 在一台设备中阅读电子书时，我的阅读/灵修进度、书架分组以及所做的笔记、划线、书签，是否可以同步到其他设备当中？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           可以的。您只需使用同一恩道账号登录App，在网络连接正常的情况下，以上数据即可自动同步更新；但在新的设备中，您仍需手动将这些电子书添加至书架。
@@ -213,7 +214,7 @@
               <!-- 图书阅读相关 -->
               <div class="accordion-title text-center">图书阅读相关</div>
               <div class="accordion-item">
-                  <div class="accordion-header">1. 已经购买的电子书，可以离线阅读吗？</div>
+                  <div class="accordion-header"><span>1. 已经购买的电子书，可以离线阅读吗？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           可以的，您只需将其添加至书架，电子书数据便已保存至本地；但离线阅读时，若电子书有更新，则无法下载更新。
@@ -221,7 +222,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">2. 如何在电子书中查看相应纸书页码？</div>
+                  <div class="accordion-header"><span>2. 如何在电子书中查看相应纸书页码？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           点击阅读界面右上角的AA图标，在弹出的菜单栏最下方，开启“显示纸书页码”，阅读界面中出现的橙色标签即为纸书页码（例如，标签7至8之间的内容归属于纸书第7页）。
@@ -229,7 +230,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">3. 点击书架上的书籍，提示无法打开，怎么办？</div>
+                  <div class="accordion-header"><span>3. 点击书架上的书籍，提示无法打开，怎么办？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您可以将无法打开的书籍移出书架后重新下载。
@@ -239,7 +240,7 @@
               <!-- 先租后买相关 -->
               <div class="accordion-title text-center">先租后买相关</div>
               <div class="accordion-item">
-                  <div class="accordion-header">1. 哪些电子书可以先租后买？</div>
+                  <div class="accordion-header"><span>1. 哪些电子书可以先租后买？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           目前仅房角石圣经注释丛书电子书（包括简体和繁体）可以使用先租后买服务。<br>
@@ -248,7 +249,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">2. 订阅先租后买服务后，如何阅读套装中的电子书？</div>
+                  <div class="accordion-header"><span>2. 订阅先租后买服务后，如何阅读套装中的电子书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您需要下载恩道电子书App，在“我的订阅/套装”中下载书籍到书架，即可阅读。
@@ -256,7 +257,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">3. 如何续订、退订或优惠购书？</div>
+                  <div class="accordion-header"><span>3. 如何续订、退订或优惠购书？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您可以登录恩道电子书网页端（ebook.endao.co），在“我的>我的订阅”中进行续订、退订及优惠购书操作。
@@ -264,7 +265,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">4. 我忘记手动续订了，怎么办？</div>
+                  <div class="accordion-header"><span>4. 我忘记手动续订了，怎么办？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您将在订阅到期前5天收到邮件提醒，请留意您的恩道账户邮箱。<br>
@@ -273,7 +274,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">5. 累计月费可以用来购买什么书籍？</div>
+                  <div class="accordion-header"><span>5. 累计月费可以用来购买什么书籍？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           累计月费仅可以用于购买您所订阅套装中的电子书。
@@ -281,7 +282,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">6. 订阅过期后，能否看到之前在订阅书籍中做的笔记？</div>
+                  <div class="accordion-header"><span>6. 订阅过期后，能否看到之前在订阅书籍中做的笔记？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您的笔记将被保留，在您购买相应电子书或重新订阅包含该书籍的套装后，即可查看笔记。
@@ -291,7 +292,7 @@
               <!-- 灵修功能相关 -->
               <div class="accordion-title text-center">灵修功能相关</div>
               <div class="accordion-item">
-                  <div class="accordion-header">1. 如何使用灵修功能？</div>
+                  <div class="accordion-header"><span>1. 如何使用灵修功能？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您可以在App“灵修>全部灵修”中选择感兴趣的灵修/读经材料，点击“添加至灵修计划”后即可在“我的灵修”中在线接收每日推送的灵修/读经内容，书写感悟笔记，并在完成后打卡。
@@ -299,7 +300,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">2. 为什么我只能阅读灵修计划当日的内容？</div>
+                  <div class="accordion-header"><span>2. 为什么我只能阅读灵修计划当日的内容？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           未购书时，您仅可查看当日灵修内容，无法补读或预览其他内容；购书后则可畅读所有内容，并能通过日历功能跳转到未打卡的日期，进行“补打卡”操作。
@@ -307,7 +308,7 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">3. 我的灵修笔记可以导出吗？</div>
+                  <div class="accordion-header"><span>3. 我的灵修笔记可以导出吗？</span></div>
                   <div class="accordion-body">
                       <div class="accordion-body-content">
                           您可以在App“我的>笔记>灵修笔记”中，进入对应灵修材料的笔记详情页面，点击右上角“导出”按钮，批量导出您的灵修笔记。<br>
@@ -315,9 +316,421 @@
                   </div>
               </div>
               <div class="accordion-item">
-                  <p>如遇到任何未在此提及的问题，均可在App“帮助与反馈”中提交反馈，或直接写信至客服邮箱 <a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=反馈问题">ebookservice@endao.co </a>。请尽量详细描述您所遇到的问题，同工收到后将会尽快回复。</p>
+                  <p>如遇到任何未在此提及的问题，可直接写信至客服邮箱 <a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=反馈问题">ebookservice@endao.co </a>。请尽量详细描述您所遇到的问题，同工收到后将会尽快回复。</p>
               </div> 
             </div>
+
+
+
+            <!-- 繁体 -->
+            <div class="accordion">
+              <!-- 圖書購買相關 -->
+              <div class="accordion-title text-center">圖書購買相關</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. 如何購買電子書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          （1）網頁端購書網址：<a class="text-medium text-decoration-none" href="https://ebook.endao.co">ebook.endao.co</a><br>
+                          （2）安卓端App支援應用內購書，<a class="text-medium text-decoration-none" href="index-Reader">點選這裏</a>下載安裝。<br>
+                          註意: 通過App Store（蘋果應用商店）下載安裝的恩道電子書App僅可瀏覽書籍信息，暫不支援購書。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. 購書時我可以選擇哪些支付方式？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">恩道電子書支援支付寶及信用卡付款，支付寶付款目前僅麵嚮中國大陸用戶。</div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. 已購買的電子書是否可以申請退換/退款？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">非常抱歉，電子書是數字閱讀産品，購買成功後不可申請退換或退款。</div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>4. 如何閱讀已經購買的電子書？可以使用Kindle閱讀嗎？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          （1）您可以在iOS/安卓移動端、PC/Mac電腦端下載安裝恩道電子書App閱讀已購圖書，<a class="text-medium text-decoration-none" href="#">點選這裏</a>了解詳情。<br>
+                          （2）您無法通過kindle閱讀在恩道購買的電子書（Kindle用戶隻能閱讀在亞馬遜平臺上購買的電子書或不受DRM版權保護的電子書）。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>5. 我購買的是什麼類型的電子書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您購買的是恩道提供的EPUB格式、受DRM版權保護的電子書。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>6. 我可以購買電子書送給朋友嗎？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          在書籍詳情頁點選“贈送”按鈕，即可購書贈友；付款成功後，您可以在“我的>贈書管理”中填寫受贈對象的信箱，對方收到贈書兌換碼後可在其“我的>使用兌換碼”中兌換贈書。
+                      </div>
+                  </div>
+              </div>
+              <!-- 圖書管理相關 -->
+              <div class="accordion-title text-center">圖書管理相關</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. App書架上為何看不到我購買的電子書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          App書架僅展示您已經下載的書籍。您可以在App“我的>圖書”中找到已購買的電子書，點選“加入書架”即可下載。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. 如何管理書架中的電子書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          長按電子書封麵或點選書架右上角“編輯”圖示（電腦端請點擊書封右下角圖標），即可進入書架管理模式，您可以對圖書進行批量移出或分組操作。“移出圖書”將刪除相應電子書的在地文件，但不會刪除您所做的筆記/劃線。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. 我將已經購買的電子書從書架移出後，如何繼續閱讀這本書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          從書架移出的電子書仍然會顯示在“我的>圖書”當中，您隻需前往該頁麵，重新將此書添加至書架即可。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>4. 我可以在多臺設備上用同一恩道賬號登入App並閱讀已經購買的電子書嗎？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          同一恩道賬號最多可同時在5臺設備中登入，超過5臺設備將無法成功登入；也就是說，您最多可以在5臺設備中閱讀已經購買的電子書；您可通過網頁端“我的>我的設備”來管理您綁定的設備。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>5. 在一臺設備中閱讀電子書時，我的閱讀/靈修進度、書架分組以及所做的筆記、劃線、書簽，是否可以同步到其他設備當中？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          可以的。您隻需使用同一恩道賬號登入App，在網路連接正常的情況下，以上數據即可自動同步更新；但在新的設備中，您仍需手動將這些電子書添加至書架。
+                      </div>
+                  </div>
+              </div>
+              <!-- 圖書閱讀相關 -->
+              <div class="accordion-title text-center">圖書閱讀相關</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. 已經購買的電子書，可以離線閱讀嗎？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          可以的，您隻需將其添加至書架，電子書數據便已保存至在地；但離線閱讀時，若電子書有更新，則無法下載更新。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. 如何在電子書中檢視相應紙書頁碼？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          點選閱讀界麵右上角的AA圖示，在彈出的菜單欄最下方，開啓“顯示紙書頁碼”，閱讀界麵中出現的橙色標簽即為紙書頁碼（例如，標簽7至8之間的內容歸屬於紙書第7頁）。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. 點選書架上的書籍，提示無法打開，怎麼辦？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您可以將無法打開的書籍移出書架後重新下載。
+                      </div>
+                  </div>
+              </div>
+              <!-- 先租後買相關 -->
+              <div class="accordion-title text-center">先租後買相關</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. 哪些電子書可以先租後買？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          目前僅房角石聖經註釋叢書電子書（包括簡體和正體）可以使用先租後買服務。<br>
+                          了解詳情：<a class="text-medium text-decoration-none" href="https://ebook.endao.co/rent-to-own">https://ebook.endao.co/rent-to-own</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. 訂閱先租後買服務後，如何閱讀套裝中的電子書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您需要下載恩道電子書App，在“我的訂閱/套裝”中下載書籍到書架，即可閱讀。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. 如何續訂、退訂或優惠購書？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您可以登入恩道電子書網頁端（ebook.endao.co），在“我的>我的訂閱”中進行續訂、退訂及優惠購書操作。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>4. 我忘記手動續訂了，怎麼辦？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您將在訂閱到期前5天收到郵件提醒，請留意您的恩道賬戶信箱。<br>
+                          如果您未續訂，訂閱到期，您將享有3天續訂寬限期。寬限期結束時若仍未續訂，您將無法再續訂，但可以重新訂閱。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>5. 纍計月費可以用來購買什麼書籍？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          纍計月費僅可以用於購買您所訂閱套裝中的電子書。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>6. 訂閱過期後，能否看到之前在訂閱書籍中做的筆記？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您的筆記將被保留，在您購買相應電子書或重新訂閱包含該書籍的套裝後，即可檢視筆記。
+                      </div>
+                  </div>
+              </div>
+              <!-- 靈修功能相關 -->
+              <div class="accordion-title text-center">靈修功能相關</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. 如何使用靈修功能？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您可以在App“靈修>全部靈修”中選擇感興趣的靈修/讀經材料，點選“添加至靈修計畫”後即可在“我的靈修”中在線接收每日推送的靈修/讀經內容，書寫感悟筆記，並在完成後打卡。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. 為什麼我隻能閱讀靈修計劃當日的內容？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          未購書時，您僅可檢視當日靈修內容，無法補讀或預覽其他內容；購書後則可暢讀所有內容，並能通過日曆功能跳轉到未打卡的日期，進行“補打卡”操作。
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. 我的靈修筆記可以導出嗎？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          您可以在App“我的>筆記>靈修筆記”中，進入對應靈修材料的筆記詳情頁麵，點選右上角“導出”按鈕，批量導出您的靈修筆記。<br>
+                      </div>
+                  </div>
+              </div> 
+              <div class="accordion-item">
+                  <p>如遇到任何未在此提及的問題，可直接寫信至客服信箱 <a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=反饋問題">ebookservice@endao.co </a>。請盡量詳細描述您所遇到的問題，同工收到後將會盡快回複。</p>
+              </div> 
+            </div>
+
+
+
+            <!-- 英文 -->
+            <div class="accordion">
+              <!-- 图书购买相关 -->
+              <div class="accordion-title text-center">Book Purchase Related</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1.  In what ways may I purchase e-books？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          （1）Inspirata eBooks platform: <a class="text-medium text-decoration-none" href="https://ebook.endao.co">ebook.endao.co</a><br>
+                          （2）Android App supports in-app purchase, please <a class="text-medium text-decoration-none" href="index-Reader">click here</a> to download<br>
+                          &nbsp; Note: Inspirata eBooks App installed through Apple App Store does not support book purchase at the moment.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. What payment options are available to me when purchasing books？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">Inspirata eBooks supports Alipay and credit card payment, and Alipay payment is currently only available for users in mainland China.</div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. Can I request a return/refund for a purchased e-book？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">Unfortunately, you are purchasing a digital reading product and cannot apply for a refund or exchange after a successful purchase.</div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>4. How to read purchased e-books？Can I read them through a Kindle reader?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          4.1. You can download the Inspirata eBooks App on iOS, Android, PC and Mac to read e-books, <a class="text-medium text-decoration-none" href="#">click here</a> for details.<br>
+                          4.2. Kindle users can only read e-books purchased on the Amazon platform or e-books that are not protected by DRM copyright. Please understand that our e-books are protected by DRM copyright and cannot be read on Kindle.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>5. What type of book am I purchasing？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You are purchasing an EPUB formatted, DRM protected e-book from Inspirata eBooks.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>6. Can I buy an e-book as a gift to a friend？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Yes. Click the "Gift" button on the “book details” page to purchase the book as a gift to someone else. After successful payment, you can fill in the email address of the recipient in "Me > My gift history”. The other party can redeem the book in their "Me > Use redeem code" after receiving the book redemption code.
+                      </div>
+                  </div>
+              </div>
+              <!-- 图书管理相关 -->
+              <div class="accordion-title text-center">Library Management Related</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. I have already purchased e-books, why does the library show empty after I sign in to the App？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Your purchased e-books will be displayed in "Me > Books" by default. If you want to add some or all of your purchased books to your library, please go to the "Me > Books" page and complete this operation through the "Download" button.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. How can I manage the e-books in the library?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Long click on the cover of the e-books or click on the icon at the top right corner of the library to enter the management mode (on the computer side, please click on the icon at the bottom right corner of the book cover), where you can remove or group e-books in batches. "Remove download" will delete the local files of the corresponding e-books, but will not delete the notes/underlines you have made.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. How do I continue to read a book after I have removed a purchased e-book from the library?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          The e-books removed from the library will still appear in "Me > Books". You just need to go to this page and download the book again.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>4. Can I sign in to the App and read purchased e-books on multiple devices with the same Inspirata account?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Yes. The same Inspirata account can be signed in a maximum of 5 devices at the same time, but the sixth device will not be able to sign in successfully. This means that you can read purchased e-books on up to 5 devices. You can manage your bundled devices through "Me > My devices" on the website.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>5. When I read an e-book in one device, can my reading/devotional progress, grouping information, notes, underlines, and bookmarks be synchronized to other devices?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Yes. You only need to use the same Inspirata account to sign in to the App, and the above data will be automatically synchronized and updated when the network connection is normal. However, in the new device, you still need to manually download these e-books to the library.
+                      </div>
+                  </div>
+              </div>
+              <!-- 图书阅读相关 -->
+              <div class="accordion-title text-center">Book Reading Related</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. Can I read the e-book I have purchased offline?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Yes. Simply download it to your library and the e-book data will be saved locally. However, if the e-book is updated when you read the book offline, the update cannot be downloaded.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. How can I view the paperback page numbers in the e-book?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Click on the "AA" icon in the top right corner of the reading interface, and turn on "Page numbers" at the bottom of the pop-up menu bar. The orange tabs that appear in the reading interface are the paper book page numbers (for example, the content between tabs 7 and 8 belongs to page 7)
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. What if I can't open a e-book on the library?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You can remove the e-book from the library and download it again.
+                      </div>
+                  </div>
+              </div>
+              <!-- 先租后买相关 -->
+              <div class="accordion-title text-center">Rent-to-own Related</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. Which e-books are available for rent-to-own service?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Only the Cornerstone Biblical Commentary e-books (in both Simplified and Traditional Chinese) are currently available for rent-to-own service.<br>
+                          Find out more at: <a class="text-medium text-decoration-none" href="https://ebook.endao.co/rent-to-own">https://ebook.endao.co/rent-to-own</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. How can I read the e-books after subscribing to the rent-to-own service?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You need to download the Inspirata eBooks App and download the e-books to your library under "My Subscription/Set" to read them.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. How can I renew, unsubscribe or use special offers to buy the eBooks I have subscribed to?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You can do so by signing in to ebook.endao.co and going to "My > My Subscription".
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>4. I forgot to renew my subscription manually, what should I do?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You will receive an email reminder 5 days before your subscription expires, please check your Inspirata account email.<br>
+                          If you have not renewed your subscription and it expires, you will be given a 3-day grace period to renew your subscription. If your subscription has not been renewed at the end of the grace period, you will not be able to renew your subscription, but you can re-subscribe.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>5. What e-books can I purchase with my accumulated monthly fee?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          The cumulative monthly fee can only be used to purchase the e-books in your subscription package.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>6. Can I see the notes I made in the e-books I have previously subscribed to after my subscription has expired?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          Your notes will be retained and can be viewed after you have purchased the e-book or re-subscribed to a set containing the e-book.
+                      </div>
+                  </div>
+              </div>
+              <!-- 灵修功能相关 -->
+              <div class="accordion-title text-center">Devotional Functions Related</div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>1. How to use devotional functions？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You can select the devotional/bible reading materials you are interested in from the App "Devotional > All Devotionals". Click "Subscribe" to receive daily devotions/readings online in "My Devotionals", write notes on your feelings and punch in when you are done
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>2. Why can I only read the devotional plan for the day？</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          If you have not purchased the book, you will only be able to view the day's devotions and will not be able to catch up on the reading or preview other content. After purchasing the book, you can read all the contents and jump to the unpunched date through the calendar function to "catch up".
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <div class="accordion-header"><span>3. Can I export my devotional notes?</span></div>
+                  <div class="accordion-body">
+                      <div class="accordion-body-content">
+                          You can go to "Me> Notes>Devotionals" in the App to enter the details of the notes corresponding to the spirituality material. Click the "Export" button in the upper right corner to export your devotional notes in bulk.<br>  
+                      </div>
+                  </div>
+              </div> 
+              <div class="accordion-item">
+                  <p>If there are any problems not mentioned here but need to be solved, you can send an email to Customer Service at <a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=feedback">ebookservice@endao.co </a>. Please describe in detail the problems you encounter. Our customer service will respond as soon as possible.</p>
+              </div> 
+            </div>
+
+
+            
+            <!-- -->
           </div>
         </div>
       </div>
