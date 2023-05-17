@@ -18,6 +18,9 @@
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
     <style>
+      .comment-form .form-control {
+        padding: 4px 8px 3px;
+      }
       .comment .comment-body::after, .comment .comment-body::before {
         position: absolute;
         top: 12px;
@@ -33,6 +36,7 @@
         position: relative;
         margin-bottom: 0px;
         padding-left: 0px;
+        text-align: justify;
       }
       .comment .comment-body {
         position: relative;
@@ -322,7 +326,10 @@
               <div class="text-center mt-3">
                 <a class="text-decoration-none" href="shop-single.html" target="_blank"><i class="icon-paper"></i><small>&nbsp;试读</small></a>
               </div>
-            
+              
+            </div>
+            <div class="rating-stars" style="text-align: center;">
+              <i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i>
             </div>
           </div>
           <div class="col-md-1"></div>
@@ -423,34 +430,8 @@
                   <div class="comment-header d-flex flex-wrap justify-content-between">
                     <label for="review_name">会员有一个超级长的名字</label>
                     <div class="mb-2">
-                      <div class="rating-stars">
-                        <div id="half-stars">点击星形评分:
-                          <div class="rating-group">
-                              <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                              <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                              <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                              <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                              <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                              <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                              <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                              <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                              <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                              <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                              <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                              <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                          </div>
-                        </div>
-                      </div>
+                      点击星形评分:
+                      <span>⭐️⭐️</span>
                     </div>
                   </div>
                   <form class="row" method="post">
@@ -461,7 +442,7 @@
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="3" placeholder="请写下您对本书的评论" required></textarea>
+                        <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="2" placeholder="请写下您对本书的评论" required></textarea>
                       </div>
                     </div>
                     <div class="col-8 text-left">
@@ -479,7 +460,7 @@
                       <h4 class="comment-title">路人有一个超级长的名字</h4>
                       <div class="mb-2">
                           <div class="text-sm">
-                            2023年5月30日
+                            2023-05-30
                           </div>
                       </div>
                     </div>
@@ -511,10 +492,10 @@
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <h4 class="comment-title">路人有一个超级长的名字</h4>
+                      <h4 class="comment-title">路人<span class="text-muted">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
                           <div class="text-sm">
-                            2023年5月30日
+                            2023-05-30
                           </div>
                       </div>
                     </div>
@@ -530,10 +511,10 @@
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <h4 class="comment-title">路人有一个超级长的名字</h4>
+                      <h4 class="comment-title">路人<span class="text-muted">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
                           <div class="text-sm">
-                            2023年5月30日
+                            2023-05-30
                           </div>
                       </div>
                     </div>
@@ -550,37 +531,13 @@
                 <div class="comment padding-top-1x">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <div class="rating-stars">
-                        <div id="half-stars"><span class="comment-title">路人有一个超级长的名字 &nbsp; | &nbsp;</span>
-                          <div class="rating-group">
-                              <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                              <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                              <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                              <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                              <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                              <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                              <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                              <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                              <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                              <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                              <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                              <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                          </div>
-                        </div>
-                      </div> 
+                      <div class="comment-title">路人有一个超级长的名字  ⭐️⭐️
+                        <span class="text-muted">&nbsp;|&nbsp;</span> 
+                        <span>最好用的注释书</span>
+                      </div>
                       <div class="mb-2">
                           <div class="text-sm">
-                            2023年5月30日
+                            2023-05-30
                           </div>
                       </div>
                     </div>
@@ -597,37 +554,13 @@
                 <div class="comment padding-top-1x">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <div class="rating-stars">
-                        <div id="half-stars"><span class="comment-title">路人有一个超级长的名字 &nbsp; | &nbsp;</span>
-                          <div class="rating-group">
-                              <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                              <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                              <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                              <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                              <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                              <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                              <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                              <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                              <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                              <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                              <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                              <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                              <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                          </div>
-                        </div>
+                      <div class="comment-title">路人有一个超级长的名字 
+                        <span class="text-muted">&nbsp;|&nbsp;</span> 
+                        <span> ⭐️⭐️</span>
                       </div> 
                       <div class="mb-2">
                           <div class="text-sm">
-                            2023年5月30日
+                            2023-05-30
                           </div>
                       </div>
                     </div>
