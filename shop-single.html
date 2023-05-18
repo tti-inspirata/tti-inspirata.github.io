@@ -21,6 +21,12 @@
       .comment-form .form-control {
         padding: 4px 8px 3px;
       }
+      .comment-form .comment-header {
+        margin-bottom: 8px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+      }
       .comment .comment-body::after, .comment .comment-body::before {
         position: absolute;
         top: 12px;
@@ -37,6 +43,12 @@
         margin-bottom: 0px;
         padding-left: 0px;
         text-align: justify;
+      }
+      .comment .comment-title {
+        margin-bottom: 8px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
       }
       .comment .comment-body {
         position: relative;
@@ -56,16 +68,20 @@
       /* 增加 */
       .comment-form {
         position: relative;
-        padding: 12px 16px;
+        padding: 28px 16px 12px 16px;
         border: 1px solid #f7f7f7;
         border-radius: 0px;
         background-color: #f7f7f7;
+        color: #000;
       }
       .comment .comment-body::before {
         margin-top: 0px;
         border-width: 0px;
         border-color: transparent;
         border-right-color: #e1e7ec;
+      }
+      .comment-text {
+        color: #000;
       }
       .comment-form .form-group label {
         padding-left: 0px;
@@ -81,7 +97,7 @@
         height: 28px;
       }
       .comment-form .text-sm {
-        color: #9da9b9;
+        color: #7a7a7a;
         font-size: 13px;
       }
       
@@ -111,6 +127,9 @@
       .comment-bg .comment-body {
         background-color: #f7f7f7;
       }
+
+      
+
       .rating-stars {
         font-size: 12px;
       }
@@ -459,7 +478,7 @@
                     <div class="comment-header d-flex flex-wrap justify-content-between">
                       <h4 class="comment-title">路人有一个超级长的名字</h4>
                       <div class="mb-2">
-                          <div class="text-sm">
+                          <div class="text-muted text-sm">
                             2023-05-30
                           </div>
                       </div>
@@ -492,9 +511,9 @@
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <h4 class="comment-title">路人<span class="text-muted">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
+                      <h4 class="comment-title">路人<span class="text-muted text-sm">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
-                          <div class="text-sm">
+                          <div class="text-muted text-sm">
                             2023-05-30
                           </div>
                       </div>
@@ -511,9 +530,9 @@
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <h4 class="comment-title">路人<span class="text-muted">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
+                      <h4 class="comment-title">路人<span class="text-muted text-sm">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
-                          <div class="text-sm">
+                          <div class="text-muted text-sm">
                             2023-05-30
                           </div>
                       </div>
@@ -536,7 +555,7 @@
                         <span>最好用的注释书</span>
                       </div>
                       <div class="mb-2">
-                          <div class="text-sm">
+                          <div class="text-muted text-sm">
                             2023-05-30
                           </div>
                       </div>
@@ -555,11 +574,10 @@
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
                       <div class="comment-title">路人有一个超级长的名字 
-                        <span class="text-muted">&nbsp;|&nbsp;</span> 
                         <span> ⭐️⭐️</span>
                       </div> 
                       <div class="mb-2">
-                          <div class="text-sm">
+                          <div class="text-muted text-sm">
                             2023-05-30
                           </div>
                       </div>
