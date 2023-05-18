@@ -18,6 +18,24 @@
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
     <style>
+      .font-stars {
+        font-family: 'Source Han Serif SC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 46px;
+        color: #EB4742;
+      }
+      form .textarea-counter {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 12px 28px;
+        font-size: 14px;
+      }
       .comment-form .form-control {
         padding: 4px 8px 3px;
       }
@@ -345,10 +363,9 @@
               <div class="text-center mt-3">
                 <a class="text-decoration-none" href="shop-single.html" target="_blank"><i class="icon-paper"></i><small>&nbsp;试读</small></a>
               </div>
-              
             </div>
-            <div class="rating-stars" style="text-align: center;">
-              <i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i>
+            <div class="text-center mt-3">
+              <div class="font-stars text-normal mb-2">4.5<span style="font-size: 16px;"> ⭐️⭐️⭐️⭐️ </span><span class="text-muted text-sm">(20)</span></div>
             </div>
           </div>
           <div class="col-md-1"></div>
@@ -442,11 +459,12 @@
                 <p class="mb-title"><strong>语言文字</strong>简体中文</p>
                 <p class="mb-title"><a class="text-medium navi-link" href="http://cbcs.endao.co">产品网站</a></p>
               </div>
+              <!-- 评论 -->
               <div class="tab-pane fade show active" id="reviews" role="tabpanel">
-                
+
                 <!-- 发表 -->
                 <div class="comment-form">
-                  <div class="comment-header d-flex flex-wrap justify-content-between">
+                  <div class="comment-header d-flex flex-wrap justify-content-between ml-2 mr-2">
                     <label for="review_name">会员有一个超级长的名字</label>
                     <div class="mb-2">
                       点击星形评分:
@@ -461,7 +479,8 @@
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="2" placeholder="请写下您对本书的评论" required></textarea>
+                        <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="3" placeholder="请写下您对本书的评论" required></textarea>
+                        <div class="textarea-counter text-muted text-right text-sm"><span id="length">0</span>/2000</div>
                       </div>
                     </div>
                     <div class="col-8 text-left">
@@ -472,15 +491,14 @@
                     </div>
                   </form>
                 </div>
+
                 <!-- 评论-1 -->
                 <div class="comment padding-top-1x margin-bottom-1x">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
                       <h4 class="comment-title">路人有一个超级长的名字</h4>
                       <div class="mb-2">
-                          <div class="text-muted text-sm">
-                            2023-05-30
-                          </div>
+                          <div class="text-muted text-sm">2023-05-30</div>
                       </div>
                     </div>
                     <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
@@ -490,12 +508,14 @@
                     <div class="column"><span class="comment-meta"></span></div>
                   </div>
                 </div>
+
                 <!-- 回复 -->
                 <div class="comment-form">
                   <form class="row" method="post">
                     <div class="col-12">
                       <div class="form-group">
                         <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="3" placeholder="回复：路人有一个超级长的名字" required></textarea>
+                        <div class="textarea-counter text-muted text-right text-sm"><span id="length">0</span>/500</div>
                       </div>
                     </div>
                     <div class="col-8 text-left">
@@ -507,34 +527,32 @@
                   </form>
                 </div>
                 <hr style="border-top:2px solid #fff;">
+
                 <!-- 回复-1 -->
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
                       <h4 class="comment-title">路人<span class="text-muted text-sm">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
-                          <div class="text-muted text-sm">
-                            2023-05-30
-                          </div>
+                          <div class="text-muted text-sm">2023-05-30</div>
                       </div>
                     </div>
                     <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
                   </div>
-                  <div class="comment-footer">
+                  <div class="comment-footer mt-2">
                     <div class="column"><span class="comment-meta"><img src="./img/favorite.svg"></span></span></div>
                     <div class="column"><span class="comment-meta"><img src="./img/delete.svg"></span></div>
                   </div>
                 </div>
                 <hr style="border-top:2px solid #fff;">
+
                 <!-- 回复-2 -->
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
                       <h4 class="comment-title">路人<span class="text-muted text-sm">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
-                          <div class="text-muted text-sm">
-                            2023-05-30
-                          </div>
+                          <div class="text-muted text-sm">2023-05-30</div>
                       </div>
                     </div>
                     <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
@@ -555,9 +573,7 @@
                         <span>最好用的注释书</span>
                       </div>
                       <div class="mb-2">
-                          <div class="text-muted text-sm">
-                            2023-05-30
-                          </div>
+                          <div class="text-muted text-sm">2023-05-30</div>
                       </div>
                     </div>
                     <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
@@ -567,9 +583,9 @@
                     <div class="column"><span class="comment-meta"><img src="./img/delete.svg"></span></div>
                   </div>
                 </div>
-                
-                <!-- 评论-2 -->
                 <hr class="margin-top-1x">
+
+                <!-- 评论-2 -->
                 <div class="comment padding-top-1x">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
@@ -577,9 +593,7 @@
                         <span> ⭐️⭐️</span>
                       </div> 
                       <div class="mb-2">
-                          <div class="text-muted text-sm">
-                            2023-05-30
-                          </div>
+                          <div class="text-muted text-sm">2023-05-30</div>
                       </div>
                     </div>
                     <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
@@ -589,12 +603,21 @@
                     <div class="column"><span class="comment-meta"></span></div>
                   </div>
                 </div>
+                <!-- 评论结束 -->
+                <div class="comment comment-user margin-top-1x padding-bottom-1x">
+                  <div class="text-center">
+                    <p class="comment-text"><img src="./img/pen.svg">&nbsp;<a class="text-decoration-none" href="#">登录</a>/<a class="text-decoration-none" href="#">注册</a>&nbsp;后可评论</p>
+                  </div>
+                </div>
+                <div class="padding-top-1x padding-bottom-1x">
+                  <p class="comment-text text-center">谈谈本书，使他人受益</p>
+                </div>
                 
+              
               </div>
             </div>
           </div>
         </div>
-        <!-- 新书上架 -->
 
       </div>
       <!-- Site Footer-->
