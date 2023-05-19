@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>商品</title>
+    <title>评分</title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="恩道电子书">
     <meta name="keywords" content="恩道电子书">
@@ -14,37 +14,9 @@
     <!-- Main Template Styles-->
     <link rel="stylesheet" media="screen" href="css/vendor.min.css">
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
     <style>
-      .font-stars {
-        font-family: 'Source Han Serif SC';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 46px;
-        color: #EB4742;
-      }
-      form .textarea-counter {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        padding: 12px 28px;
-        font-size: 14px;
-      }
-      .comment-form .form-control {
-        padding: 4px 8px 3px;
-      }
-      .comment-form .comment-header {
-        margin-bottom: 8px;
-        color: #000;
-        font-size: 14px;
-        font-weight: 500;
-      }
       .comment .comment-body::after, .comment .comment-body::before {
         position: absolute;
         top: 12px;
@@ -75,7 +47,6 @@
         border-radius: 7px;
         background-color: #fff;
       }
-
       .comment-user {
         position: relative;
         padding: 12px 16px 2px 16px;
@@ -91,6 +62,15 @@
         border-radius: 0px;
         background-color: #f7f7f7;
         color: #000;
+      }
+      .comment-form .form-control {
+        padding: 4px 8px 3px;
+      }
+      .comment-form .comment-header {
+        margin-bottom: 8px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
       }
       .comment .comment-body::before {
         margin-top: 0px;
@@ -145,61 +125,23 @@
       .comment-bg .comment-body {
         background-color: #f7f7f7;
       }
-
-      
-
-      .rating-stars {
-        font-size: 12px;
+      .font-stars {
+        font-family: 'Source Han Serif SC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 46px;
+        color: #EB4742;
       }
-      .comment-meta img {
-        margin: 0 4px 3px 0;
-      }
-      #half-stars .rating-group {
-        display: inline-flex;
-      }
-      #half-stars .rating__icon {
-        pointer-events: none;
-      }
-      #half-stars .rating__input {
-        position: absolute !important;
-        left: -9999px !important;
-      }
-      #half-stars .rating__label {
-        cursor: pointer;
-        /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
-        padding: 0 0.1em;
-        font-size: 0.9rem;
-      }
-      #half-stars .rating__label--half {
-        padding-right: 0;
-        margin-right: -0.6em;
-        z-index: 2;
-      }
-      #half-stars .rating__icon--star {
-        color: orange;
-      }
-      #half-stars .rating__icon--none {
-        color: #eee;
-      }
-      #half-stars .rating__input--none:checked + .rating__label .rating__icon--none {
-        color: red;
-      }
-      #half-stars .rating__input:checked ~ .rating__label .rating__icon--star {
-        color: #ddd;
-      }
-      #half-stars .rating-group:hover .rating__label .rating__icon--star,
-      #half-stars .rating-group:hover .rating__label--half .rating__icon--star {
-        color: orange;
-      }
-      #half-stars .rating__input:hover ~ .rating__label .rating__icon--star,
-      #half-stars .rating__input:hover ~ .rating__label--half .rating__icon--star {
-        color: #ddd;
-      }
-      #half-stars .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
-        color: #eee;
-      }
-      #half-stars .rating__input--none:hover + .rating__label .rating__icon--none {
-        color: red;
+      form .textarea-counter {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 12px 28px;
+        font-size: 14px;
       }
     </style>
   </head>
@@ -604,6 +546,8 @@
                   </div>
                 </div>
                 <!-- 评论结束 -->
+
+                <!-- 登录/注册 -->
                 <div class="comment comment-user margin-top-1x padding-bottom-1x">
                   <div class="text-center">
                     <p class="comment-text"><img src="./img/pen.svg">&nbsp;<a class="text-decoration-none" href="#">登录</a>/<a class="text-decoration-none" href="#">注册</a>&nbsp;后可评论</p>
