@@ -17,6 +17,9 @@
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
     <style>
+      .form-group textarea::placeholder {
+        color: #b2b2b2;
+      }
       .comment .comment-body::after, .comment .comment-body::before {
         position: absolute;
         top: 12px;
@@ -144,6 +147,9 @@
         margin: 0;
         padding: 12px 28px;
         font-size: 14px;
+      }
+      .text-muted-number {
+        color: #cfcfcf !important;
       }
     </style>
   </head>
@@ -437,7 +443,7 @@
                     <div class="col-12">
                       <div class="form-group">
                         <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="3" placeholder="请写下您对本书的评论" required></textarea>
-                        <div class="textarea-counter text-muted text-right text-sm"><span id="length">0</span>/2000</div>
+                        <div class="textarea-counter text-muted-number text-right text-sm"><span id="length">0</span>/2000</div>
                       </div>
                     </div>
                     <div class="col-8 text-left">
