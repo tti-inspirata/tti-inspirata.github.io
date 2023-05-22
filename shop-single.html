@@ -38,7 +38,7 @@
         margin-bottom: 8px;
         color: #000;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 400;
       }
       .comment .comment-body {
         position: relative;
@@ -49,7 +49,7 @@
       }
       .comment-user {
         position: relative;
-        padding: 12px 16px 2px 16px;
+        padding: 12px 16px;
         border: 1px solid #f7f7f7;
         border-radius: 0px;
         background-color: #f7f7f7;
@@ -70,7 +70,6 @@
         margin-bottom: 8px;
         color: #000;
         font-size: 14px;
-        font-weight: 500;
       }
       .comment .comment-body::before {
         margin-top: 0px;
@@ -114,6 +113,9 @@
       }
       .comment-meta {
         font-size: 12px;
+      }
+      .comment-meta img {
+        padding: 0 6px 3px 0;
       }
       .comment-bg {
         position: relative;
@@ -219,36 +221,64 @@
     <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
     <header class="navbar navbar-sticky">
       <!-- Search-->
-      <form class="site-search" method="get">
-        <input type="text" name="site_search" placeholder="书名／作者／出版社">
-        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      <form class="site-search" method="get" action="https://ebook.endao.co/searchBook?_csrf=dc7feaad-3d7d-48ec-8ed7-26272dfd9acd" enctype="multipart/form-data">
+          <input type="text" name="searchText" placeholder="搜索：书名／作者" id="shopSearch">
+          <input type="hidden" name="order" value="3">
+          <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
       </form>
       <div class="site-branding">
-        <div class="inner">
-          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
-          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
-          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
-        </div>
+          <div class="inner">
+              <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+              <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+              <!-- Site Logo--><a class="site-logo" href="https://ebook.endao.co/"><img src="https://ehome.endao.co/statics/images/logo/logo.png" alt="log"></a>
+          </div>
       </div>
       <!-- 导航栏 -->
       <nav class="site-menu">
         <ul>
-          <li><a href="index.html"><span>首页</span></a></li>
-          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+          <li><a href="https://ebook.endao.co/category-0-grid-0-0-0-0-0-0-0-0"><span>全部书目 </span></a>
             <ul class="sub-menu">
-              <li><a href="#">读经工具</a></li>
-              <li><a href="#">圣经注释</a></li>
-              <li><a href="#">福音真理</a></li>
+              <li><a href="https://ebook.endao.co/category-9-grid-0-0-0-0-0-0-0-0">神学研究</a></li>
+              <li><a href="https://ebook.endao.co/category-14-grid-0-0-0-0-0-0-0-0">圣经研究</a></li>
+              <li><a href="https://ebook.endao.co/category-5-grid-0-0-0-0-0-0-0-0">圣经注释-旧约</a></li>
+              <li><a href="https://ebook.endao.co/category-1-grid-0-0-0-0-0-0-0-0">圣经注释-新约</a></li>
+              <li><a href="https://ebook.endao.co/category-7-grid-0-0-0-0-0-0-0-0">教会事工</a></li>
+              <li><a href="https://ebook.endao.co/category-13-grid-0-0-0-0-0-0-0-0">宣教差传</a></li>
+              <li><a href="https://ebook.endao.co/category-15-grid-0-0-0-0-0-0-0-0">灵命塑造</a></li>
+              <li><a href="https://ebook.endao.co/category-8-grid-0-0-0-0-0-0-0-0">信徒生活</a></li>
+              <li><a href="https://ebook.endao.co/category-12-grid-0-0-0-0-0-0-0-0">婚恋亲子</a></li>
+              <li><a href="https://ebook.endao.co/category-11-grid-0-0-0-0-0-0-0-0">历史/经典著作</a></li>
+              <li><a href="https://ebook.endao.co/category-10-grid-0-0-0-0-0-0-0-0">见证/传记/文艺</a></li>
+              <li><a href="https://ebook.endao.co/category-4-grid-0-0-0-0-0-0-0-0">宗教与其他学科</a></li>
             </ul>
           </li>
-          <li><a href="#"><span>简体书</span></a></li>
-          <li><a href="#"><span>繁体书</span></a></li>
-          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li><a href="https://ebook.endao.co/category-0-grid-0-1-0-0-0-0-0-0"><span>恩道出版 </span></a></li>
+          <li><a href="https://ebook.endao.co/category-0-grid-0-0-0-0-0-0-0-0"><span>书籍语言 </span></a>
+            <ul class="sub-menu">
+              <li><a href="https://ebook.endao.co/category-0-grid-1-0-0-0-0-0-0-0"><span>简体书 </span></a></li>
+              <li><a href="https://ebook.endao.co/category-0-grid-2-0-0-0-0-0-0-0"><span>繁体书 </span></a></li>
+              <li><a href="https://ebook.endao.co/category-0-grid-3-0-0-0-0-0-0-0"><span>英文书 </span></a></li>
+            </ul>
+          </li>
+          <li><a href="https://ebook.endao.co/category-0-grid-0-0-1-0-0-0-0-0"><span>免费书 </span></a></li>
+          <li><a href="https://read.endao.co/readingIndex"><span>读书伙伴 </span></a></li>
+          <li><a href="https://ebook.endao.co/rent-to-own"><span>先租后买 </span></a><img src="https://dl.endao.co/fire.png" alt="new" style="position: absolute; top: 20px; right: 6px; width: 16px; height: auto;"></li>
+          <li><a href="https://ebook.endao.co/blogs"><span>发现 </span></a></li>
+          <li><a href="https://ebook.endao.co/index-Wechat"><span>App下载 </span></a></li>
           <li>
             <div class="lang-currency-switcher-wrap">
-              <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">$ USD</a>
+              <div class="lang-currency-switcher dropdown-toggle" id="currencyCN"><span class="currency" id="currency-active">CNY(¥)</span></div><div class="dropdown-menu" ><a class="dropdown-item" href="/currency/HKD(HK$)/book-1057" id="currency-active-not">HKD(HK$)</a><a class="dropdown-item" href="/currency/TWD(NT$)/book-1057" id="currency-active-not">TWD(NT$)</a><a class="dropdown-item" href="/currency/USD(US$)/book-1057" id="currency-active-not">USD(US$)</a><a class="dropdown-item" href="/currency/CAD(CA$)/book-1057" id="currency-active-not">CAD(CA$)</a><a class="dropdown-item" href="/currency/EUR(€)/book-1057" id="currency-active-not">EUR(€)</a><a class="dropdown-item" href="/currency/AUD(AU$)/book-1057" id="currency-active-not">AUD(AU$)</a><a class="dropdown-item" href="/currency/SGD(SG$)/book-1057" id="currency-active-not">SGD(SG$)</a><a class="dropdown-item" href="/currency/MYR(RM)/book-1057" id="currency-active-not">MYR(RM)</a><a class="dropdown-item" href="/currency/IDR(Rp)/book-1057" id="currency-active-not">IDR(Rp)</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="lang-currency-switcher-wrap">
+              <div class="lang-currency-switcher dropdown-toggle" id="localeCN">
+                <span class="currency" id="locale-active">简体 </span>
+              </div>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="#" id="locale-active-not-cn">简体</a>
+                <a class="dropdown-item" href="https://ebook.endao.co/index?locale=zh_HK" id="locale-active-not-hk">繁體 </a>
+                <a class="dropdown-item" href="https://ebook.endao.co/index?locale=en_US" id="locale-active-not-us">English </a>
               </div>
             </div>
           </li>
@@ -259,51 +289,36 @@
         <div class="inner">
           <div class="tools">
             <div class="search"><i class="icon-search"></i></div>
-            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
-              <ul class="toolbar-dropdown w-110">
-                <li><a href="account-register.html">注&nbsp;册</a></li>
-                <li><a href="account-login.html">登&nbsp;录</a></li>
+            <div class="account"><a href='https://ebook.endao.co/login'></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown w-150">
+                <li><a href='https://ebook.endao.co/reg'>注&nbsp;册 </a></li>
+                <li><a href='https://ebook.endao.co/login'>登&nbsp;录 </a></li>
               </ul>
             </div>
-            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
           </div>
         </div>
       </div>
     </header>
+    <script>
+        function changeCurrency(sel)
+        {
+            var url = "/currency/"+sel.value+"//book-1057";
+            //alert(url);
+            location.href = url;//location.href实现客户端页面的跳转
+        }
+    </script> 
     <!-- Off-Canvas Wrapper-->
     <div class="offcanvas-wrapper">
-      <!-- Page Title-->
-      <div class="page-title navbar-back">
-        <div class="container">
-          <div class="column">
-            <h1>以弗所书 • 歌罗西书 • 腓利门书</h1>
-          </div>
-          <div class="column">
-            <ul class="breadcrumbs">
-              <li><a href="index.html">首页</a>
-              </li>
-              <li class="separator">&nbsp;</li>
-              <li><a href="shop-grid-ls.html">全部书目</a>
-              </li>
-              <li class="separator">&nbsp;</li>
-              <li>以弗所书 • 歌罗西书 • 腓利门书</li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <!-- Page Content-->
-      <div class="container padding-bottom-1x mb-1">
+      <div class="container padding-bottom-1x mb-1 padding-top-2x">
         <div class="row">
           <!-- Poduct -->
           <div class="col-md-4 offset-lg-1">
             <div class="product-gallery">
               <!-- 产品图片 -->
-              <div class="product-carousel owl-carousel"><a class="product-thumb" href="shop-single.html">
-                <div class="product-single" data-hash="one"><div class="product-badge text-danger text-left">70%</div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1572934547907.jpg" alt="Product"></div></a>
-              </div>
-              <!-- 增加试读 -->
-              <div class="text-center mt-3">
-                <a class="text-decoration-none" href="shop-single.html" target="_blank"><i class="icon-paper"></i><small>&nbsp;试读</small></a>
+              <div class="product-carousel owl-carousel"><a class="product-thumb" href="#">
+                <div class="product-single" data-hash="one"><div class="product-badge text-danger text-left">6折
+                </div><img src="https://d1.endao.cloud/root/images/book_img/2305/IP137_web.jpg" alt="Product"></div></a>
               </div>
             </div>
             <div class="text-center mt-3">
@@ -314,52 +329,51 @@
           <!-- Product Info -->
           <div class="col-md-6">
             <div class="padding-top-2x mt-2 hidden-md-up"></div>
-            <h3 class="text-normal">以弗所书 • 歌罗西书 • 腓利门书</h3>
+            <h3 class="text-normal">[免费]《与我同行：爱中进深&跟随耶稣》作者见面会（讲义）</h3>
             <div class="mt-4 mb-4">
-              <span class="h3 text-center">
-                <del class="text-muted text-normal">¥88.00</del>&nbsp; <span class="text-primary">¥50.00</span>
-              </span>
-            </div>
-            <!-- 增加N件折 -->
-            <div class="d-inline">
-              <div class="text-decoration-none"><span class="red-bg">N件折</span><a class="navi-link text-danger" href="#">1件9折 2件8折 3件6折</a></div>
+              <div class="h3 text-left">
+                <span class="text-primary">HK$0.00</span><span class="h6 text-primary">(¥0.00)</span>
+              </div>
+                <div class="d-inline">(支持多种货币结算，可在导航栏中切换参考货币)</div>
             </div>
             <div>
-              <strong class="d-inline">作 者:</strong>
-              <div class="d-inline text-muted"><a class="navi-link" href="arthor.html">盖瑞·史密斯</a></div>
+              <strong class="d-inline">作 者 :</strong>
+              <div class="d-inline text-muted"><a class="navi-link" href="searchBook?searchText=珍妮·麦吉尔（Jenny McGill）">珍妮·麦吉尔（Jenny McGill）</a></div>
             </div>
-            <div>
-              <strong class="d-inline">译 者:</strong>
-              <div class="d-inline text-muted"><a class="navi-link" href="#">林心怡</a></div>
-            </div>
-            <div>
-              <strong class="d-inline">出版社:</strong>
-              <div class="d-inline text-muted"><a class="navi-link" href="press.html">恩道出版社</a></div>
-            </div>
-            <!-- <div class="sp-buttons mt-4 mb-4">
-              <a class="btn btn-primary btn-sm scale-up" href="#.pdf">&nbsp;在线试读&nbsp;</a>
-            </div> -->
-            <div class="sp-buttons mt-4 mb-4 padding-bottom-1x">
-              <a class="btn btn-primary btn-sm" href="account-cart.html">立即购买</a>
-              <a class="btn btn-outline-primary btn-sm"  data-toggle="modal" data-target="#modal-give">赠送</a>
-              <a class="btn btn-outline-primary btn-sm" href="account-cart.html">加入购物车</a>&nbsp;&nbsp;
-              <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏" onclick="javascript:window.location.href='/login'"><i class="icon-heart"></i></button>
-            </div>
-            <div class="sp-buttons">
-              <a class="text-medium text-decoration-none" href="#">阅读本书需下载，了解详情  &nbsp;&gt;&gt;</a>
-            </div>
-            <div class="d-flex flex-wrap justify-content-between">
+              <div>
+                <strong class="d-inline">译 者 :</strong>
+                <div class="d-inline"><a class="navi-link" href="#"></a>Chole</div>
+              </div>
+              <div>
+                <strong class="d-inline">出版社 :</strong>
+                <div class="d-inline text-muted"><a class="navi-link" href="category-0-grid-0-1-0-0-0-0-0-0">恩道出版社</a></div>
+              </div>
+              <div class="sp-buttons mt-4 mb-4 padding-bottom-1x">
+                <a class="btn btn-primary btn-sm" href="orderConfirmBook-1057">购买电子书</a>
+                <button class="btn btn-outline-primary btn-sm btn-round" data-toggle="tooltip" title="购物车" onclick="javascript:window.location.href='https://ebook.endao.co/login'">
+                    加入购物车
+                </button>
+                <a class="btn btn-outline-primary btn-sm"  data-toggle="modal" onclick="javascript:window.location.href='https://ebook.endao.co/login'">赠送</a>
+                <button class="btn btn-outline-secondary btn-sm btn-round" data-toggle="tooltip" title="收藏" onclick="javascript:window.location.href='https://ebook.endao.co/login'">
+                    <i class="icon-heart"></i>
+                </button>
+              </div>
               <div class="sp-buttons">
-                <div class="d-inline text-muted go-menu">
-                  <ul class="list-unstyled">
-                    <li><a class="text-medium text-decoration-none" href="">购买纸版书 &nbsp;&gt;&gt;</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">邮寄到大陆地区</a></li>
-                        <li><a class="dropdown-item" href="#">邮寄到香港地区</a></li>
-                        <li><a class="dropdown-item" href="#">邮寄到美国</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                <a class="text-medium text-decoration-none" href="index-Reader" target="_blank">阅读本书/试读样章需下载App，了解详情 &nbsp;&gt;&gt; </a>
+              </div>
+              <div class="d-flex flex-wrap justify-content-between">
+                <div class="sp-buttons">
+                  <div class="d-inline text-muted go-menu">
+                    <ul class="list-unstyled">
+                      <li><a class="text-medium text-decoration-none" href="">购买纸版书 &nbsp;&gt;&gt;</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">邮寄到大陆地区</a></li>
+                          <li><a class="dropdown-item" href="#">邮寄到香港地区</a></li>
+                          <li><a class="dropdown-item" href="#">邮寄到美国</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -548,7 +562,7 @@
                 <!-- 评论结束 -->
 
                 <!-- 登录/注册 -->
-                <div class="comment comment-user margin-top-1x padding-bottom-1x">
+                <div class="comment comment-user margin-top-1x">
                   <div class="text-center">
                     <p class="comment-text"><img src="./img/pen.svg">&nbsp;<a class="text-decoration-none" href="#">登录</a>/<a class="text-decoration-none" href="#">注册</a>&nbsp;后可评论</p>
                   </div>
