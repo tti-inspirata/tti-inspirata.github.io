@@ -17,6 +17,9 @@
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
     <style>
+      .nav-tabs .nav-link {
+        font-weight: 400;
+      }
       .form-group textarea::placeholder {
         color: #b2b2b2;
       }
@@ -63,17 +66,18 @@
       /* 增加 */
       .comment-form {
         position: relative;
-        padding: 28px 16px 12px 16px;
+        padding: 20px 20px 15px 20px;
         border: 1px solid #f7f7f7;
         border-radius: 0px;
         background-color: #f7f7f7;
         color: #000;
       }
       .comment-form .form-control {
-        padding: 4px 8px 3px;
+        padding: 5px 12px;
       }
       .comment-form .comment-header {
-        margin-bottom: 8px;
+        margin-top: 5px;
+        margin-bottom: 7px;
         color: #000;
         font-size: 14px;
       }
@@ -93,7 +97,7 @@
         border-radius: 0px;
       }
       .comment-form .form-group {
-        margin-bottom: 10px !important;
+        margin-bottom: 8px !important;
         font-size: 12px;
       }
       .comment-form .form-control-sm:not(textarea) {
@@ -125,7 +129,7 @@
       }
       .comment-bg {
         position: relative;
-        padding: 12px 16px;
+        padding: 20px;
         border: 1px solid #f7f7f7;
         border-radius: 0px;
         background-color: #f7f7f7;
@@ -153,6 +157,9 @@
       }
       .text-muted-number {
         color: #cfcfcf !important;
+      }
+      .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        font-weight: 500;
       }
     </style>
   </head>
@@ -336,7 +343,7 @@
           </div>
           <div class="col-md-1"></div>
           <!-- Product Info -->
-          <div class="col-md-5">
+          <div class="col-md-7 col-lg-5 col-xl-5">
             <div class="padding-top-2x mt-2 hidden-md-up"></div>
             <h3 class="text-normal">[免费]《与我同行：爱中进深&跟随耶稣》作者见面会（讲义）</h3>
             <p class="text-muted">本书为预售书，预计2023年5月正式上架</p>
@@ -450,7 +457,7 @@
                       </div>
                     </div>
                     <div class="col-8 text-left">
-                      <div class="comment-footer"><span class="comment-meta"><a href="#"><img src="./img/info.svg"></a>评论对所有人可见</span></div>
+                      <div class="comment-footer"><span class="comment-meta text-muted"><a href="#"><img src="./img/info.svg"></a>评论对所有人可见</span></div>
                     </div> 
                     <div class="col-4 text-right">
                       <button class="btn btn-sm btn-primary" type="submit">发表</button>
@@ -485,7 +492,7 @@
                       </div>
                     </div>
                     <div class="col-8 text-left">
-                      <div class="comment-footer"><span class="comment-meta"><a href="#"><img src="./img/info.svg"></a>评论对所有人可见</span></div>
+                      <div class="comment-footer"><span class="comment-meta text-muted"><a href="#"><img src="./img/info.svg"></a>评论对所有人可见</span></div>
                     </div> 
                     <div class="col-4 text-right">
                       <button class="btn btn-sm btn-primary" type="submit">回复</button>
@@ -498,7 +505,7 @@
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <h4 class="comment-title">路人<span class="text-muted text-sm">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
+                      <h4 class="comment-title">路人<span class="text-muted">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
                           <div class="text-muted text-sm">2023-05-30</div>
                       </div>
@@ -516,7 +523,7 @@
                 <div class="comment comment-bg">
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
-                      <h4 class="comment-title">路人<span class="text-muted text-sm">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
+                      <h4 class="comment-title">路人<span class="text-muted">&nbsp;回复&nbsp;</span>路人有一个超级长的名字:</h4>
                       <div class="mb-2">
                           <div class="text-muted text-sm">2023-05-30</div>
                       </div>
