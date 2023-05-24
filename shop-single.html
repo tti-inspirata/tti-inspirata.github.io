@@ -161,10 +161,36 @@
       .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
         font-weight: 500;
       }
+      .modal-header, .modal-body, .modal-footer {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 5px;
+        border-top: 0px solid #e9ecef;
+      }
+      .modal-body {
+        padding: 26px 32px 0 32px;
+      }
+      .nav-tabs .nav-link {
+        padding: 10px 15px;
+      }
     </style>
   </head>
   <!-- Body-->
   <body>
+    <!-- Delete Modal-->
+    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>确定删除该评论？</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">取消</button>
+            <button class="btn btn-primary btn-sm" type="button">删除</button>
+          </div>
+        </div>
+      </div>
+    </div>
      <!-- 弹出窗 -->
      <div class="modal fade" id="modal-give" tabindex="-1">
       <div class="modal-dialog">
@@ -412,7 +438,7 @@
               <li class="nav-item"><a class="nav-link" href="#description" data-toggle="tab" role="tab">图书简介</a></li>
               <li class="nav-item"><a class="nav-link" href="#tableofcontent" data-toggle="tab" role="tab">图书目录</a></li>
               <li class="nav-item"><a class="nav-link" href="#info" data-toggle="tab" role="tab">基本信息</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#reviews" data-toggle="tab" role="tab">评论</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#reviews" data-toggle="tab" role="tab">评论<span class="text-muted text-sm">(52)</span></a></li>
             </ul>
             <div class="tab-content">
               <!-- 图书简介-->
@@ -514,7 +540,8 @@
                   </div>
                   <div class="comment-footer mt-2">
                     <div class="column"><span class="comment-meta"><img src="./img/favorite.svg"></span></span></div>
-                    <div class="column"><span class="comment-meta"><img src="./img/delete.svg"></span></div>
+                    <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span>
+                    </div>
                   </div>
                 </div>
                 <hr style="border-top:2px solid #fff;">
@@ -553,7 +580,7 @@
                   </div>
                   <div class="comment-footer mt-2">
                     <div class="column"><span class="comment-meta"><img src="./img/favorite-red.svg">17<img src="./img/comment.svg" class="ml-4">22</span></span></div>
-                    <div class="column"><span class="comment-meta"><img src="./img/delete.svg"></span></div>
+                    <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
                   </div>
                 </div>
                 <hr class="margin-top-1x">
