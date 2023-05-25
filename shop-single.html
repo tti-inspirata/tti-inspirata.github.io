@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>评分</title>
+    <title>书籍评论</title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="恩道电子书">
     <meta name="keywords" content="恩道电子书">
@@ -173,6 +173,23 @@
       .nav-tabs .nav-link {
         padding: 10px 15px;
       }
+      .rating-stars .star-number {
+        color: #EB4742; font-family: 'Source Han Serif SC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 46px;
+      }
+      /* 书籍封面与信息 */
+      .product-gallery {
+        position: relative;
+        padding-top: 0px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border: 0px solid #e1e7ec;
+        border-radius: 7px;
+      } 
     </style>
   </head>
   <!-- Body-->
@@ -359,39 +376,52 @@
             <div class="product-gallery">
               <!-- 产品图片 -->
               <div class="product-carousel owl-carousel"><a class="product-thumb" href="#">
-                <div class="product-single" data-hash="one"><div class="product-badge text-danger text-left">6折
+                <div class="product-single text-center" data-hash="one"><div class="product-badge text-danger text-left">6折
                 </div><img src="https://d1.endao.cloud/root/images/book_img/2305/IP137_web.jpg" alt="Product"></div></a>
               </div>
             </div>
-            <div class="text-center mt-3">
-              <div class="font-stars text-normal mb-2">4.5<span style="font-size: 16px;"> ⭐️⭐️⭐️⭐️ </span><span class="text-muted text-sm">(20)</span></div>
+            <div class="rating-stars d-flex mt-2 align-items-center justify-content-center">
+              <div class="column star-number align-items-start mr-2"><span>4.5</span>
+              </div>
+              <div class="column">
+                <span class="comment-meta">⭐️⭐️⭐️⭐️</span><span class="text-muted text-sm ml-1">(20)</span>
+              </div>
             </div>
+            
           </div>
-          <div class="col-md-1"></div>
+          <!-- <div class="col-md-1"></div> -->
           <!-- Product Info -->
-          <div class="col-md-7 col-lg-5 col-xl-5">
+          <div class="col-md-8 col-lg-6 col-xl-6">
             <div class="padding-top-2x mt-2 hidden-md-up"></div>
             <h3 class="text-normal">[免费]《与我同行：爱中进深&跟随耶稣》作者见面会（讲义）</h3>
             <p class="text-muted">本书为预售书，预计2023年5月正式上架</p>
-            <div class="mt-4 mb-4">
-              <div class="h3 text-left">
-                <span class="text-primary">HK$0.00</span><span class="h6 text-primary">(¥0.00)</span>
+            <div class="mb-3">
+              <div class="h4 text-left">
+                <span class="text-primary mr-2">HK$0.00</span><span class="h6 text-primary mr-2">(¥0.00)</span><span class="h6 text-muted">HK$0.00</span>
               </div>
                 <div class="d-inline text-muted">(支持多种货币结算，可在导航栏中切换参考货币)</div>
-            </div>
-            <div>
-              <strong class="d-inline">作 者 :</strong>
-              <div class="d-inline text-muted"><a class="navi-link" href="searchBook?searchText=珍妮·麦吉尔（Jenny McGill）">珍妮·麦吉尔（Jenny McGill）</a></div>
-            </div>
-              <div>
-                <strong class="d-inline">译 者 :</strong>
+              </div>
+              <div class="pt-1">
+                <p class="d-inline">作 者 :</p>
+                <div class="d-inline text-muted"><a class="navi-link" href="searchBook?searchText=珍妮·麦吉尔（Jenny McGill）">珍妮·麦吉尔（Jenny McGill）</a></div>
+              </div>
+              <div class="pt-1">
+                <p class="d-inline">译 者 :</p>
                 <div class="d-inline"><a class="navi-link" href="#"></a>Chole</div>
               </div>
-              <div>
-                <strong class="d-inline">出版社 :</strong>
+              <div class="pt-1">
+                <p class="d-inline">书系 :</p>
+                <div class="d-inline"><a class="navi-link text-primary" href="#"></a>房角石圣经注释全书</div>
+              </div>
+              <div class="pt-1">
+                <p class="d-inline">出版社 :</p>
                 <div class="d-inline text-muted"><a class="navi-link" href="category-0-grid-0-1-0-0-0-0-0-0">恩道出版社</a></div>
               </div>
-              <div class="sp-buttons mt-4 mb-4 padding-bottom-1x">
+              <div class="pt-1">
+                <p class="d-inline">其他语言版本:</p>
+                <div class="d-inline"><a class="navi-link text-primary mr-2" href="#">简体版</a><a class="navi-link text-primary" href="#">繁体版</a></div>
+              </div>
+              <div class="sp-buttons mt-4 mb-4">
                 <a class="btn btn-primary btn-sm" href="orderConfirmBook-1057">购买电子书</a>
                 <button class="btn btn-outline-primary btn-sm btn-round" data-toggle="tooltip" title="购物车" onclick="javascript:window.location.href='https://ebook.endao.co/login'">
                     加入购物车
