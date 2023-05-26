@@ -3826,6 +3826,10 @@ button:focus {
     padding-left: 50px
 }
 
+.comment-reply {
+    padding-left: 45px; 
+}
+
 .comment .comment-author-ava {
     display: block;
     position: absolute;
@@ -3834,6 +3838,10 @@ button:focus {
     width: 45px;
     border-radius: 50%;
     overflow: hidden
+}
+
+.comment .comment-author-ava-reply {
+    width: 40px; 
 }
 
 .comment .comment-author-ava>img {
