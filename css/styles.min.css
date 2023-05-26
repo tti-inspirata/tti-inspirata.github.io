@@ -1869,7 +1869,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .form-group {
-    margin-bottom: 20px
+    margin-bottom: 8px
 }
 
 .form-group label {
@@ -1922,6 +1922,9 @@ select.form-control.form-control-lg:not([size]):not([multiple]) {
 
 .form-control-sm.form-control-square {
     border-radius: 0
+    padding: 0 12px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7
 }
 
 select.form-control.form-control-sm:not([size]):not([multiple]) {
@@ -3223,7 +3226,7 @@ button:focus {
 }
 
 .nav-tabs .nav-link {
-    padding: 10px 20px;
+    padding: 10px 15px;
     transition: color .3s;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -8335,11 +8338,11 @@ video {
 
 .product-gallery {
     position: relative;
-    padding-top: 14px;
+    padding-top: 0px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
-    border: 1px solid #e1e7ec;
+    border: 0px solid #e1e7ec;
     border-radius: 7px
 }
 

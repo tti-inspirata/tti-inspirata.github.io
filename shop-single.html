@@ -45,13 +45,6 @@
       .comment-form .btn {
         margin: 0px;
       }
-      .btn-sm {
-        height: 26px;
-        padding: 0 12px;
-        border-radius: 12px;
-        font-size: 12px;
-        line-height: 24px;
-      }
       .comment-meta {
         font-size: 12px;
       }
@@ -76,14 +69,17 @@
         padding: 12px 28px;
         font-size: 14px;
       }
+      .form-group textarea::placeholder {
+        color: #b2b2b2;
+      }
+      .form-group input::placeholder {
+        color: #b2b2b2;
+      }
       .text-muted-number {
         color: #cfcfcf !important;
       }
-      .modal-body {
+      .modal-body-d {
         padding: 26px 32px 0 32px;
-      }
-      .nav-tabs .nav-link {
-        padding: 10px 15px;
       }
       .rating-stars .star-number {
         color: #EB4742; font-family: 'Source Han Serif SC';
@@ -92,31 +88,13 @@
         font-size: 32px;
         line-height: 46px;
       }
-      .form-control {
+      .btn-sm {
+        height: 26px;
         padding: 0 12px;
-        border: 2px solid #f7f7f7;
-        border-radius: 22px;
-        background-color: #f7f7f7;
+        border-radius: 12px;
+        font-size: 12px;
+        line-height: 24px;
       }
-      .form-group {
-        margin-bottom: 8px;
-      }
-      .form-group textarea::placeholder {
-        color: #b2b2b2;
-      }
-      .form-group input::placeholder {
-        color: #b2b2b2;
-      }
-      /* 书籍封面与信息 */
-      .product-gallery {
-        position: relative;
-        padding-top: 0px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        border: 0px solid #e1e7ec;
-        border-radius: 7px;
-      } 
     </style>
   </head>
   <!-- Body-->
@@ -125,7 +103,7 @@
     <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-          <div class="modal-body">
+          <div class="modal-body modal-content-d">
             <p>确定删除该评论？</p>
           </div>
           <div class="modal-footer">
