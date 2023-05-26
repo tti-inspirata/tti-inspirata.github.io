@@ -3842,12 +3842,13 @@ button:focus {
 
 .comment .comment-body {
     position: relative;
-    padding: 24px;
-    border: 1px solid #e1e7ec;
+    padding: 0 5px;
+    border: 1px solid #fff;
     border-radius: 7px;
-    background-color: #ffffff
+    background-color: #fff;
+    text-align: justify
 }
-
+/* 
 .comment .comment-body::after,
 .comment .comment-body::before {
     position: absolute;
@@ -3871,13 +3872,13 @@ button:focus {
     border-width: 10px;
     border-color: transparent;
     border-right-color: #e1e7ec
-}
+} */
 
 .comment .comment-title {
     margin-bottom: 8px;
     color: #000000;
     font-size: 14px;
-    font-weight: 500
+    font-weight: 400
 }
 
 .comment .comment-text {
@@ -3886,7 +3887,8 @@ button:focus {
 
 .comment .comment-footer {
     display: table;
-    width: 100%
+    width: 100%;
+    padding: 0 5px
 }
 
 .comment .comment-footer>.column {

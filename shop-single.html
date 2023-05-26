@@ -20,36 +20,6 @@
       .nav-tabs .nav-link {
         font-weight: 400;
       }
-      .form-group textarea::placeholder {
-        color: #b2b2b2;
-      }
-      .form-group input::placeholder {
-        color: #b2b2b2;
-      }
-      .comment .comment-body::after, .comment .comment-body::before {
-        position: absolute;
-        top: 12px;
-        right: 100%;
-        width: 0;
-        height: 0;
-        border: none;
-        content: '';
-        pointer-events: none;
-      }
-      .comment .comment-title {
-        margin-bottom: 8px;
-        color: #000;
-        font-size: 14px;
-        font-weight: 400;
-      }
-      .comment .comment-body {
-        position: relative;
-        padding: 0px;
-        border: 0px solid #e1e7ec;
-        border-radius: 7px;
-        background-color: #fff;
-        text-align: justify;
-      }
       .comment-user {
         position: relative;
         padding: 12px 16px;
@@ -75,12 +45,6 @@
         color: #000;
         font-size: 14px;
       } */
-      .comment .comment-body::before {
-        margin-top: 0px;
-        border-width: 0px;
-        border-color: transparent;
-        border-right-color: #e1e7ec;
-      }
       .comment-text {
         color: #000;
       }
@@ -101,7 +65,6 @@
         color: #7a7a7a;
         font-size: 13px;
       }
-      
       .comment-footer-info {
         position:absolute;
         top:50%;
@@ -123,16 +86,6 @@
       .comment-meta img {
         padding: 0 6px 3px 0;
       }
-      /* .comment-bg {
-        position: relative;
-        padding: 20px;
-        border: 1px solid #f7f7f7;
-        border-radius: 0px;
-        background-color: #f7f7f7;
-      }
-      .comment-bg .comment-body {
-        background-color: #f7f7f7;
-      } */
       .font-stars {
         font-family: 'Source Han Serif SC';
         font-style: normal;
@@ -178,12 +131,18 @@
       }
       .form-control {
         padding: 0 12px;
-        border: 0px solid #dbe2e8;
+        border: 2px solid #f7f7f7;
         border-radius: 22px;
         background-color: #f7f7f7;
       }
       .form-group {
         margin-bottom: 8px;
+      }
+      .form-group textarea::placeholder {
+        color: #b2b2b2;
+      }
+      .form-group input::placeholder {
+        color: #b2b2b2;
       }
       /* 书籍封面与信息 */
       .product-gallery {
@@ -528,7 +487,7 @@
                 </div>
 
                 <!-- 评论-1 -->
-                <div class="comment margin-top-1x margin-bottom-1x">
+                <div class="comment">
                   <div class="comment-author-ava"><img src="img/m1.svg" alt="Review"></div>
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
@@ -547,7 +506,7 @@
 
                 <!-- 回复 -->
                 <div class="comment">
-                  <form class="row padding-bottom-1x" method="post">
+                  <form class="row" method="post">
                     <div class="col-12">
                       <div class="form-group">
                         <textarea class="form-control form-control-square form-control-sm" id="review_text" rows="3" placeholder="回复 路人有一个超级长的名字：" required></textarea>
@@ -602,7 +561,7 @@
         
                 <!-- 评论-2 -->
                 <hr>
-                <div class="comment margin-top-1x">
+                <div class="comment">
                   <div class="comment-author-ava"><img src="img/m2.svg" alt="Review"></div>
                   <div class="comment-body">
                     <div class="comment-header d-flex flex-wrap justify-content-between">
