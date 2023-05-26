@@ -3953,7 +3953,7 @@ button:focus {
     }
 
     .comment .comment-body {
-        padding: 15px
+        padding: 0
     }
 
     .comment .comment-body::before,
