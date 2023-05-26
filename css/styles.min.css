@@ -3820,8 +3820,9 @@ button:focus {
 .comment {
     display: block;
     position: relative;
-    margin-bottom: 30px;
-    padding-left: 66px
+    margin-top: 23px;
+    margin-bottom: 23px;
+    padding-left: 50px
 }
 
 .comment .comment-author-ava {
@@ -3829,7 +3830,7 @@ button:focus {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50px;
+    width: 45px;
     border-radius: 50%;
     overflow: hidden
 }
@@ -7711,7 +7712,15 @@ video {
 .product-card.product-list {
     margin-bottom: 30px
 }
-
+@media (max-width: 576px) {
+    .product-thumb .product-single>img {
+        display: block;
+        width: 50%;
+        border-radius: 7px;
+        margin: 0 auto;
+        box-shadow: 3px 6px 6px 0 rgb(47 56 68 / 12%)
+    } 
+}
 @media (min-width:576px) {
     .product-card.product-list {
         display: table;
@@ -7734,7 +7743,7 @@ video {
 
     .product-thumb .product-single>img {
         display: block;
-        width: 70%;
+        width: 100%;
         border-radius: 7px;
         margin: 0 auto;
         box-shadow: 3px 6px 6px 0 rgb(47 56 68 / 12%)
