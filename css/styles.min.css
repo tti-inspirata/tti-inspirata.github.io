@@ -1921,7 +1921,7 @@ select.form-control.form-control-lg:not([size]):not([multiple]) {
 }
 
 .form-control-sm.form-control-square {
-    border-radius: 0
+    border-radius: 4px;
     padding: 0 12px;
     border: 1px solid #f7f7f7;
     background-color: #f7f7f7
