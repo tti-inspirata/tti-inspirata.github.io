@@ -96,6 +96,10 @@ hr.hr-light {
     width: 120px !important
 }
 
+.w-200 {
+    width: 200px !important
+}
+
 .w-210 {
     width: 210px !important
 }
@@ -1982,3 +1986,6 @@ button:focus {
     font-size: 1.4em
 }
 
+.d-inline> .d-flex {
+    line-height: 1.9;
+}

@@ -121,7 +121,7 @@
           <!-- <div class="gallery-wrapper" data-pswp-uid="1">
             <div class="gallery-item video-btn text-center"><a href="#" data-toggle="tooltip" data-type="video" data-video="<div class=&quot;wrapper&quot;><div class=&quot;video-wrapper&quot;><iframe class=&quot;pswp__video&quot; width=&quot;960&quot; height=&quot;640&quot; src=&quot;//www.youtube.com/embed/B81qd2v6alw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen></iframe></div></div>" title="" data-original-title="Watch video"></a></div>
           </div> -->
-          <div class="pl-3 d-table-cell align-top">
+          <div class="pl-3 d-table-cell align-top align-items-center">
             <h5 id="name">圣言365:全年读经灵修之旅（简）</h5>
             <div class="mb-2">
               <span class="h6 text-center text-danger" id="realPrice">
@@ -130,11 +130,13 @@
                 <del class="text-muted-l-l text-sm" id="delPrice">HK$ <span id="price">100</span></del>
               </span>
             </div>
-            <p class="mb-1 p-sm w210 text-muted-l" id="author">肯尼斯·博亚, 凯伦·博亚肯尼斯·博亚, 凯伦·博亚</p>
-            <p class="mb-1 p-sm text-muted-l" id="publisherName">恩道出版社</p>
-            <p class="mb-1 text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折   5件5折 &gt;</p>
-            <p class="mb-2 text-muted-l-l" id="bookAbstract">预计2021年5月正式上架（副标题）</p>
-            <p class="mb-1 text-danger" id="supportBuy">此应用程序不支持购买</p>
+            <div class="d-inline align-items-center">
+              <div class="d-flex"><span class="p-sm w-200" id="author">肯尼斯·博亚, 凯伦·博亚肯尼斯·博亚, 凯伦·博亚</span><span class="ml-1"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span id="publisherName">恩道出版社</span><span class="ml-2"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span class="text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折  5件5折</span><span class="ml-2"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span class="text-muted-l p-sm w210" id="bookAbstract">预计2023年5月31日正式上架（副标题）</span></div>
+              <div class="d-flex"><span class="text-danger" id="supportBuy">此应用程序不支持购买</span></div>
+            </div>
           </div>
         </div>      
       </div>
@@ -142,35 +144,41 @@
         <div class="container">
           <ul>
             <li>
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-6 text-left">
                   <div class="rating-stars d-flex align-items-center">
-                    <div class="column star-number align-items-start mr-2"><span>4.5</span>
-                    </div>
+                    <div class="column star-number mr-2"><span>4.5</span></div>
                     <div class="column">
                       <span class="comment-meta">⭐️⭐️⭐️⭐️</span><span class="text-muted-l text-sm ml-1">(20)</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-6 text-right">
-                  <div class="align-items-center">
+                  <div class="d-inline">
                     <a class="navi-link text-decoration-none" href="#">40个评分</a>
-                    <span><img src="./img/arrow.svg"></span>
+                    <img src="./img/arrow.svg">
                   </div>
                 </div>
               </div> 
             </li>
             <li>
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-3 text-left">书系：</div>
-                <div class="col-9 text-right">房角石圣经注释丛书（34册）<img src="./img/arrow.svg"></div>
+                <div class="col-9 text-right">
+                  <div class="d-inline"><span>房角石圣经注释丛书（34册）</span><img src="./img/arrow.svg"></div> 
+                </div>
               </div>
               
             </li>
             <li>
               <div class="row">
                 <div class="col-4 text-left">其他语言：</div>
-                <div class="col-8 text-right"><div class="d-inline"><a class="navi-link text-decoration-none mr-2" href="#">繁体版</a><img src="./img/arrow.svg"><a class="navi-link text-decoration-none ml-4 mr-2" href="#">英文版</a><img src="./img/arrow.svg"></div></div>
+                <div class="col-8 text-right">
+                  <div class="d-inline">
+                    <a class="navi-link text-decoration-none mr-2" href="#">繁体版</a><img src="./img/arrow.svg">
+                    <a class="navi-link text-decoration-none ml-4 mr-2" href="#">英文版</a><img src="./img/arrow.svg">
+                  </div>
+                </div>
               </div>
               
             </li>
