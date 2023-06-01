@@ -26,7 +26,7 @@ body {
 }
 
 a {
-    color: #EB4742;
+    color: #000000;
     text-decoration: underline
 }
 
@@ -37,6 +37,16 @@ a:hover {
 
 a:focus {
     outline: none
+}
+
+.navi-link, .navi-link-light {
+    transition: color .3s;
+    color: #000000;
+    text-decoration: none;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
 }
 
 .small,
@@ -1966,6 +1976,4 @@ button:focus {
     margin-top: -6px;
     font-size: 1.4em
 }
-
-
 
