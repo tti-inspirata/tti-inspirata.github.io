@@ -15,95 +15,7 @@
     <link rel="stylesheet" media="screen" href="css/vendor.min.css">
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/indexm.min.css">
     <style>
-      .comment-form .form-group label {
-        padding-left: 0px
-      }
-
-      .comment-form .form-control-rounded {
-        border-radius: 0px
-      }
-
-      .comment-form .form-group {
-        margin-bottom: 8px !important;
-        font-size: 12px
-      }
-
-      .comment-form .form-control-sm:not(textarea) {
-        height: 28px
-      }
-
-      .comment-form .text-sm {
-        color: #7a7a7a;
-        font-size: 13px
-      }
-
-      .comment-footer-info {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%)
-      }
-
-      .comment-form .btn {
-        margin: 0px
-      }
-
-      .comment-meta {
-        font-size: 12px
-      }
-
-      .comment-meta img {
-        padding: 0 3px 2px 0
-      }
-
-      .info-sm img {
-        height: 16px
-      }
-
-      .font-stars {
-        font-family: 'Source Han Serif SC';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 46px;
-        color: #EB4742
-      }
-
-      form .textarea-counter {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        padding: 12px 28px;
-        font-size: 14px
-      }
-
-      .form-group textarea::placeholder {
-        color: #b2b2b2
-      }
-
-      .form-group input::placeholder {
-        color: #b2b2b2
-      }
-
-      .text-muted-l-number {
-        color: #cfcfcf !important
-      }
-
-      .modal-body-d {
-        padding: 26px 32px 0 32px
-      }
-
-      .rating-stars .star-number {
-        color: #EB4742;
-        font-family: 'Source Han Serif SC';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 46px
-      }
-
+      
      
     </style>
   </head>
@@ -121,15 +33,15 @@
             <h5 id="name">圣言365:全年读经灵修之旅（简）</h5>
             <div class="mb-2">
               <span class="h6 text-center text-danger" id="realPrice">
-                <span class="text-xs">HK$ </span><span class="text-danger" id="priceDiscount">60</span>&nbsp;
-                <span class="text-danger">(<span class="text-xs"> <span id="currencyLabel">¥</span> </span><span id="priceCurrency">60.76</span>)</span>
-                <del class="text-muted-l-l text-sm" id="delPrice">HK$ <span id="price">100</span></del>
+                <span class="text-xs">HK$ </span><span class="text-danger" id="priceDiscount">160.65</span>
+                <span class="text-danger text-sm">(<span class="text-xs"> <span id="currencyLabel">¥</span></span><span id="priceCurrency">60.76</span>)</span>
+                <del class="text-muted-l text-sm" id="delPrice">HK$<span id="price">100</span></del>
               </span>
             </div>
             <div class="d-inline align-items-center">
               <div class="d-flex"><span class="text-wrap w210" id="author">肯尼斯·博亚, 凯伦·博亚肯尼斯·博亚, 凯伦·博亚</span><span class="ml-1"><img src="./img/arrow.svg"></span></div>
               <div class="d-flex"><span id="publisherName">恩道出版社</span><span class="ml-2"><img src="./img/arrow.svg"></span></div>
-              <div class="d-flex"><span class="text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折  5件5折</span><span class="ml-2"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span class="text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折  5件5折</span><span class="ml-2"><img src="./img/arrow-red.svg"></span></div>
               <div class="d-flex"><span class="text-muted-l text-wrap w210" id="bookAbstract">预计2023年5月31日正式上架（副标题）</span></div>
               <div class="d-flex"><span class="text-danger" id="supportBuy">此应用程序不支持购买</span></div>
             </div>
@@ -145,7 +57,7 @@
                   <div class="rating-stars d-flex align-items-center">
                     <div class="column star-number mr-2"><span>4.5</span></div>
                     <div class="column">
-                      <span class="comment-meta">⭐️⭐️⭐️⭐️</span><span class="text-muted-l text-sm ml-1">(20)</span>
+                      <span class="comment-meta">⭐️⭐️⭐️⭐️</span>
                     </div>
                   </div>
                 </div>
@@ -221,7 +133,7 @@
                   <ol>电子书格式：ePub</ol>
                   <ol>语言文字：简体中文</ol>
                 </ul>
-                <p class="text-muted-l-l">数字产品不支持退换，不提供源文件<br />仅支持在恩道电子书App中阅读</p> 
+                <p class="text-muted-l">数字产品不支持退换，不提供源文件<br />仅支持在恩道电子书App中阅读</p> 
               </div>
             </div>
 
@@ -230,7 +142,7 @@
               <div class="container padding-top-1x padding-bottom-1x">
                 <div class="row">
                   <div class="col-6 text-left">
-                    <div class="comment-footer-info"><span class="comment-meta text-muted-l">评论<span>(0)</span></span></div>
+                    <div class="comment-footer-info"><span class="comment-meta">评论<span>(0)</span></span></div>
                   </div> 
                   <div class="col-6 text-right">
                     <button class="btn btn-sm btn-outline-primary">评论本书</button>
@@ -239,7 +151,7 @@
                 <div class="container padding-top-1x padding-bottom-1x">
                   <img class="d-block m-auto" src="img/review.svg" style="width: 100%; max-width: 550px;" alt="Review">
                   <div class="padding-top-1x mt-2 text-center">
-                    <p>谈谈本书，使他人受益</p>
+                    <p class="text-muted-l">谈谈本书，使他人受益</p>
                   </div>
                 </div>
               </div>
@@ -250,7 +162,7 @@
               <div class="container padding-top-1x padding-bottom-1x">
                 <div class="row">
                   <div class="col-6 text-left">
-                    <div class="comment-footer-info"><span class="comment-meta text-muted-l">评论<span>(0)</span></span></div>
+                    <div class="comment-footer-info"><span class="comment-meta">评论<span>(0)</span></span></div>
                   </div> 
                   <div class="col-6 text-right">
                     <button class="btn btn-sm btn-outline-primary">评论本书</button>
@@ -274,7 +186,7 @@
                     </div>
                     <div class="comment-footer mt-2">
                       <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
-                      <div class="column"><span class="comment-meta"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
                     </div>
                   </li>
                   <li>
@@ -294,7 +206,7 @@
                     </div>
                     <div class="comment-footer mt-2">
                       <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
-                      <div class="column"><span class="comment-meta"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
                     </div>
                   </li>
                 </ul>
@@ -322,7 +234,7 @@
                     </div>
                     <div class="comment-footer mt-2">
                       <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
-                      <div class="column"><span class="comment-meta"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
                     </div>
                     
                   </li>
@@ -342,7 +254,7 @@
                     </div>
                     <div class="comment-footer mt-2">
                       <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
-                      <div class="column"><span class="comment-meta"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
                     </div>
                   </li>
                 </ul>
