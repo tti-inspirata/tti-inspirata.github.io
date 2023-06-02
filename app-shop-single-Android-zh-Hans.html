@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>App Android</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/indexm.min.css">
+    <style>
+      
+     
+    </style>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- main -->
+    <div class="app-main">
+      <!-- Page Content-->
+      <div class="container padding-top-3x padding-bottom-1x mb-1">
+        <div class="d-table"><img class="d-block w-120 mx-auto img-thumbnail d-table-cell align-middle rounded" src="https://d1.endao.cloud/root/tmp/book_image/detail/1606459291730.jpg" alt="Team" id="imgUrl">
+          <!-- <div class="gallery-wrapper" data-pswp-uid="1">
+            <div class="gallery-item video-btn text-center"><a href="#" data-toggle="tooltip" data-type="video" data-video="<div class=&quot;wrapper&quot;><div class=&quot;video-wrapper&quot;><iframe class=&quot;pswp__video&quot; width=&quot;960&quot; height=&quot;640&quot; src=&quot;//www.youtube.com/embed/B81qd2v6alw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen></iframe></div></div>" title="" data-original-title="Watch video"></a></div>
+          </div> -->
+          <div class="pl-3 d-table-cell align-top align-items-center">
+            <h5 id="name">圣言365:全年读经灵修之旅（简）</h5>
+            <div class="mb-2">
+              <span class="h6 text-center text-danger" id="realPrice">
+                <span class="text-xs">HK$ </span><span class="text-danger" id="priceDiscount">160.65</span>
+                <span class="text-danger text-sm">(<span class="text-xs"> <span id="currencyLabel">¥</span></span><span id="priceCurrency">60.76</span>)</span>
+                <del class="text-muted-l text-sm" id="delPrice">HK$<span id="price">100</span></del>
+              </span>
+            </div>
+            <div class="d-inline align-items-center">
+              <div class="d-flex"><span class="text-wrap w210" id="author">肯尼斯·博亚, 凯伦·博亚肯尼斯·博亚, 凯伦·博亚</span><span class="ml-1"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span id="publisherName">恩道出版社</span><span class="ml-2"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span class="text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折  5件5折</span><span class="ml-2"><img src="./img/arrow-red.svg"></span></div>
+              <div class="d-flex"><span class="text-muted-l text-wrap w210" id="bookAbstract">预计2023年5月31日正式上架（副标题）</span></div>
+              <div class="d-flex"><span class="text-danger" id="supportBuy">此应用程序不支持购买</span></div>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="comment comment-menu bg-white">
+        <div class="container">
+          <ul>
+            <li>
+              <div class="row align-items-center">
+                <div class="col-6 text-left">
+                  <div class="rating-stars d-flex align-items-center">
+                    <div class="column star-number mr-2"><span>4.5</span></div>
+                    <div class="column">
+                      <span class="comment-meta">⭐️⭐️⭐️⭐️</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 text-right">
+                  <div class="d-inline">
+                    <a class="navi-link text-decoration-none" href="#">40个评分</a>
+                    <img src="./img/arrow.svg">
+                  </div>
+                </div>
+              </div> 
+            </li>
+            <li>
+              <div class="row align-items-center">
+                <div class="col-3 text-left">书系：</div>
+                <div class="col-9 text-right">
+                  <div class="d-inline"><span>房角石圣经注释丛书（34册）</span><img src="./img/arrow.svg"></div> 
+                </div>
+              </div>
+              
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-4 text-left">其他语言：</div>
+                <div class="col-8 text-right">
+                  <div class="d-inline">
+                    <a class="navi-link text-decoration-none mr-2" href="#">繁体版</a><img src="./img/arrow.svg">
+                    <a class="navi-link text-decoration-none ml-4 mr-2" href="#">英文版</a><img src="./img/arrow.svg">
+                  </div>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-tabs">
+        <ul class="nav nav-tabs nav-justified">
+          <li class="nav-item"><a class="nav-link" href="#bookDescription" data-toggle="tab" role="tab">简介</a></li><span class="text-gray nav-frasl">&frasl;</span>
+          <li class="nav-item"><a class="nav-link" href="#bookCatalogue" data-toggle="tab" role="tab">目录</a></li><span class="text-gray nav-frasl">&frasl;</span>
+          <li class="nav-item"><a class="nav-link active" href="#Information" data-toggle="tab" role="tab">基本信息</a></li>
+        </ul>
+        <!-- Loading -->
+        <!-- <div class="tab-content text-center padding-top-4x">
+          <div class="spinner-border text-danger m-2" style="width: 2rem; height: 2rem;" role="status"><span class="sr-only">Loading...</span></div>
+        </div> -->
+        <div class="tab-content p-text">
+          <div class="tab-pane" id="bookDescription" role="tabpanel">
+            <div class="container padding-bottom-4x">
+              <p>博亚博士是映像事工主席，该机构旨在鼓励、教导、装备人认识并跟随基督，成长为他的样式，并造就他人拥有基督的生命。他也是三一出版社的社长，三一出版社致力于开发有益的资源，帮助人与神建立亲密的关系并更好地理解所处的文化，从而能够在短暂俗世彰显出永恒的价值观。</p>
+            
+              <p>博亚博士著作丰富，包括《更新成他样式》、《上帝存在的20个有力证据》、《面对面》、《从奥古斯丁到弗洛伊德》、《有理有据的信心》以及《神啊，我不明白》等。他是《开启圣经》和《领导力圣经》的编辑之一，也是《NASB研读本圣经》的顾问。</p>
+              
+              <p>凯伦·博亚（Karen Boa）拥有蒙特克莱尔州立大学的英语文学学士学位，并在纽约大学完成了比较文学专业的研究生学业。她对文学、电影、音乐和艺术有浓厚的兴趣，并且热衷园艺。</p>
+              <img src="https://d1.endao.cloud/root/tmp/book_image/detail/1606459291730.jpg" alt="Image">
+            </div>
+          </div>
+
+          <div class="tab-pane" id="bookCatalogue">
+            <div class="container">
+              <p>图书目录</p>
+            </div>
+          </div>
+
+          <div class="tab-pane fade show active" id="Information">
+            <!-- 内容 -->
+            <div class="comment">
+              <div class="container padding-bottom-4x">
+                <ul>
+                  <ol>ESIN：<span id="ESIN">B11851429971</span></ol>
+                  <ol>出版日期：<span id="dateStr">2020</span></ol>
+                  <ol>电子书格式：ePub</ol>
+                  <ol>语言文字：简体中文</ol>
+                </ul>
+                <p class="text-muted-l">数字产品不支持退换，不提供源文件<br />仅支持在恩道电子书App中阅读</p> 
+              </div>
+            </div>
+
+            <!-- 写评论 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x">
+                <div class="row">
+                  <div class="col-6 text-left">
+                    <div class="comment-footer-info"><span class="comment-meta">评论<span>(0)</span></span></div>
+                  </div> 
+                  <div class="col-6 text-right">
+                    <button class="btn btn-sm btn-outline-primary">评论本书</button>
+                  </div>
+                </div>
+                <div class="container padding-top-1x padding-bottom-1x">
+                  <img class="d-block m-auto" src="img/review.svg" style="width: 100%; max-width: 550px;" alt="Review">
+                  <div class="padding-top-1x mt-2 text-center">
+                    <p class="text-muted-l">谈谈本书，使他人受益</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 评论 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x">
+                <div class="row">
+                  <div class="col-6 text-left">
+                    <div class="comment-footer-info"><span class="comment-meta">评论<span>(0)</span></span></div>
+                  </div> 
+                  <div class="col-6 text-right">
+                    <button class="btn btn-sm btn-outline-primary">评论本书</button>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <div class="entry">
+                      <div class="entry-thumb"><a href="#"><img src="img/male.svg" alt="male"></a></div>
+                      <div class="entry-content">
+                        <h4 class="entry-title"><a href="#">路人有一个超级长的名字</a></h4>
+                        <span class="entry-meta">⭐️⭐️⭐️⭐️⭐️</span>
+                      </div>
+                      <div class="text-right text-muted-l text-sm comment-data">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的注释书</span></div>
+                      </div>
+                      <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="entry">
+                      <div class="entry-thumb"><a href="#"><img src="img/female.svg" alt="male"></a></div>
+                      <div class="entry-content">
+                        <h4 class="entry-title"><a href="#">路人有一个超级长的名字</a></h4>
+                        <span class="entry-meta">⭐️⭐️⭐️⭐️⭐️</span>
+                      </div>
+                      <div class="text-right text-muted-l text-sm comment-data">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的注释书</span></div>
+                      </div>
+                      <p class="comment-text">丁道尔出版社的《房角石圣经注释丛书》倾四十位一流福音派学者之力，为您逐段解读66卷圣经书卷。丛书结合最新学术成果，深入探讨字词、文本、背景、解经方面的关键议题，详细阐发经文的神学主旨，并在此坚实基础上就经文应用提出深刻实在的见解，牧者、学者、平信徒均能从中受益。恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 回复 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x">
+                <p class="text-muted-l">共<span>2</span>条回复</p>
+                <ul>
+                  <li>
+                    <div class="entry">
+                      <div class="entry-thumb"><a href="#"><img src="img/female.svg" alt="male"></a></div>
+                      <div class="entry-content">
+                        <h4 class="entry-title"><a href="#">路人有一个超级长的名字</a></h4>
+                      </div>
+                      <div class="text-right text-muted-l text-xs comment-data-middle">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的注释书</span></div>
+                      </div>
+                      <p class="comment-text">恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
+                    </div>
+                    
+                  </li>
+                  <li>
+                    <div class="entry">
+                    <div class="entry-thumb"><a href="#"><img src="img/female.svg" alt="male"></a></div>
+                    <div class="entry-content">
+                      <h4 class="entry-title"><a href="#">路人有一个超级长的名字</a></h4>
+                    </div>
+                    <div class="text-right text-muted-l text-sm comment-data-middle">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的注释书</span></div>
+                      </div>
+                      <p class="comment-text">恩道出版社蒙授权推出《房角石圣经注释丛书》中文版，力求以准确晓畅的译文将这套高水准注释书介绍给所有中文读者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+            
+            <!-- 评分 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x" style="margin-bottom: 1200px;">
+                <div class="comment-header d-flex flex-wrap justify-content-between ml-1 mr-1">
+                  <label for="review_name">轻点星形评分:</label>
+                  <div class="mb-3"><span>⭐️⭐️</span></div>
+                </div>
+                <form class="row" method="post">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control form-control-square" id="review_name" placeholder="标题（选填）">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control form-control-square" id="review_text" rows="3" placeholder="请写下您对本书的评论...." required></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+         
+
+
+        </div> 
+      </div>
+    </div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script>
+      function updateData(param,hiden){
+        for(id in param){
+          var o = document.getElementById(id);
+          if(o!=null){
+            var v = param[id];
+            if(id=="imgUrl"){
+              o.src = v;
+            }else{
+              o.innerHTML = v;
+            }
+          }
+        }
+        for(id in hiden){
+          var o = document.getElementById(id);
+          if(o!=null){
+            o.style.display="none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
