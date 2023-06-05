@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tc">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <title>App Android</title>
@@ -21,57 +21,267 @@
     <div class="app-main">
       <!-- Page Content-->
       <div class="container padding-top-3x padding-bottom-1x mb-1">
-        <div class="d-table"><img class="d-block w-120 mx-auto img-thumbnail d-table-cell align-middle rounded" src="./img/bookcover-placeholder.png" alt="Team" id="imgUrl">
-          <div class="pl-3 d-table-cell align-top">
-            <h5 id="name">圣言365:全年读经灵修之旅（简）</h5>
-            <del class="mb-2 text-muted-l" id="delPrice">HK$ <span id="price">100</span></del>
-            <div class="mb-3">
+        <div class="d-table"><img class="d-block w-120 mx-auto img-thumbnail d-table-cell align-middle rounded" src="https://d1.endao.cloud/root/tmp/book_image/detail/1606459291730.jpg" alt="Team" id="imgUrl">
+          <!-- <div class="gallery-wrapper" data-pswp-uid="1">
+            <div class="gallery-item video-btn text-center"><a href="#" data-toggle="tooltip" data-type="video" data-video="<div class=&quot;wrapper&quot;><div class=&quot;video-wrapper&quot;><iframe class=&quot;pswp__video&quot; width=&quot;960&quot; height=&quot;640&quot; src=&quot;//www.youtube.com/embed/B81qd2v6alw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen></iframe></div></div>" title="" data-original-title="Watch video"></a></div>
+          </div> -->
+          <div class="pl-3 d-table-cell align-top align-items-center">
+            <h5 id="name">聖言365:全年讀經靈修之旅（簡）</h5>
+            <div class="mb-2">
               <span class="h6 text-center text-danger" id="realPrice">
-                <span class="text-xs">HK$ </span><span class="text-danger" id="priceDiscount">60</span>&nbsp;
-                <span class="text-danger">(<span class="text-xs"> <span id="currencyLabel">¥</span> </span><span id="priceCurrency">60.76</span>)</span>
+                <span class="text-xs">HK$</span><span class="text-danger" id="priceDiscount">160.65</span>
+                <span class="text-danger text-sm">(<span class="text-xs"> <span id="currencyLabel">¥</span></span><span id="priceCurrency">60.76</span>)</span>
+                <del class="text-muted-l text-sm" id="delPrice">HK$<span id="price">100</span></del>
               </span>
             </div>
-            <p class="mb-1 p-sm w210 text-muted" id="author">肯尼斯·博亚, 凯伦·博亚肯尼斯·博亚, 凯伦·博亚</p>
-            <p class="mb-1 p-sm text-muted" id="publisherName">恩道出版社</p>
-            <p class="mb-1 text-danger" id="supportBuy">此應用程序不支持購買</p>
+            <div class="d-inline align-items-center">
+              <div class="d-flex"><span class="text-wrap w210" id="author">肯尼斯·博亞, 凱倫·博亞肯尼斯·博亞, 凱倫·博亞</span><span class="ml-1"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span id="publisherName">恩道出版社</span><span class="ml-2"><img src="./img/arrow.svg"></span></div>
+              <div class="d-flex"><span class="text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折  5件5折</span><span class="ml-2"><img src="./img/arrow-red.svg"></span></div>
+              <div class="d-flex"><span class="text-muted-l text-wrap w210" id="bookAbstract">預計2023年5月31日正式上架（副標題）</span></div>
+              <div class="d-flex"><span class="text-danger" id="supportBuy">此應用程式不支援購買</span></div>
+            </div>
           </div>
-        </div>
-        <div class="padding-top-1x">
-          <p class="mb-1 text-danger" id="discountDesc" onclick="bookstore.gotoVolumeDiscount()">N件折：3件6折   5件5折 &gt;</p>
-          <p class="mb-2 text-muted-l" id="bookAbstract">預計2021年5月正式上架（副標題）</p>
-        </div>         
+        </div>      
       </div>
-      <div class="card-tabs padding-bottom-3x">
+      <div class="comment comment-menu bg-white">
+        <div class="container">
+          <ul>
+            <li>
+              <div class="row align-items-center">
+                <div class="col-6 text-left">
+                  <div class="rating-stars d-flex align-items-center">
+                    <div class="column star-number mr-2"><span>4.5</span></div>
+                    <div class="column">
+                      <span class="comment-meta">⭐️⭐️⭐️⭐️</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 text-right">
+                  <div class="d-inline">
+                    <a class="navi-link text-decoration-none" href="#">40個評分</a>
+                    <img src="./img/arrow.svg">
+                  </div>
+                </div>
+              </div> 
+            </li>
+            <li>
+              <div class="row align-items-center">
+                <div class="col-3 text-left">書係：</div>
+                <div class="col-9 text-right">
+                  <div class="d-inline"><span>房角石聖經註釋叢書（34冊）</span><img src="./img/arrow.svg"></div> 
+                </div>
+              </div>
+              
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-4 text-left">其他語言：</div>
+                <div class="col-8 text-right">
+                  <div class="d-inline">
+                    <a class="navi-link text-decoration-none mr-2" href="#">正體版</a><img src="./img/arrow.svg">
+                    <a class="navi-link text-decoration-none ml-4 mr-2" href="#">英文版</a><img src="./img/arrow.svg">
+                  </div>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-tabs">
         <ul class="nav nav-tabs nav-justified">
-          <li class="nav-item"><a class="nav-link active" href="#bookDescription" data-toggle="tab" role="tab">簡介</a></li><span class="text-gray nav-frasl">&frasl;</span>
+          <li class="nav-item"><a class="nav-link" href="#bookDescription" data-toggle="tab" role="tab">簡介</a></li><span class="text-gray nav-frasl">&frasl;</span>
           <li class="nav-item"><a class="nav-link" href="#bookCatalogue" data-toggle="tab" role="tab">目錄</a></li><span class="text-gray nav-frasl">&frasl;</span>
-          <li class="nav-item"><a class="nav-link" href="#Information" data-toggle="tab" role="tab">基本資訊</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#Information" data-toggle="tab" role="tab">基本信息</a></li>
         </ul>
         <!-- Loading -->
-        <div class="tab-content text-center padding-top-4x">
+        <!-- <div class="tab-content text-center padding-top-4x">
           <div class="spinner-border text-danger m-2" style="width: 2rem; height: 2rem;" role="status"><span class="sr-only">Loading...</span></div>
-        </div>
+        </div> -->
         <div class="tab-content p-text">
-          <div class="tab-pane fade show active" id="bookDescription" role="tabpanel">
-            <p>博亚博士是映像事工主席，该机构旨在鼓励、教导、装备人认识并跟随基督，成长为他的样式，并造就他人拥有基督的生命。他也是三一出版社的社长，三一出版社致力于开发有益的资源，帮助人与神建立亲密的关系并更好地理解所处的文化，从而能够在短暂俗世彰显出永恒的价值观。</p>
+          <div class="tab-pane" id="bookDescription" role="tabpanel">
+            <div class="container padding-bottom-4x">
+              <p>博亞博士是映像事工主席，該機構旨在鼓勵、教導、裝備人認識並跟隨基督，成長為他的樣式，並造就他人擁有基督的生命。他也是三一出版社的社長，三一出版社緻力於開發有益的資源，幫助人與神建立親密的關係並更好地理解所處的文化，從而能夠在短暫俗世彰顯出永恆的價值觀。</p>
             
-            <p>博亚博士著作丰富，包括《更新成他样式》、《上帝存在的20个有力证据》、《面对面》、《从奥古斯丁到弗洛伊德》、《有理有据的信心》以及《神啊，我不明白》等。他是《开启圣经》和《领导力圣经》的编辑之一，也是《NASB研读本圣经》的顾问。</p>
-            
-            <p>凯伦·博亚（Karen Boa）拥有蒙特克莱尔州立大学的英语文学学士学位，并在纽约大学完成了比较文学专业的研究生学业。她对文学、电影、音乐和艺术有浓厚的兴趣，并且热衷园艺。</p>
-            <img src="./img/bookcover-placeholder.png" alt="Image">
+              <p>博亞博士著作豐富，包括《更新成他樣式》、《上帝存在的20個有力證據》、《麵對麵》、《從奧古斯丁到弗洛伊德》、《有理有據的信心》以及《神啊，我不明白》等。他是《開啓聖經》和《領導力聖經》的編輯之一，也是《NASB研讀本聖經》的顧問。</p>
+              
+              <p>凱倫·博亞（Karen Boa）擁有蒙特克萊爾州立大學的英國文學學士學位，並在紐約大學完成了比較文學專業的研究生學業。她對文學、電影、音樂和藝術有濃厚的興趣，並且熱衷園藝。</p>
+              <img src="https://d1.endao.cloud/root/tmp/book_image/detail/1606459291730.jpg" alt="Image">
+            </div>
           </div>
+
           <div class="tab-pane" id="bookCatalogue">
-            <p>圖書目錄</p>
+            <div class="container">
+              <p>圖書目錄</p>
+            </div>
           </div>
-          <div class="tab-pane" id="Information">
-            <ul>
-              <ol>ESIN：<span id="ESIN">B11851429971</span></ol>
-              <ol>出版日期：<span id="dateStr">2020</span></ol>
-              <ol>電子書格式：ePub</ol>
-              <ol>語言文字：简体中文</ol>
-             </ul>
-             <p class="text-muted-l">數位產品不支援退換，不提供原始檔案<br />僅支持在恩道電子書App中閱讀</p> 
-          </div>           
+
+          <div class="tab-pane fade show active" id="Information">
+            <!-- 內容 -->
+            <div class="comment">
+              <div class="container padding-bottom-4x">
+                <ul>
+                  <ol>ESIN：<span id="ESIN">B11851429971</span></ol>
+                  <ol>出版日期：<span id="dateStr">2020</span></ol>
+                  <ol>電子書格式：ePub</ol>
+                  <ol>語言文字：簡體中文</ol>
+                </ul>
+                <p class="text-muted-l">數字産品不支援退換，不提供源文件<br />僅支援在恩道電子書App中閱讀</p> 
+              </div>
+            </div>
+
+            <!-- 寫評論 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x">
+                <div class="row">
+                  <div class="col-6 text-left">
+                    <div class="comment-footer-info"><span class="comment-meta">評論<span>(0)</span></span></div>
+                  </div> 
+                  <div class="col-6 text-right">
+                    <button class="btn btn-sm btn-outline-primary">評論本書</button>
+                  </div>
+                </div>
+                <div class="container padding-top-1x padding-bottom-1x">
+                  <img class="d-block m-auto" src="img/review.svg" style="width: 100%; max-width: 550px;" alt="Review">
+                  <div class="padding-top-1x mt-2 text-center">
+                    <p class="text-muted-l">談談本書，使他人受益</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 評論 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x">
+                <div class="row">
+                  <div class="col-6 text-left">
+                    <div class="comment-footer-info"><span class="comment-meta">評論<span>(0)</span></span></div>
+                  </div> 
+                  <div class="col-6 text-right">
+                    <button class="btn btn-sm btn-outline-primary">評論本書</button>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <div class="entry">
+                      <div class="entry-thumb"><a href="#"><img src="img/male.svg" alt="male"></a></div>
+                      <div class="entry-content">
+                        <h4 class="entry-title"><a href="#">路人有一個超級長的名字</a></h4>
+                        <span class="entry-meta">⭐️⭐️⭐️⭐️⭐️</span>
+                      </div>
+                      <div class="text-right text-muted-l text-sm comment-data">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的註釋書</span></div>
+                      </div>
+                      <p class="comment-text">丁道爾出版社的《房角石聖經註釋叢書》傾四十位一流福音派學者之力，為您逐段解讀66卷聖經書卷。叢書結合最新學術成果，深入探討字詞、文本、背景、解經方麵的關鍵議題，詳細闡發經文的神學主旨，並在此堅實基礎上就經文應用提出深刻實在的見解，牧者、學者、平信徒均能從中受益。恩道出版社蒙授權推出《房角石聖經註釋叢書》中文版，力求以準確曉暢的譯文將這套高水準註釋書介紹給所有中文讀者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="entry">
+                      <div class="entry-thumb"><a href="#"><img src="img/female.svg" alt="male"></a></div>
+                      <div class="entry-content">
+                        <h4 class="entry-title"><a href="#">路人有一個超級長的名字</a></h4>
+                        <span class="entry-meta">⭐️⭐️⭐️⭐️⭐️</span>
+                      </div>
+                      <div class="text-right text-muted-l text-sm comment-data">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的註釋書</span></div>
+                      </div>
+                      <p class="comment-text">丁道爾出版社的《房角石聖經註釋叢書》傾四十位一流福音派學者之力，為您逐段解讀66卷聖經書卷。叢書結合最新學術成果，深入探討字詞、文本、背景、解經方麵的關鍵議題，詳細闡發經文的神學主旨，並在此堅實基礎上就經文應用提出深刻實在的見解，牧者、學者、平信徒均能從中受益。恩道出版社蒙授權推出《房角石聖經註釋叢書》中文版，力求以準確曉暢的譯文將這套高水準註釋書介紹給所有中文讀者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/comment.svg">22<img src="./img/favorite-red.svg" class="ml-4">17</span></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 回複 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x">
+                <p class="text-muted-l">共<span>2</span>條回複</p>
+                <ul>
+                  <li>
+                    <div class="entry">
+                      <div class="entry-thumb"><a href="#"><img src="img/female.svg" alt="male"></a></div>
+                      <div class="entry-content">
+                        <h4 class="entry-title"><a href="#">路人有一個超級長的名字</a></h4>
+                      </div>
+                      <div class="text-right text-muted-l text-xs comment-data-middle">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的註釋書</span></div>
+                      </div>
+                      <p class="comment-text">恩道出版社蒙授權推出《房角石聖經註釋叢書》中文版，力求以準確曉暢的譯文將這套高水準註釋書介紹給所有中文讀者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
+                    </div>
+                    
+                  </li>
+                  <li>
+                    <div class="entry">
+                    <div class="entry-thumb"><a href="#"><img src="img/female.svg" alt="male"></a></div>
+                    <div class="entry-content">
+                      <h4 class="entry-title"><a href="#">路人有一個超級長的名字</a></h4>
+                    </div>
+                    <div class="text-right text-muted-l text-sm comment-data-middle">2023-05-30</div>
+                    </div>
+                    <div class="comment-body">
+                      <div class="comment-header d-flex flex-wrap justify-content-between">
+                        <div class="comment-title"><span>最好用的註釋書</span></div>
+                      </div>
+                      <p class="comment-text">恩道出版社蒙授權推出《房角石聖經註釋叢書》中文版，力求以準確曉暢的譯文將這套高水準註釋書介紹給所有中文讀者。</p>
+                    </div>
+                    <div class="comment-footer mt-2">
+                      <div class="column"><span class="comment-meta"><a href="#" data-toggle="modal" data-target="#modalDelete"><img src="./img/delete.svg"></a></span></div>
+                      <div class="column"><span class="comment-meta text-muted-l"><img src="./img/favorite.svg" class="ml-4">17</span></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+            
+            <!-- 評分 -->
+            <div class="comment">
+              <div class="container padding-top-1x padding-bottom-1x" style="margin-bottom: 1200px;">
+                <div class="comment-header d-flex flex-wrap justify-content-between ml-1 mr-1">
+                  <label for="review_name">輕點星形評分:</label>
+                  <div class="mb-3"><span>⭐️⭐️</span></div>
+                </div>
+                <form class="row" method="post">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control form-control-square" id="review_name" placeholder="標題（選填）">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control form-control-square" id="review_text" rows="3" placeholder="請寫下您對本書的評論...." required></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+         
+
+
         </div> 
       </div>
     </div>
