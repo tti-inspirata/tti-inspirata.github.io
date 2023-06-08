@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>套装书 - 恩道电子书</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+    <style>
+      .istext-overflow {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+
+    </style>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title text-white">网站导航</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="index.html">首页</a></span></li>
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 手持设备菜单栏，未登录状态 -->
+    <div class="offcanvas-container" id="mobile-menu">
+      <nav class="offcanvas-menu">
+        <ul>
+          <li><a href="account-login.html"><span class="text-lg">注册&nbsp;/&nbsp;登录</span></a></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">网站导航</h6>
+        </div>
+      </a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li><span><a href="index.html"><span>首页</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">货币种类</h6>
+        </div>
+      </a>
+      <!-- 货币切换 -->
+      <div class="column text-center padding-top-1x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">$ USD</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;¥ CNY</a>
+          </div>
+        </div>
+      </div>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">界面语言</h6>
+        </div>
+      </a>
+      <!-- 语言切换 -->
+      <div class="column text-center padding-top-1x padding-bottom-10x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">简体</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;繁体</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo hidden-md-down" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+          <!-- Site Logo(mobilbe)--><a class="site-logo hidden-lg-up" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li><a href="https://ebook.endao.co/rent"><span>先租后买 </span></a><img src="img/fire.png" alt="new" style="position: absolute; top: 20px; right: 6px; width: 16px; height: auto;"></li>
+          <li>
+          <!-- 货币切换 -->
+          <!-- <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">$ HKD</a>
+            </div>
+          </div> -->
+          <!-- 货币与语言切换合并 -->
+          <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="img/flags/CN.png"></span><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <div class="currency-select">
+                <select class="form-control form-control-rounded form-control-sm">
+                  <option value="usd">¥ CNY</option>
+                  <option value="usd">$ HKD</option>
+                </select>
+              </div><a class="dropdown-item" href="#"><img src="img/flags/CN.png" alt="zh-CN">简体</a><a class="dropdown-item" href="#"><img src="img/flags/HK.png" alt="zh-HK">繁体</a>
+            </div>
+          </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
+              <!-- 修改宽度支持英文 -->
+              <ul class="toolbar-dropdown w-150">
+                <li><a href="account-register.html">Sign up</a></li>
+                <li><a href="account-login.html">Sign in</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 开始页面 -->
+    <div class="offcanvas-wrapper">
+      <section class="container">
+        <div class="owl-carousel" data-owl-carousel="{ &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;data-wrap&quot;: true, &quot;autoplayTimeout&quot;: 4000 }">
+          <figure><img src="https://ehome.endao.co/book_image/detail/1676033238080.png" alt="Image"></figure>
+        </div>
+      </section>
+
+      <!-- 书单 -->
+      <section class="container padding-top-2x padding-bottom-2x">
+        <h4 class="text-center">书单&nbsp;&bull;&nbsp;<span>读书伙伴2023年计划（8本）</span></h4>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-xl-auto col-xl-10">
+            <p class="text-overflow pt-3" style="line-height: 2;">由史蒂芬·尼科尔斯和贾斯汀·泰勒编辑的“神学家的人生智慧”丛书，以简明易懂的方式介绍了教会历史上一些最伟大的教师。该丛书探讨这些伟大教师的个人生活与著作，格外关注其中与信仰实践相关的内容，并深刻表现了他们各自的基督徒生活观。这些作品围绕各位著名神学家生平与教导的特色主题，对他们的刻画不仅仅是传记，更是来自过去的智慧，供今人撷取和应用。</p>
+          </div>
+        </div>
+        <!-- 书单列表 -->  
+        
+      </section>
+      <div class="container padding-bottom-3x mb-1">
+        <div class="row">
+          <!-- Products-->
+          <div class="col-xl-6 col-lg-6">            
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+                <!-- <div class="product-badge text-danger">6折</div> -->
+                <img src="https://d1.endao.cloud/root/tmp/book_image/detail/1603888226217.jpg" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="shop-single.html">屬靈的秘訣——戴德生信心之旅(繁)</a></h3>
+                <h4 class="product-price text-danger">
+                  <del>HK$118.00</del><span>HK$59.00</span><span>(¥53.13)</span>
+                </h4>
+                <div class="pt-1">
+                  <div class="d-inline"><a class="navi-link text-muted" href="arthor.html">戴存義夫婦 盧逸斯</a></div>
+                </div>
+                <div class="pt-1">
+                  <div class="d-inline"><a class="navi-link text-muted" href="press.html">海外基督使团</a></div>
+                </div>
+                <p class="hidden-xs-down istext-overflow text-muted pt-3">而本書作者所企盼的，就是要讓忙碌的信眾，有機會得嘗戴德生的種種經驗。他是存義摯愛的父親，他一生的為人，對神所追尋而領受到的，還有他結果纍纍的辛勞，都祝福了我倆的生命，為此，我們感激不盡。...</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <a class="btn btn-outline-primary btn-sm btn-bag" href="#"><i class="icon-bag"></i></a>
+                </div>
+              </div>            
+            </div>
+          </div>
+
+
+          <div class="col-xl-6 col-lg-6">            
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+                <!-- <div class="product-badge text-danger">6折</div> -->
+                <img src="https://d1.endao.cloud/root/tmp/book_image/detail/1603888226217.jpg" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title"><a href="shop-single.html">屬靈的秘訣——戴德生信心之旅(繁)</a></h3>
+                <h4 class="product-price text-danger">
+                  <del>HK$118.00</del><span>HK$59.00</span><span>(¥53.13)</span>
+                </h4>
+                <div class="pt-1">
+                  <div class="d-inline"><a class="navi-link text-muted" href="arthor.html">戴存義夫婦 盧逸斯</a></div>
+                </div>
+                <div class="pt-1">
+                  <div class="d-inline"><a class="navi-link text-muted" href="press.html">海外基督使团</a></div>
+                </div>
+                <p class="hidden-xs-down istext-overflow text-muted pt-3">而本書作者所企盼的，就是要讓忙碌的信眾，有機會得嘗戴德生的種種經驗。他是存義摯愛的父親，他一生的為人，對神所追尋而領受到的，還有他結果纍纍的辛勞，都祝福了我倆的生命，為此，我們感激不盡。...</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <a class="btn btn-outline-primary btn-sm btn-bag" href="#"><i class="icon-bag"></i></a>
+                </div>
+              </div>            
+            </div>
+          </div>
+
+          
+
+        </div>
+        <div class="pt-2">
+          <!-- 页码 -->
+          <nav class="pagination">
+            <div class="column">
+              <ul class="pages">
+                <!-- 增加class="active"显示所在页面 -->
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li>...</li>
+                <li><a href="#">12</a></li>
+              </ul>
+            </div>
+            <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">下一页&nbsp;<i class="icon-arrow-right"></i></a></div>
+          </nav>
+        </div>
+      </div>
+      <!-- Site Footer-->
+      <!-- <footer class="site-footer-1">
+        <div class="container">
+          <div class="row padding-bottom-3x">
+            <div class="col-lg-10 col-md-10" style="margin-left: 20px;">
+              <span class="d-inline"><a class="navi-link" href="#"> 全部书单 &nbsp; | &nbsp;</a></span>
+          </div>
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer> -->
+    </div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
