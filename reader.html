@@ -16,6 +16,34 @@
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.css">
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
+    <style>
+      /* 弹窗样式 */
+      .pop {
+          display: block; 
+          position: fixed;
+          bottom: 100px;   /* 设置弹窗距离底部的距离 */
+          right: 30px;    /* 设置弹窗距离右边的距离 */
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 1;
+          border-radius: 5px;  /* 为弹窗添加圆角 */
+      }
+      .pop-content {
+          background-color: #fff;
+          padding: 20px;
+          /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+          width: 200px;
+      }
+      .close-btn {
+          position: absolute;
+          right: 10px;
+          top: 5px;
+          background: none;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+      }
+  
+    </style>
   </head>
   <!-- Body-->
   <body>
@@ -187,14 +215,14 @@
                 <div class="mb-2 pb-1" style="color:black;">恩道电子书APP</div>
                 <div class="h2 mb-4 pb-1" style="color:black;">华人基督徒专属的电子书阅读平台</div>
                 <div class="row">
-                  <div class="col-lg-4 text-md-left text-center">
+                  <div class="col-lg-4 text-md-left">
                     <div class="from-bottom">
                       <a class="market-button android-button" href="#"><span class="mb-title">安卓下载</span><span class="mb-subtitle">支持App内购书 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span></a>
                       <a class="market-button apple-button" href="#"><span class="mb-title">iOS 下载</span><span class="mb-subtitle">非中国大陆苹果ID适用 &nbsp;&nbsp;</span></a>
                       <a class="market-button apple-button" href="#"><span class="mb-title">iOS 试用版下载</span><span class="mb-subtitle">中国大陆苹果ID适用 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
                     </div>
                   </div>
-                  <div class="col-lg-4 text-md-left text-center">
+                  <div class="col-lg-4 text-md-left">
                     <div class="from-bottom">
                       <a class="market-button windows-button" href="#"><span class="mb-title">Windows 下载</span><span class="mb-subtitle">版本 1.0.0 &nbsp;&nbsp;</span></a>
                       <a class="market-button apple-button" href="#"><span class="mb-title">Mac 下载&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mb-subtitle">版本 1.0.0 </span></a>
@@ -357,6 +385,28 @@
           <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
         </div>
       </footer>
+      <div class="pop" id="myPop">
+        <div class="pop-content">
+            <button class="close-btn" onclick="closepop()">&times;</button>
+            <img src="https://d1.endao.cloud/root/images/banners/test.png" alt="" style="width: 200px;">
+        </div>
+      </div>
+      <script>
+        // 在页面加载时检查 sessionStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('popClosed') === 'true') {
+                closepop();
+            }
+        });
+    
+        // 关闭弹窗的函数
+        function closepop() {
+            document.getElementById('myPop').style.display = 'none';
+            // 存储弹窗关闭的状态到 sessionStorage
+            sessionStorage.setItem('popClosed', 'true');
+        }
+    
+      </script>
     </div>
     <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
     <!-- Backdrop-->
