@@ -392,18 +392,42 @@
         </div>
       </div>
       <script>
-        // 在页面加载时检查 sessionStorage
+        // 设置cookie的函数
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        // 获取cookie的函数
+        function getCookie(name) {
+            const cookieString = decodeURIComponent(document.cookie);
+            const cookies = cookieString.split(';');
+            for(let i = 0; i < cookies.length; i++) {
+                let c = cookies[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name + "=") === 0) {
+                    return c.substring(name.length + 1, c.length);
+                }
+            }
+            return "";
+        }
+
+        // 在页面加载时检查 cookie
         document.addEventListener('DOMContentLoaded', function() {
-            if (sessionStorage.getItem('popClosed') === 'true') {
+            if (getCookie('popClosed') === 'true') {
                 closepop();
             }
         });
-    
+
         // 关闭弹窗的函数
         function closepop() {
             document.getElementById('myPop').style.display = 'none';
-            // 存储弹窗关闭的状态到 sessionStorage
-            sessionStorage.setItem('popClosed', 'true');
+            // 使用 cookie 存储弹窗关闭的状态，设置有效期为 2 天
+            setCookie('popClosed', 'true', 2);
         }
     
       </script>
