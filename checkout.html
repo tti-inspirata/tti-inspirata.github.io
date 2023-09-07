@@ -235,77 +235,74 @@
           <div class="column text-lg"><br /><br /></div>
         </div>
         <!-- 支付方式-->
-        <div class="col-xl-8 col-lg-8 padding-top-1x">
+        <div class="col-xl-8 col-lg-8">
           <h4>支付方式</h4>
-          <hr class="padding-bottom-1x">
+          <hr>
           <div class="accordion" role="tablist">
-            <div class="card">
-              <div class="collapse show" role="tabpanel">
-                <div class="card-body" style="padding-bottom: 0;">
-                  <!-- checked 默认勾选 -->
-                  <label class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="card_check" checked><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">使用支付宝(中国)付款: &nbsp;<img class="d-inline-block align-middle" src="img/credit-alipay.png" style="width: 75px;" alt="支付宝"></span>
-                  </label>
-                </div>
-                <div class="card-body" style="padding: 0.9rem 1.25rem;">
-                  <!-- alipayHK -->
-                  <label class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="card_check"><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">使用AlipayHK付款: &nbsp;<img class="d-inline-block align-middle" src="img/alipayHK.svg" style="width: 110px;" alt="AlipayHK"></span>
-                  </label>
-                </div>
-                <div class="card-body" style="padding: 0 1.25rem;">
-                  <label class="custom-control custom-radio">
-                    <input id="card_check" class="custom-control-input" type="radio" name="card_check"><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">使用信用卡付款: &nbsp;<img class="d-inline-block align-middle" src="img/credit-cards.png" style="width: 160px;" alt="信用卡"></span>
-                  </label><p style="font-size:14px; padding-left:1.6rem; font-family:Arial,Verdana,Sans-serif;">Visa, Master, American Express, Discovery</p>
-                  <div class="card-wrapper"></div>
-                  <fieldset class="card-info">
-                    <form class="interactive-credit-card row">
-                      <div class="form-group col-sm-12">
-                        <input class="form-control" type="text" name="number" placeholder="Card Number 信用卡号码" required>
-                      </div>
-                      <div class="form-group col-sm-8">
-                        <div class="row">
-                          <label class="col-form-label" >有效期至</label>
-                          <div class="col-sm-4">
-                            <select class="form-control input-lg" name="month" id="month" required>
-                              <option value = "1">01</option>
-                              <option value = "2">02</option>
-                              <option value = "3">03</option>
-                              <option value = "4">04</option>
-                              <option value = "5">05</option>
-                              <option value = "6">06</option>
-                              <option value = "7">07</option>
-                              <option value = "8">08</option>
-                              <option value = "9">09</option>
-                              <option value = "10">10</option>
-                              <option value = "11">11</option>
-                              <option value = "12">12</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-4">
-                            <select class="form-control input-lg" name="year" id="year" required>
-                              <option value = "18">2018</option>
-                              <option value = "19">2019</option>
-                              <option value = "20">2020</option>
-                              <option value = "21">2021</option>
-                              <option value = "22">2022</option>
-                              <option value = "23">2023</option>
-                              <option value = "24">2024</option>
-                              <option value = "25">2025</option>
-                              <option value = "26">2026</option>
-                              <option value = "27">2027</option>
-                            </select>
-                          </div>
+            <div class="collapse show mt-1 mb-1" role="tabpanel">
+              <div class="card-body" style="padding-bottom: 0;">
+                <!-- checked 默认勾选 -->
+                <label class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" name="card_check" checked><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">使用支付宝(中国)付款: &nbsp;<img class="d-inline-block align-middle" src="img/credit-alipay.png" style="width: 75px;" alt="支付宝"></span>
+                </label>
+              </div>
+              <div class="card-body" style="padding: 0.6rem 1.25rem;">
+                <!-- alipayHK -->
+                <label class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" name="card_check"><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">使用 AlipayHK 付款: &nbsp;<img class="d-inline-block align-middle" src="img/alipayHK.svg" style="width: 110px;" alt="AlipayHK"></span>
+                </label>
+              </div>
+              <div class="card-body" style="padding: 0 1.25rem 1.25rem;">
+                <label class="custom-control custom-radio">
+                  <input id="card_check" class="custom-control-input" type="radio" name="card_check"><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">使用信用卡（Visa/Master）付款: &nbsp;<img class="d-inline-block align-middle" src="img/credit-cards.png" style="width: 90px;" alt="信用卡"></span>
+                </label>
+                <fieldset class="card-info">
+                  <form class="interactive-credit-card row">
+                    <div class="form-group col-sm-12">
+                      <input class="form-control" type="text" name="number" placeholder="Card Number 信用卡号码" required>
+                    </div>
+                    <div class="form-group col-sm-8">
+                      <div class="row">
+                        <label class="col-form-label" >有效期至</label>
+                        <div class="col-sm-4">
+                          <select class="form-control input-lg" name="month" id="month" required>
+                            <option value = "1">01</option>
+                            <option value = "2">02</option>
+                            <option value = "3">03</option>
+                            <option value = "4">04</option>
+                            <option value = "5">05</option>
+                            <option value = "6">06</option>
+                            <option value = "7">07</option>
+                            <option value = "8">08</option>
+                            <option value = "9">09</option>
+                            <option value = "10">10</option>
+                            <option value = "11">11</option>
+                            <option value = "12">12</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-4">
+                          <select class="form-control input-lg" name="year" id="year" required>
+                            <option value = "18">2018</option>
+                            <option value = "19">2019</option>
+                            <option value = "20">2020</option>
+                            <option value = "21">2021</option>
+                            <option value = "22">2022</option>
+                            <option value = "23">2023</option>
+                            <option value = "24">2024</option>
+                            <option value = "25">2025</option>
+                            <option value = "26">2026</option>
+                            <option value = "27">2027</option>
+                          </select>
                         </div>
                       </div>
-                      <div class="form-group col-sm-4">
-                        <input class="form-control" type="text" name="cvc" placeholder="CVC" required>
-                      </div>
-                    </form>
-                  </fieldset>
-                </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <input class="form-control" type="text" name="cvc" placeholder="CVC" required>
+                    </div>
+                  </form>
+                </fieldset>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
         
@@ -322,10 +319,9 @@
               </div>
             </div>
             <label class="custom-control custom-checkbox d-block">
-              <input class="custom-control-input" type="checkbox" checked><span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">我已知悉上述提醒事项，并已阅读和接受恩道电子书的<a class="text-medium text-decoration-none" href="conditions.html">《使用条款》</a>与<a class="text-medium text-decoration-none" href="refund-policy.html">《退款政策》</a></span>
-              <div class="padding-top-1x">
-                <p class="text-medium text-danger">您需要接受以上条款，方能进行支付</p>
-              </div>
+              <input class="custom-control-input" type="checkbox" checked>
+              <span class="custom-control-indicator"></span><span class="custom-control-description text-color-dark">我已知悉上述提醒事项，并已阅读和接受恩道电子书的<a class="text-medium text-decoration-none" href="conditions.html">《使用条款》</a>与<a class="text-medium text-decoration-none" href="refund-policy.html">《退款政策》</a></span>
+              <p class="text-medium text-danger mt-1">您需要接受以上条款，方能进行支付</p>
             </label>
             <a class="btn btn-primary" data-toggle="modal" data-target="#modalPay">立即支付</a>
             <a class="btn btn-outline-secondary" href="account-orders.html" data-toast-position="topRight">返回</a>
