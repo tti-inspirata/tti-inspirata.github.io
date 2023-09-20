@@ -42,6 +42,24 @@
           font-size: 20px;
           cursor: pointer;
       }
+
+      .subBookItem {
+          text-align: left;
+          height: 31px;
+      }
+
+      .subBookItem a {
+          padding: 5px 36px;
+          height: 31px;
+          font-size: 14px;
+          line-height: 21px;
+          transition: color .3s;
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+      }
+
   
     </style>
   </head>
@@ -132,11 +150,9 @@
       <nav class="site-menu">
         <ul>
           <li><a href="index.html"><span>首页</span></a></li>
-          <li class="has-megamenu"><a href="#"><span>test</span></a>
-            
-          </li>
-          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
-            <!-- <ul class="sub-menu clearfix" style="width: 310px;">
+          <li>
+            <a href="/category-0-grid-0-0-0-0-0-0-0-0"><span class="allBooksPage">全部书目</span></a>
+            <ul class="sub-menu clearfix" style="width: 310px;">
               <div style="float: left;">
                 <li style="font-size: 15px;padding: 15px 36px;text-align: start;font-weight: 700;" class="bookGrouped">书籍分类</li>
                 <li class="subBookItem"><a class="subBookPage1" href="/category-9-grid-0-0-0-0-0-0-0-0">神学研究</a></li>
@@ -158,14 +174,9 @@
                 <li class="subBookItem"><a href="/category-0-grid-2-0-0-0-0-0-0-0"><span class="zhHKBooksPage">繁体书</span></a></li>
                 <li class="subBookItem"><a href="/category-0-grid-3-0-0-0-0-0-0-0"><span class="enBooksPage">英文书</span></a></li>
               </div>
-            </ul> -->
-            
-            <ul class="sub-menu">
-              <li><a href="#">读经工具</a></li>
-              <li><a href="#">圣经注释</a></li>
-              <li><a href="#">福音真理</a></li>
             </ul>
           </li>
+          
           <li><a href="#"><span>简体书</span></a></li>
           <li><a href="#"><span>繁体书</span></a></li>
           <li><a href="reader.html"><span>阅读器下载</span></a></li>
@@ -397,6 +408,7 @@
           <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
         </div>
       </footer>
+      <!-- 弹窗 -->
       <div class="pop" id="myPop">
         <div class="pop-content">
             <button class="close-btn" onclick="closepop()">&times;</button>
