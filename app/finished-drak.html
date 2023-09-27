@@ -51,6 +51,7 @@
             height: auto;
             display: block;
             margin: 5px auto;
+            width: 300px;
         }
 
         button {
@@ -89,9 +90,9 @@
 <body>
     <div id="container">
         <p id="text">全书完</p>
-        <img id="svgImage" src="finished01.svg" alt="svg image">
+        <img id="svgImage" src="finishbook-01.svg" alt="svg image">
         <div id="btn-container">
-            <button id="solid-button" class="btn-block red">标记为已读</button>
+            <button id="solid-button" onclick="#" class="btn-block red">标记为已读</button>
             <button id="border-button" class="btn-block transparent-red-border"><a href="#">评论本书</a></button>
         </div>
     </div>
@@ -100,13 +101,20 @@
             document.getElementById('solid-button').classList.add('transparent-red-border');
             document.getElementById('solid-button').classList.remove('red');
             document.getElementById('solid-button').textContent = '标记为阅读中';
-            document.getElementById('svgImage').src = 'finished02.svg'; 
+            document.getElementById('svgImage').src = 'finishbook-02.svg'; 
             document.getElementById('text').textContent = '您已读完本书！';
+            document.getElementById('solid-button').addEventListener('click', function() {
+                window.open('#');
+            }); 
         });
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
+            document.getElementById('svgImage').src = 'finishbook-dark-01.svg'; 
+            document.getElementById('solid-button').addEventListener('click', function() {
+                document.getElementById('svgImage').src = 'finishbook-dark-02.svg'; 
+            });
         }
-
+        
         toggleDarkMode();
     </script>
 </body>
