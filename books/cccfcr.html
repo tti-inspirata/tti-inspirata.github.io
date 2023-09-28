@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文化与基督-恩道出版</title>
     <style>
-        body{margin:0;margin-bottom:40%;font-family:'Arial',sans-serif}#container{width:100%;text-align:center}#logo-container,#book-container{margin:20px 0}img{max-width:100%;height:auto}#info-table{margin:auto;border-collapse:collapse;width:80%}td{border:1px solid #dddddd;text-align:center;padding:8px}a{text-decoration:none;color:black}a:hover{color:#B1221E}@media (max-width:600px){#info-table{width:90%}td{padding:12px}}
+        body{margin:0;margin-bottom:40%;font-family:'Arial',sans-serif}#container{width:100%;text-align:center}#logo-container,#book-container{margin:20px 0}img{max-width:100%;height:auto}#info-table{margin:auto;border-collapse:collapse;width:50%}td{border:1px solid #dddddd;text-align:center;padding:8px}a{text-decoration:none;color:black}a:hover{color:#B1221E}@media (max-width:600px){#info-table{width:90%}td{padding:12px}}
         .tg  {border-collapse:collapse;border-spacing:0;}
         .tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
           overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -15,13 +15,33 @@
         .tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}
         .tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
         .tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}
+        #language-switch {
+            padding: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 12px;
+            margin: 0 10px;
+            border: 0px;
+            border-radius: 2px;
+        }
+
+        .hk {
+            display: none;
+        }
 
     </style>
 </head>
 <body>
     <div id="container">
+        <div id="language-switch">
+            <button onclick="switchLanguage('cn')">简</button>
+            <button onclick="switchLanguage('tw')">繁</button>
+        </div>
         <div id="logo-container">
-            <img src="https://info.ipublishinghk.org/images/ed.png" alt="Logo" id="logo" style="width: 60px;"> <!-- 替换 logo.png 为您的 Logo 文件路径 -->
+            <img src="https://endao.co/assets/img/logo.png" alt="Logo" id="logo" style="width: 140px;">
+            <p>《文化与基督》补充图片链接</p>
         </div>
         <!-- <div id="book-container">
             <img src="#" alt="Book Cover" id="book-cover"> 
@@ -37,158 +57,173 @@
             <tbody>
               <tr>
                 <td class="tg-wa1i">第一章</td>
-                <td class="tg-cly1"><a href="#" target="_blank">夏卡尔</a></td>
+                <td class="tg-cly1"><a href="https://www.wikiart.org/en/marc-chagall/peace-and-the-further-reignof-jerusalem-in-prophecy-of-isaiah-isaiah-ii-1-5" target="_blank"><span class="cn">夏卡尔</span><span class="hk">夏卡爾</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">巴黎圣梅里教堂</a></td>
+                <td class="tg-cly1"><a href="https://commons.wikimedia.org/w/index.php?search=Saint+Merri+Church+Interior&title=Special:Search&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Saint_Merri_Church_Interior_2,_Paris,_France_-_Diliff.jpg" target="_blank"><span class="cn">巴黎圣梅里教堂</span><span class="hk">巴黎聖梅里教堂</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i">第二章</td>
-                <td class="tg-cly1"><a href="" target="_blank">上海广学会总部大楼，张安朴速写</a></td>
+                <td class="tg-cly1"><a href="https://freewechat.com/a/MzA5OTQwODMzNA==/2661561108/1" target="_blank"><span class="cn">上海广学会总部大楼，张安朴速写</span><span class="hk">上海廣學會總部大樓，張安朴速寫</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">《棚户区》，庞扎耶</a></td>
+                <td class="tg-cly1"><a href="https://www.wikiart.org/en/gregoire-boonzaier/shanty-town" target="_blank"><span class="cn">《棚户区》，庞扎耶</span><span class="hk">《棚戶區》，龐扎耶</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">《盲山》剧照</a></td>
+                <td class="tg-cly1"><a href="https://weibo.com/2110705772/GB8Rc2MbF?type=comment" target="_blank"><span class="cn">《盲山》剧照</span><span class="hk">《盲山》劇照</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i">第四章</td>
-                <td class="tg-cly1"><a href="" target="_blank">刘小枫主编的《经典与解释》丛书</a></td>
+                <td class="tg-cly1"><a href="http://culture.ifeng.com/a/20150111/42907459_0.shtml" target="_blank"><span class="cn">刘小枫主编的《经典与解释》丛书</span><span class="hk">劉小楓主編的《經典與解釋》叢書</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank"></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Longford_%28film%29" target="_blank"><span class="cn">《朗福勋爵》电影海报</span><span class="hk">《朗福勳爵》電影海報</span></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">西德于1986年发行巴特像邮票</a></td>
+                <td class="tg-cly1"><a href="https://de.wikipedia.org/wiki/Karl_Barth#/media/File:DBP_1986_1282_Karl_Barth.jpg" target="_blank"><span class="cn">西德于1986年发行巴特像邮票</span><span class="hk">西德於1986年發行巴特像郵票</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">德国波恩明斯特广场的贝多芬像</a></td>
+                <td class="tg-cly1"><a href="https://upload.wikimedia.org/wikipedia/commons/d/d7/Beethoven_monument_bonn_muensterplatz_2008.jpg" target="_blank"><span class="cn">德国波恩明斯特广场的贝多芬像</span><span class="hk">德國波恩明斯特廣場的貝多芬像</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">顾彬照片</a></td>
+                <td class="tg-cly1"><a href="https://de.wikipedia.org/wiki/Wolfgang_Kubin#/media/File:2010-01-21_Wolfgang_Kubin_IMG_4531.jpg" target="_blank"><span class="cn">顾彬照片</span><span class="hk">顧彬照片</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">1830年《庄严弥撒》在捷克范斯多夫演出的纪念匾额</a></td>
+                <td class="tg-cly1"><a href="https://upload.wikimedia.org/wikipedia/commons/9/9f/Varnsdorf-St.Peter-und_Paulchurch_8492.JPG" target="_blank"><span class="cn">1830年《庄严弥撒》在捷克范斯多夫演出的纪念匾额</span><span class="hk">1830年《莊嚴彌撒》在捷克范斯多夫演出的紀念匾額</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">《生死劫》电影 DVD封套</a></td>
+                <td class="tg-cly1"><a href="https://movie.douban.com/photos/photo/2513588834/" target="_blank"><span class="cn">《生死劫》电影 DVD封套</span><span class="hk">《生死劫》電影 DVD 封套</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">祥林嫂之问</a></td>
+                <td class="tg-cly1"><a href="https://commons.wikimedia.org/wiki/Category:Xianglin%27s_Wife_(Yue_opera)#/media/File:%E7%A5%A5%E6%9E%97%E5%AB%82.%E5%A4%A9%E9%97%AE152633.jpg" target="_blank"><span class="cn">祥林嫂之问</span><span class="hk">祥林嫂之問</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">身处儒服的利玛窦像</a></td>
+                <td class="tg-cly1"><a href="https://zh.wikipedia.org/wiki/%E5%88%A9%E7%8E%9B%E7%AA%A6#/media/File:Ricciinnanchang.jpg" target="_blank"><span class="cn">身处儒服的利玛窦像</span><span class="hk">身穿儒服的利瑪竇像</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">藏于嘉定孔庙的《农政全书》</a></td>
+                <td class="tg-cly1"><a href="https://zh.wikipedia.org/wiki/%E5%86%9C%E6%94%BF%E5%85%A8%E4%B9%A6#/media/File:Nongzhengquanshu.jpg" target="_blank"><span class="cn">藏于嘉定孔庙的《农政全书》</span><span class="hk">藏於嘉定孔廟的《農政全書》</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i">第七章</td>
-                <td class="tg-cly1"><a href="" target="_blank">宁波外滩天主堂</a></td>
+                <td class="tg-cly1"><a href="https://zh.wikipedia.org/zh-hant/File:Jiangbei_Cathedral_after_fire,_2014-08-02_01.JPG" target="_blank"><span class="cn">宁波外滩天主堂</span><span class="hk">寧波外灘天主堂</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">巴达切斯卡娅墓</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Tekla_B%C4%85darzewska-Baranowska#/media/File:TeklaBadarzewska.jpg" target="_blank"><span class="cn">巴达切斯卡娅墓</span><span class="hk">巴達切斯卡婭墓</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">《双城记》电影剧照</a></td>
+                <td class="tg-cly1"><a href="http://dirkbogarde.co.uk/wp-content/uploads/2015/03/DBOG-11-db-ATale-of-Two-Cities-1958.jpg" target="_blank"><span class="cn">《双城记》电影剧照</span><span class="hk">《雙城記》電影劇照</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">澳门大三巴天主教艺术博物馆墓室</a></td>
+                <td class="tg-cly1"><a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E4%B8%BB%E6%95%99%E8%97%9D%E8%A1%93%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%87%E5%A2%93%E5%AE%A4#/media/File:Macau_Macau_Cathedral_of_Saint_Paul_Museum_of_Sacred_Art_rock.JPG" target="_blank"><span class="cn">澳门大三巴天主教艺术博物馆墓室</span><span class="hk">澳門大三巴天主教藝術博物館與墓室</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">弗雷《安魂曲》CD封面</a></td>
+                <td class="tg-cly1"><a href="https://www.discogs.com/Faur%C3%A9-Arleen-Aug%C3%A9r-Benjamin-Luxon-Paul-Smy-Choir-Of-Kings-College-Cambridge-English-Chamber-Orches/release/2564330" target="_blank"><span class="cn">弗雷《安魂曲》CD封面</span><span class="hk">弗雷《安魂曲》CD封面</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">索尔仁尼琴</a></td>
+                <td class="tg-cly1"><a href="https://upload.wikimedia.org/wikipedia/commons/8/8d/Aleksandr_Solzhenitsyn_1974crop.jpg" target="_blank"><span class="cn">索尔仁尼琴</span><span class="hk">索爾仁尼琴</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">苏里科夫，《近卫兵临刑前的早晨》</a></td>
+                <td class="tg-cly1"><a href="https://www.msk-guide.ru/foto_145108.htm" target="_blank"><span class="cn">苏里科夫，《近卫兵临刑前的早晨》</span><span class="hk">蘇里科夫，《近衛兵臨刑前的早晨》</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">薇依墓</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/File:SimoneWeilGraveAug2012.jpg" target="_blank"><span class="cn">薇依墓</span><span class="hk">薇依墓</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">《在撒但的阳光下》电影封套</a></td>
+                <td class="tg-cly1"><a href="https://movie.douban.com/photos/photo/2042741676/" target="_blank"><span class="cn">《在撒但的阳光下》电影封套</span><span class="hk">《在撒但的陽光下》電影封套</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">萨诺盖拉</a></td>
+                <td class="tg-cly1"><a href="https://www.wikiart.org/en/sa-nogueira/f-los-ouvir-a-tua-cornetanegro-1974" target="_blank"><span class="cn">萨诺盖拉</span><span class="hk">薩諾蓋拉</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">黑泽明《白痴》剧照</a></td>
+                <td class="tg-cly1"><a href="https://img3.doubanio.com/view/photo/raw/public/p1405035992.jpg" target="_blank"><span class="cn">黑泽明《白痴》剧照</span><span class="hk">黑澤明《白痴》劇照</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">《等待戈多》演出剧照</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Waiting_for_Godot#/media/File:En_attendant_Godot,_Festival_d'Avignon,_1978_f22.jpg" target="_blank"><span class="cn">《等待戈多》演出剧照</span><span class="hk">《等待戈多》演出劇照</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">阿切比</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Chinua_Achebe#/media/File:Chinua_Achebe_-_Buffalo_25Sep2008_crop.jpg" target="_blank"><span class="cn">阿切比</span><span class="hk">阿切比</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">米勒，《萨勒姆的女巫》</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/The_Crucible#/media/File:Cruciblecover.Jpg" target="_blank"><span class="cn">米勒，《萨勒姆的女巫》</span><span class="hk">米勒，《薩勒姆的女巫》</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">海子</a></td>
+                <td class="tg-cly1"><a href="https://www.jianshu.com/p/fe687861f33f" target="_blank"><span class="cn">海子</span><span class="hk">海子</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">萨拉马戈</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Saramago#/media/File:JSJoseSaramago.jpg" target="_blank"><span class="cn">萨拉马戈</span><span class="hk">薩拉馬戈</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">加缪车祸纪念碑</a></td>
+                <td class="tg-cly1"><a href="https://commons.wikimedia.org/wiki/File:Camus_Monument_in_Villeblevin_France_17-august-2003.1.JPG" target="_blank"><span class="cn">加缪车祸纪念碑</span><span class="hk">加繆車禍紀念碑</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">圣雅各伯教堂悬挂的小偷手臂</a></td>
+                <td class="tg-cly1"><a href="https://www.atlasobscura.com/places/thief-s-arm-kostel-sv-jakuba-vetsiho" target="_blank"><span class="cn">圣雅各伯教堂悬挂的小偷手臂</span><span class="hk">聖雅各伯教堂懸掛的小偷手臂</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">常熟虞山柳如是墓</a></td>
+                <td class="tg-cly1"><a href="https://commons.wikimedia.org/wiki/File:Tomb_of_Liu_Rushi_04_2014-10.JPG" target="_blank"><span class="cn">常熟虞山柳如是墓</span><span class="hk">常熟虞山柳如是墓</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">杭州张苍水先生祠</a></td>
+                <td class="tg-cly1"><a href="https://upload.wikimedia.org/wikipedia/commons/d/df/%E5%BC%A0%E8%8B%8D%E6%B0%B4%E5%85%88%E7%94%9F%E7%A5%A0.jpg" target="_blank"><span class="cn">杭州张苍水先生祠</span><span class="hk">杭州張蒼水先生祠</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">伏尔塔瓦河</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Vltava#/media/File:Panorama-pragmetronom2.jpg" target="_blank"><span class="cn">伏尔塔瓦河</span><span class="hk">伏爾塔瓦河</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i"></td>
-                <td class="tg-cly1"><a href="" target="_blank">赫斯特《上帝之爱》</a></td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/For_the_Love_of_God#/media/File:Hirst-Love-Of-God.jpg" target="_blank"><span class="cn">赫斯特《上帝之爱》</span><span class="hk">赫斯特《上帝之愛》</span></a></td>
               </tr>
               <tr>
-                <td class="tg-wa1i">后记 &nbsp; &nbsp; &nbsp;</td>
-                <td class="tg-cly1"><a href="" target="_blank">上海市郊佘山是公教世界级朝圣地，图为山顶大教堂外观</a></td>
+                <td class="tg-wa1i">后记 &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td class="tg-cly1"><a href="https://en.wikipedia.org/wiki/Sheshan_Basilica#/media/File:%E5%A4%A9%E4%B8%BB%E6%95%99%E4%B8%8A%E6%B5%B7%E6%95%99%E5%8D%80%E4%BD%98%E5%B1%B1%E9%80%B2%E6%95%99%E4%B9%8B%E4%BD%91%E8%81%96%E6%AF%8D%E5%A4%A7%E6%AE%BF3_National_Shrine_and_Minor_Basilica_of_Our_Lady_of_Zo-S%C3%A8.jpg" target="_blank"><span class="cn">上海市郊佘山是公教世界级朝圣地，图为山顶大教堂外观</span><span class="hk">上海市郊佘山是公教世界級朝聖地，圖為山頂大教堂外觀</span></a></td>
               </tr>
             </tbody>
         </table>
     </div>
+    <script>
+        function switchLanguage(language) {
+            const cnElements = document.querySelectorAll('.cn');
+            const twElements = document.querySelectorAll('.hk');
+            
+            if (language === 'cn') {
+                cnElements.forEach(element => element.style.display = 'inline');
+                twElements.forEach(element => element.style.display = 'none');
+            } else {
+                cnElements.forEach(element => element.style.display = 'none');
+                twElements.forEach(element => element.style.display = 'inline');
+            }
+        }
+    
+    </script>
 </body>
 </html>
