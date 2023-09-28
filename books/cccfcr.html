@@ -6,6 +6,7 @@
     <title>文化与基督-恩道出版</title>
     <style>
         body{margin:0;margin-bottom:40%;font-family:'Arial',sans-serif}#container{width:100%;text-align:center}#logo-container,#book-container{margin:20px 0}img{max-width:100%;height:auto}#info-table{margin:auto;border-collapse:collapse;width:50%}td{border:1px solid #dddddd;text-align:center;padding:8px}a{text-decoration:none;color:black}a:hover{color:#B1221E}@media (max-width:600px){#info-table{width:90%}td{padding:12px}}
+        #language-switch{padding:10px}button{cursor:pointer;padding:5px 12px;margin:0 10px;border:0px;border-radius:2px}.cn{display:none}
         .tg  {border-collapse:collapse;border-spacing:0;}
         .tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
           overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -15,33 +16,17 @@
         .tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}
         .tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
         .tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}
-        #language-switch {
-            padding: 10px;
-        }
-
-        button {
-            cursor: pointer;
-            padding: 5px 12px;
-            margin: 0 10px;
-            border: 0px;
-            border-radius: 2px;
-        }
-
-        .hk {
-            display: none;
-        }
-
     </style>
 </head>
 <body>
     <div id="container">
         <div id="language-switch">
+            <button onclick="switchLanguage('hk')">繁</button>
             <button onclick="switchLanguage('cn')">简</button>
-            <button onclick="switchLanguage('tw')">繁</button>
         </div>
         <div id="logo-container">
             <img src="https://endao.co/assets/img/logo.png" alt="Logo" id="logo" style="width: 140px;">
-            <p>《文化与基督》补充图片链接</p>
+            <p><span class="hk">《文化與基督》補充圖片鏈接</span><span class="cn">《文化与基督》补充图片链接</span></p>
         </div>
         <!-- <div id="book-container">
             <img src="#" alt="Book Cover" id="book-cover"> 
@@ -114,6 +99,10 @@
               <tr>
                 <td class="tg-wa1i"></td>
                 <td class="tg-cly1"><a href="https://zh.wikipedia.org/wiki/%E5%86%9C%E6%94%BF%E5%85%A8%E4%B9%A6#/media/File:Nongzhengquanshu.jpg" target="_blank"><span class="cn">藏于嘉定孔庙的《农政全书》</span><span class="hk">藏於嘉定孔廟的《農政全書》</span></a></td>
+              </tr>
+              <tr>
+                <td class="tg-wa1i"></td>
+                <td class="tg-cly1"><a href="https://img1.qunarzz.com/travel/d9/1610/cc/bff42f39a3bf3b5.jpg_r_720x480x95_e77ff97e.jpg" target="_blank"><span class="cn">黄山鲫鱼背</span><span class="hk">黃山鯽魚背</span></a></td>
               </tr>
               <tr>
                 <td class="tg-wa1i">第七章</td>
@@ -213,14 +202,14 @@
     <script>
         function switchLanguage(language) {
             const cnElements = document.querySelectorAll('.cn');
-            const twElements = document.querySelectorAll('.hk');
+            const hkElements = document.querySelectorAll('.hk');
             
             if (language === 'cn') {
                 cnElements.forEach(element => element.style.display = 'inline');
-                twElements.forEach(element => element.style.display = 'none');
+                hkElements.forEach(element => element.style.display = 'none');
             } else {
                 cnElements.forEach(element => element.style.display = 'none');
-                twElements.forEach(element => element.style.display = 'inline');
+                hkElements.forEach(element => element.style.display = 'inline');
             }
         }
     
