@@ -43,6 +43,11 @@
           cursor: pointer;
       }
 
+      .sub-menu, .toolbar-dropdown {
+          /* width: 100%; */
+
+      }
+
       .subBookItem {
           text-align: left;
           height: 31px;
@@ -60,7 +65,11 @@
           text-decoration: none;
       }
 
-  
+      .rl-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
     </style>
 
   </head>
@@ -151,10 +160,23 @@
       <nav class="site-menu">
         <ul>
           <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="../account-orders.html"><span>Account</span></a>
+            <ul class="sub-menu">
+                <li class="A"><a href="../account-login.html">Login / Register</a></li>
+                <li class="A"><a href="../account-password-recovery.html">Password Recovery</a></li>
+                <li class="A"><a href="../account-orders.html">Orders List</a></li>
+                <li><a href="../account-wishlist.html">Wishlist</a></li>
+                <li><a href="../account-profile.html">Profile Page</a></li>
+                <li><a href="../account-address.html">Contact / Shipping Address</a></li>
+                <li><a href="../account-tickets.html">My Tickets</a></li>
+                <li><a href="../account-single-ticket.html">Single Ticket</a></li>
+            </ul>
+          </li>
           <li>
             <a href="/category-0-grid-0-0-0-0-0-0-0-0"><span class="allBooksPage">ALL</span></a>
-            <ul class="sub-menu clearfix" style="width: 480px;">
-              <div style="float: left;">
+            <ul class="sub-menu clearfix" style="width: auto;">
+              <div style="display: flex; white-space: nowrap;">
+                <div style="float: left;">
                   <li style="font-size: 15px;padding: 15px 36px;text-align: start;font-weight: 700;" class="bookGrouped">Categories</li>
                   
                       
@@ -194,6 +216,8 @@
                   <li class="subBookItem"><a href="https://ebook.endao.co/category-0-grid-2-0-0-0-0-0-0-0"><span>Traditional Chinese </span></a></li>
                   <li class="subBookItem"><a href="https://ebook.endao.co/category-0-grid-3-0-0-0-0-0-0-0"><span>English </span></a></li>
               </div>
+              </div>
+              
             </ul>
             
           </li>
@@ -476,40 +500,6 @@
         }
 
 
-
-
-        
-
-        function updateWidthBasedOnLocale() {
-            // 解析URL中的查询字符串
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-
-            // 获取"locale"参数
-            const locale = urlParams.get('locale');
-
-            // 定义不同语言对应的宽度
-            const widths = {
-                'zh_CN': '310px',  // 简体中文对应的宽度
-                'zh_HK': '310px', // 繁体中文对应的宽度
-                'en_US': '480px'  // 英文对应的宽度
-            };
-
-            // 获取需要改变宽度的元素
-            const element = document.getElementById('myElementAll'); // 将'myElement'替换为您的元素ID
-
-            // 根据"locale"参数更新元素的宽度
-            if (locale && widths[locale]) {
-                element.style.width = widths[locale];
-            } else {
-                return;
-            }
-        }
-
-        // 当页面加载完毕时执行函数
-        window.onload = updateWidthBasedOnLocale;
-
-    
       </script>
     </div>
     <!-- A link to contact -->
