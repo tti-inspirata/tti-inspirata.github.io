@@ -16,92 +16,8 @@
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
-    <style>
-      /* 弹窗样式 */
-      .pop {
-          display: block; 
-          position: fixed;
-          bottom: 120px;   /* 设置弹窗距离底部的距离 */
-          right: 30px;    /* 设置弹窗距离右边的距离 */
-          background-color: transparent;
-          z-index: 1;
-          border-radius: 5px;  /* 为弹窗添加圆角 */
-      }
-      .pop-content {
-          background-color: transparent;
-          padding: 20px;
-          /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
-          width: 160px;
-      }
-      .close-btn {
-          position: absolute;
-          right: 10px;
-          top: 5px;
-          background: none;
-          border: none;
-          font-size: 20px;
-          cursor: pointer;
-      }
-
-      .subBookItem {
-          text-align: left;
-          height: 31px;
-      }
-
-      .subBookItem a {
-          padding: 5px 36px;
-          height: 31px;
-          font-size: 14px;
-          line-height: 21px;
-          transition: color .3s;
-          color: #000;
-          font-size: 14px;
-          font-weight: 400;
-          text-decoration: none;
-      }
-
-  
-    </style>
-    <script>
-      // 设置cookie的函数
-      function setCookie(name, value, days) {
-          const date = new Date();
-          date.setTime(date.getTime() + (days*24*60*60*1000));
-          const expires = "expires=" + date.toUTCString();
-          document.cookie = name + "=" + value + ";" + expires + ";path=/";
-      }
-
-      // 获取cookie的函数
-      function getCookie(name) {
-          const cookieString = decodeURIComponent(document.cookie);
-          const cookies = cookieString.split(';');
-          for(let i = 0; i < cookies.length; i++) {
-              let c = cookies[i];
-              while (c.charAt(0) === ' ') {
-                  c = c.substring(1);
-              }
-              if (c.indexOf(name + "=") === 0) {
-                  return c.substring(name.length + 1, c.length);
-              }
-          }
-          return "";
-      }
-
-      // 在页面加载时检查 cookie
-      document.addEventListener('DOMContentLoaded', function() {
-          if (getCookie('popClosed') === 'true') {
-              closepop();
-          }
-      });
-
-      // 关闭弹窗的函数
-      function closepop() {
-          document.getElementById('myPop').style.display = 'none';
-          // 使用 cookie 存储弹窗关闭的状态，设置有效期为 1 天
-          setCookie('popClosed', 'true', 1);
-      }
-  
-    </script>
+    <script src="js/vendor.min.js"></script>
+    
   </head>
   <!-- Body-->
   <body>
@@ -468,7 +384,7 @@
     <!-- Backdrop-->
     <div class="site-backdrop"></div>
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-    <script src="js/vendor.min.js"></script>
+   
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
