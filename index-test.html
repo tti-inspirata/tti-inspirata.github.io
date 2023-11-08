@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>恩道电子书</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+    <style>
+      /* 弹窗样式 */
+      .pop {
+          display: block; 
+          position: fixed;
+          bottom: 120px;   /* 设置弹窗距离底部的距离 */
+          right: 30px;    /* 设置弹窗距离右边的距离 */
+          background-color: transparent;
+          z-index: 1;
+          border-radius: 5px;  /* 为弹窗添加圆角 */
+      }
+      .pop-content {
+          background-color: transparent;
+          padding: 20px;
+          /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+          width: 160px;
+      }
+      .close-btn {
+          position: absolute;
+          right: 10px;
+          top: 5px;
+          background: none;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+      }
+
+      .subBookItem {
+          text-align: left;
+          height: 31px;
+      }
+
+      .subBookItem a {
+          padding: 5px 36px;
+          height: 31px;
+          font-size: 14px;
+          line-height: 21px;
+          transition: color .3s;
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+      }
+
+  
+    </style>
+    <script>
+      // 设置cookie的函数
+      function setCookie(name, value, days) {
+          const date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          const expires = "expires=" + date.toUTCString();
+          document.cookie = name + "=" + value + ";" + expires + ";path=/";
+      }
+
+      // 获取cookie的函数
+      function getCookie(name) {
+          const cookieString = decodeURIComponent(document.cookie);
+          const cookies = cookieString.split(';');
+          for(let i = 0; i < cookies.length; i++) {
+              let c = cookies[i];
+              while (c.charAt(0) === ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name + "=") === 0) {
+                  return c.substring(name.length + 1, c.length);
+              }
+          }
+          return "";
+      }
+
+      // 在页面加载时检查 cookie
+      document.addEventListener('DOMContentLoaded', function() {
+          if (getCookie('popClosed') === 'true') {
+              closepop();
+          }
+      });
+
+      // 关闭弹窗的函数
+      function closepop() {
+          document.getElementById('myPop').style.display = 'none';
+          // 使用 cookie 存储弹窗关闭的状态，设置有效期为 1 天
+          setCookie('popClosed', 'true', 1);
+      }
+  
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title text-white">网站导航</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="index.html">首页</a></span></li>
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 手持设备菜单栏，未登录状态 -->
+    <div class="offcanvas-container" id="mobile-menu">
+      <nav class="offcanvas-menu">
+        <ul>
+          <li><a href="account-login.html"><span class="text-lg">注册&nbsp;/&nbsp;登录</span></a></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">网站导航</h6>
+        </div>
+      </a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li><span><a href="index.html"><span>首页</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">货币种类</h6>
+        </div>
+      </a>
+      <!-- 货币切换 -->
+      <div class="column text-center padding-top-1x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">$ USD</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;¥ CNY</a>
+          </div>
+        </div>
+      </div>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">界面语言</h6>
+        </div>
+      </a>
+      <!-- 语言切换 -->
+      <div class="column text-center padding-top-1x padding-bottom-10x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">简体</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;繁体</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo hidden-md-down" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+          <!-- Site Logo(mobilbe)--><a class="site-logo hidden-lg-up" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li>
+            <a href="/category-0-grid-0-0-0-0-0-0-0-0"><span class="allBooksPage">全部书目</span></a>
+            <ul class="sub-menu clearfix" style="width: auto;">
+              <div style="display: flex; white-space: nowrap;">
+                <div style="float: left;">
+                  <li style="font-size: 15px;padding: 15px 36px;text-align: start;font-weight: 700;" class="bookGrouped">书籍分类</li>
+                  <li class="subBookItem"><a class="subBookPage1" href="/category-9-grid-0-0-0-0-0-0-0-0">神学研究</a></li>
+                  <li class="subBookItem"><a class="subBookPage2" href="/category-14-grid-0-0-0-0-0-0-0-0">圣经研究</a></li>
+                  <li class="subBookItem"><a class="subBookPage3" href="/category-5-grid-0-0-0-0-0-0-0-0">圣经注释-旧约</a></li>
+                  <li class="subBookItem"><a class="subBookPage4" href="/category-1-grid-0-0-0-0-0-0-0-0">圣经注释-新约</a></li>
+                  <li class="subBookItem"><a class="subBookPage5" href="/category-7-grid-0-0-0-0-0-0-0-0">教会事工</a></li>
+                  <li class="subBookItem"><a class="subBookPage6" href="/category-13-grid-0-0-0-0-0-0-0-0">宣教差传</a></li>
+                  <li class="subBookItem"><a class="subBookPage7" href="/category-15-grid-0-0-0-0-0-0-0-0">灵命塑造</a></li>
+                  <li class="subBookItem"><a class="subBookPage8" href="/category-8-grid-0-0-0-0-0-0-0-0">信徒生活</a></li>
+                  <li class="subBookItem"><a class="subBookPage9" href="/category-12-grid-0-0-0-0-0-0-0-0">婚恋亲子</a></li>
+                  <li class="subBookItem"><a class="subBookPage10" href="/category-11-grid-0-0-0-0-0-0-0-0">历史/经典著作</a></li>
+                  <li class="subBookItem"><a class="subBookPage11" href="/category-10-grid-0-0-0-0-0-0-0-0">见证/传记/文艺</a></li>
+                  <li class="subBookItem"><a class="subBookPage12" href="/category-4-grid-0-0-0-0-0-0-0-0">宗教与其他学科</a></li>
+                </div>
+                <div style="float: right;">
+                  <li style="font-size: 15px;padding: 15px 36px;text-align: start;font-weight: 700;" class="bookLanguage">书籍语言</li>
+                  <li class="subBookItem"><a href="/category-0-grid-1-0-0-0-0-0-0-0"><span class="zhCNBooksPage">简体书</span></a></li>
+                  <li class="subBookItem"><a href="/category-0-grid-2-0-0-0-0-0-0-0"><span class="zhHKBooksPage">繁体书</span></a></li>
+                  <li class="subBookItem"><a href="/category-0-grid-3-0-0-0-0-0-0-0"><span class="enBooksPage">英文书</span></a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+          <!-- 货币切换 -->
+          <!-- <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">$ HKD</a>
+            </div>
+          </div> -->
+          <!-- 货币与语言切换合并 -->
+          <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="img/flags/CN.png"></span><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <div class="currency-select">
+                <select class="form-control form-control-rounded form-control-sm">
+                  <option value="usd">¥ CNY</option>
+                  <option value="usd">$ HKD</option>
+                </select>
+              </div><a class="dropdown-item" href="#"><img src="img/flags/CN.png" alt="zh-CN">简体</a><a class="dropdown-item" href="#"><img src="img/flags/HK.png" alt="zh-HK">繁体</a>
+            </div>
+          </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
+              <!-- 修改宽度支持英文 -->
+              <ul class="toolbar-dropdown w-150">
+                <li><a href="account-register.html">Sign up</a></li>
+                <li><a href="account-login.html">Sign in</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Content-->
+      <!-- Main Slider-->
+      <section class="hero-slider text-center">
+        <div class="owl-carousel dots-inside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 8000 }">
+          <a href="#"><img src="img/hero-slider/main-banner.png" alt="Image"></a>
+          <a href="#"><img src="img/hero-slider/main-banner.png" alt="Image"></a>
+          <a href="#"><img src="img/hero-slider/main-banner.png" alt="Image"></a>
+        </div>
+      </section>
+      <!-- 通知 -->
+      <div class="container padding-top-1x">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="alert alert-danger alert-dismissible fade show text-center"><span class="alert-close" data-dismiss="alert"></span><a class="navi-link" style="color: black;" href="https://ebook.endao.co/index-note"><i class="icon-bell"></i><span>&nbsp;&nbsp;恩道电子书App已从苹果应用商店的中国大陆区下架，<span style="color: #cc4646;">大陆苹果iOS用户</span>请点击了解后续更新/下载App方式 &#62;</span></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- Top Categories-->
+      <section class="container padding-top-2x">
+        <h3 class="text-center mb-30">编辑推荐</h3>
+        <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 6000, &quot;margin&quot;: 30, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;576&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3},&quot;991&quot;:{&quot;items&quot;:4},&quot;1200&quot;:{&quot;items&quot;:3}} }">
+          <div class="card mb-30"><a class="card-img-tiles" href="shop-single.html">
+              <div class="inner">
+                <div class="main-img"><div class="product-badge text-danger text-left">5折</div><img src="img/shop/categories/01.jpg" alt="Category"></div>
+              </div></a>
+            <div class="card-body text-center">
+              <h4 class="card-title"><a class="navi-link" href="shop-single.html" title="F06圣经、神学与教牧学研究手册">F06圣经、神学与教牧学研究手册</a></h4>
+              <div><a class="navi-link" href="arthor.html">小罗伯特·马尔霍兰</a></div>
+              <div class="text-muted"><a class="navi-link" href="press.html">恩道出版社</a></div>
+              <h6 class="text-muted"><del>¥65.00</del> <span class="text-danger">¥32.50</sapn></h6>
+              <div class="product-buttons">
+                <!-- 未登录状态 -->
+                <button class="btn btn-outline-secondary btn-sm btn-round" data-toggle="tooltip" title="收藏" onclick="javascript:window.location.href='http://52.230.9.236/login'"><i class="icon-heart"></i></button>
+                <button class="btn btn-outline-primary btn-sm btn-round" data-toggle="tooltip" title="加入购物车" onclick="javascript:window.location.href='http://52.230.9.236/login'"><i class="icon-bag"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-30"><a class="card-img-tiles" href="shop-single.html">
+              <div class="inner">
+                <div class="main-img"><img src="img/shop/categories/01.jpg" alt="Category"></div>
+              </div></a>
+            <div class="card-body text-center">
+              <h4 class="card-title"><a class="navi-link" href="shop-single.html" title="F06圣经、神学与教牧学研究手册">F06圣经、神学与教牧学研究手册</a></h4>
+              <div class="d-inline text-muted"><a class="navi-link" href="arthor.html">小罗伯特·马尔霍兰</a></div>
+              <div class="text-muted"><a class="navi-link" href="press.html">恩道出版社</a></div>
+              <h6 class="text-danger">¥65.00</h6>
+              <div class="product-buttons">
+                <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                <button class="btn btn-outline-primary btn-sm btn-bag" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="F06圣经、神学与教牧学研究手册" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card mb-30"><a class="card-img-tiles" href="shop-single.html">
+              <div class="inner">
+                <div class="main-img"><img src="img/shop/categories/01.jpg" alt="Category"></div>
+              </div></a>
+            <div class="card-body text-center">
+              <h4 class="card-title"><a class="navi-link" href="shop-single.html" title="F06圣经、神学与教牧学研究手册">F06圣经、神学与教牧学研究手册</a></h4>
+              <div class="d-inline text-muted"><a class="navi-link" href="arthor.html"><p class="navi-text">作者单行实现增加这个标签</p></a></div>
+              <div class="text-muted"><a class="navi-link" href="press.html">恩道出版社</a></div>
+              <h6 class="text-danger">¥65.00</h6>
+              <div class="product-buttons">
+                <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                <button class="btn btn-outline-primary btn-sm btn-bag" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="F06圣经、神学与教牧学研究手册" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top banner -->
+      <section class="container padding-top-3x">
+        <!-- Banner  -->
+        <div class="owl-carousel" data-owl-carousel="{ &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;data-wrap&quot;: true, &quot;autoplayTimeout&quot;: 4000 }">
+          <figure><img src="img/banners/home03.jpg" alt="Image">
+          </figure>
+          <figure><img src="img/banners/home03.jpg" alt="Image">
+          </figure>
+          <figure><img src="img/banners/home03.jpg" alt="Image">
+          </figure>
+        </div>
+      </section>
+
+      <!-- 圣经注释 -->
+      <section class="container padding-top-3x padding-bottom-3x">
+        <h3 class="text-center mb-30 hidden-md-down">圣经注释<span><a class="btn" href="shop-grid-ls.html">More >></a></span></h3>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-6">
+            <!-- Product ON SALE -->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+                <div class="product-badge text-danger text-left">5折</div><img src="img/shop/products/01.jpg" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title word-break"><a href="shop-single.html">以弗所书 • 歌罗西书 • 腓利门书 [房角石卷16上]</a></h3>
+                <h4 class="product-price">
+                  <del>¥50</del><span class="text-danger">¥25.00</span>
+                </h4>
+                <p>
+                  <span class="d-inline"><a class="navi-link word-break" href="arthor.html">盖瑞·史密斯</a></span>
+                  <span class="d-inline text-muted"><a class="navi-link" href="press.html">恩道出版社</a></span>
+                </p>
+                <div class="product-buttons">
+                  <!-- 收藏列表英文实现：btn-wishlist 修改为 btn-round, 使用【加入购物车方式】提示英文 -->
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="以弗所书 • 歌罗西书 • 腓利门书 [房角石卷16上]" data-toast-message="is successfully added to wishlist" data-toggle="tooltip" title="add to wishlist"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="以弗所书 • 歌罗西书 • 腓利门书 [房角石卷16上]" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-6">
+            <!-- Product ON SALE -->
+            <div class="product-card product-list"><a class="product-thumb" href="shop-single.html">
+                <div class="product-badge text-danger text-left">5折</div><img src="img/shop/products/01.jpg" alt="Product"></a>
+              <div class="product-info">
+                <h3 class="product-title word-break"><a href="shop-single.html">以弗所书 </a></h3>
+                <h4 class="product-price">
+                  <del>¥50</del><span class="text-danger">¥25.00</span>
+                </h4>
+                <p>
+                  <span class="d-inline"><a class="navi-link" href="arthor.html">盖瑞·史密斯</a></span><br />
+                  <span class="d-inline text-muted"><a class="navi-link" href="press.html">恩道出版社</a></span>
+                </p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-bag" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="以弗所书 • 歌罗西书 • 腓利门书 [房角石卷16上]" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 合作伙伴 -->
+      <!-- <section class="bg-faded padding-top-3x padding-bottom-3x">
+        <div class="container">
+          <h3 class="text-center mb-30 pb-2">合作伙伴</h3>
+        </div>
+      </section> -->
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+              <!-- 客户服务 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">客户服务</h3>
+                <ul>
+                  <li><a href="faq.html">常见问题</a></li>
+                  <li><a href="refund-policy.html">退款政策</a></li>
+                  <li><a href="publisher.html">出版合作</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <!-- 相关信息 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">相关信息</h3>
+                <ul>
+                  <li><a href="conditions.html">使用条款</a></li>
+                  <li><a href="privacy-policy.html">隐私策略</a></li>
+                  <li><a href="copyright.html">版权申明</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <!-- 友情连接 -->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">友情链接</h3>
+                <ul>
+                  <li><a href="http://book.endao.co/">恩道书房</a></li>
+                  <li><a href="#">恩道读书</a></li>
+                  <li><a href="http://ebook.endao.co/">恩道电子书</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- 关于我们-->
+              <section class="widget widget-light-skin">
+                <h3 class="widget-title">关于我们</h3>
+                <p class="text-white">恩道电子书是恩道出版（香港）有限公司旗下的基督教电子书阅读平台，旨在通过与主内的出版机构合作，协力促进华文基督教资源电子化，帮助中国乃至全球华人基督徒，更加便捷地获取并阅读基督教图书。</p>
+              </section>
+            </div>
+          </div>
+          <!-- Copyright-->
+          <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p>
+        </div>
+      </footer>
+      <!-- 弹窗 -->
+      <div class="pop hidden-sm-down" id="myPop">
+        <div class="pop-content">
+            <button class="close-btn" onclick="closepop()">&times;</button>
+            <img src="https://d1.endao.cloud/root/images/banners/test.png" alt="" style="width: 200px;">
+        </div>
+      </div>
+      
+    </div>
+    <!-- A link to contact -->
+    <!-- 联系客服-中文 -->
+    <!-- <a onclick=javascript:window.location.href='./contact.html' class="scroll-to-top-btn scroll-cst"><p class="scroll-to-p text-white">联系<br />客服</p></a> -->
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- 联系客服-英文 -->
+    <a onclick=javascript:window.location.href='./contact.html' class="scroll-to-top-btn scroll-cst"><img src="data:image/png;base64,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" /></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
