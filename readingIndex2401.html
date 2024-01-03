@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>读书伙伴 - 恩道电子书</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="恩道电子书">
+    <meta name="keywords" content="恩道电子书">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Template Styles-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+    <style>
+      @media (min-width: 576px){
+        .card-deck .card {
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+      } 
+      @media (max-width: 768px){
+        .product-card.product-list .product-thumb {
+          width:120px;
+          padding:0px 0px;
+        }
+      }
+      @media (max-width: 576px){
+        .product-card.product-list .product-thumb {
+          width:100%;
+        }
+      } 
+      .owl-carousel .owl-dots {
+        margin-top: -50px;
+      }
+      .txt-1 {
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .txt-2 {
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .txt-3 {
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      .txt-4 {
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+
+    </style>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title text-white">网站导航</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="index.html">首页</a></span></li>
+          <li class="has-children"><span><a href="shop-grid-ls.html">全部书目</a></span></li>
+          <li class="has-children"><span><a href="#">简体书</a></span></li>
+          <li class="has-children"><span><a href="#">繁体书</a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 手持设备菜单栏，未登录状态 -->
+    <div class="offcanvas-container" id="mobile-menu">
+      <nav class="offcanvas-menu">
+        <ul>
+          <li><a href="account-login.html"><span class="text-lg">注册&nbsp;/&nbsp;登录</span></a></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">网站导航</h6>
+        </div>
+      </a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li><span><a href="index.html"><span>首页</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>全部书目</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>简体书</span></a></span></li>
+          <li class="has-children"><span><a href="#"><span>繁体书</span></a></span></li>
+          <li class="has-children"><span><a href="reader.html">阅读器下载</a></span></li>
+        </ul>
+      </nav>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">货币种类</h6>
+        </div>
+      </a>
+      <!-- 货币切换 -->
+      <div class="column text-center padding-top-1x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">$ USD</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;¥ CNY</a>
+          </div>
+        </div>
+      </div>
+      <a class="account-link" href="index.html">
+        <div class="user-info">
+          <h6 class="user-name">界面语言</h6>
+        </div>
+      </a>
+      <!-- 语言切换 -->
+      <div class="column text-center padding-top-1x padding-bottom-10x">
+        <div class="switcher-wrap">
+          <div class="switcher">
+            <a class="text-lg" href="#">简体</a> &nbsp;&#124;&nbsp;<a class="text-lg" href="#">&nbsp;繁体</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar"></div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" 导航栏与页面一起滚动-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="书名／作者">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo hidden-md-down" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+          <!-- Site Logo(mobilbe)--><a class="site-logo hidden-lg-up" href="index.html"><img src="img/logo/logo.png" alt="log"></a>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="index.html"><span>首页</span></a></li>
+          <li><a href="shop-grid-ls.html"><span>全部书目</span></a>
+            <ul class="sub-menu">
+              <li><a href="#">读经工具</a></li>
+              <li><a href="#">圣经注释</a></li>
+              <li><a href="#">福音真理</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>简体书</span></a></li>
+          <li><a href="#"><span>繁体书</span></a></li>
+          <li><a href="reader.html"><span>阅读器下载</span></a></li>
+          <li>
+          <!-- 货币切换 -->
+          <!-- <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">$ HKD</a>
+            </div>
+          </div> -->
+          <!-- 货币与语言切换合并 -->
+          <div class="lang-currency-switcher-wrap">
+            <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="img/flags/CN.png"></span><span class="currency">¥ CNY</span></div>
+            <div class="dropdown-menu">
+              <div class="currency-select">
+                <select class="form-control form-control-rounded form-control-sm">
+                  <option value="usd">¥ CNY</option>
+                  <option value="usd">$ HKD</option>
+                </select>
+              </div><a class="dropdown-item" href="#"><img src="img/flags/CN.png" alt="zh-CN">简体</a><a class="dropdown-item" href="#"><img src="img/flags/HK.png" alt="zh-HK">繁体</a>
+            </div>
+          </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-login.html"></a><i class="icon-head"></i>
+              <!-- 修改宽度支持英文 -->
+              <ul class="toolbar-dropdown w-150">
+                <li><a href="account-register.html">Sign up</a></li>
+                <li><a href="account-login.html">Sign in</a></li>
+              </ul>
+            </div>
+            <div class="cart"><a href="account-cart.html"></a><i class="icon-bag"></i><span class="count">2</span><span class="subtotal">¥100.00</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 开始页面 -->
+    <div class="offcanvas-wrapper">
+      <section class="container">
+        <div class="owl-carousel" data-owl-carousel="{ &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;data-wrap&quot;: true, &quot;autoplayTimeout&quot;: 4000 }">
+          <figure><img src="https://ehome.endao.co/book_image/detail/1656662355084.png" alt="Image"></figure>
+          <figure><img src="https://ehome.endao.co/book_image/detail/1656662588466.png" alt="Image"></figure>
+        </div>
+      </section>
+
+      <!-- 奔走灵程 -->
+      <section class="container padding-top-2x padding-bottom-3x">
+        <h3 class="text-center">奔走灵程<br></h3>
+        <p class="text-center text-sm padding-bottom-1x">2024年读书会书目</p>
+        <div class="row card-deck">
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-118#">
+              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1671764119818.png" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-118#">亲爱的，别把上帝缩小了(简) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></h3><br>
+                <p>
+                  <span class="txt-1"> 爱德华·韦尔契（Edward T. Welch）</span>
+                  <span class="d-inline">真生命辅导传道会</span>
+                </p>
+                <p class="txt-4">「任何心理辅导理论，都有其人性观，本书是基督徒辅导员或基督徒心理学家在其专业上所必读的书。教会牧师或服事同工们需要对圣经人格论有深入认识，以利服事的果效﹕荣神益人。所有基督徒都该对自己有正确的自我形像，不可不读本书。凡想要改变自己或帮助别人改变生命改变心者，更须读本书。」──真生命辅导传道会会长／李台莺</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="亲爱的，别把上帝缩小了" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="亲爱的，别把上帝缩小了" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-119#">
+              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1648540560964.jpg" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-119#"> 工作魅力：連結你的工作與上帝的工作(繁)</a></h3><br>
+                <p>
+                  <span class="txt-1">提摩太·凱勒（Timothy Keller） 凱薩琳‧李芮‧阿斯多夫（Katherine Leary Alsdorf）</span>
+                  <span class="d-inline">希望之声</span>
+                </p>
+                <p class="txt-4">本書總結了一些基本的思考方式，用來説明我們如何認識上帝、耶穌和聖靈，並按照我們和那三一神的關係來認識自己是誰，以及這一切將如何影響我們被造來要從事的工作。我們都身在歷史、生涯和社會中的特定文化和時代處境，而如何在這種處境中工作，則是每個人都要在自己社群中思考清楚的問題。然而，所有答案的關鍵都在於以下的神學核心：認識上帝是誰、祂和人的關係、祂對世界的計畫，以及基督的好消息或福音如何顛覆了我們的生活和工作方式。</p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="工作魅力：連結你的工作與上帝的工作(繁)" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="工作魅力：連結你的工作與上帝的工作(繁)" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row card-deck">
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-120#">
+              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/images/book_img/2309/IP128_web.jpg" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-120#">沧州好医生——潘尔德书信集(简) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></h3><br>
+                <p>
+                  <span class="txt-1">潘尔德 （Arthur Davies Peill）</span>
+                  <span class="d-inline">恩道出版社</span>
+                </p>
+                <p class="txt-4">1896－1906年，潘尔德医生回应大使命的呼召，在晚清时期动荡不安的中国行医布道。他创建了博施纪念医院（今沧州市中心医院），是沧州福音的拓荒者。本书英文原著出版于1908年，是潘医生去世后，其父耶利米·皮尔整理他的日记、家信和工作报告后出版的。本书勾勒出一位忠心圣仆短暂而全然奉献的一生，以及福音在沧州的传播过程，书中还附有几十张照片，留存和展现了医疗宣教士生活和侍奉的情景，是一部珍贵的入华宣教史资料。 </p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="沧州好医生——潘尔德书信集(简)" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="沧州好医生——潘尔德书信集(简)" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+            <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-121#">
+              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/images/book_img/2305/RIE509_web.jpg" alt="Product"></a>
+              <div class="product-info" style="vertical-align:top;">
+                <h3 class="product-title"><a href="https://ebook.endao.co/blog-121#">父母之道：14个彻底改变家庭的真理原则(简)</a></h3><br>
+                <p>
+                  <span class="txt-1">保罗·区普（Paul David Tripp）</span>
+                  <span class="d-inline">根基国际教育</span>
+                </p>
+                <p class="txt-4">作为父母，你的使命是什么？ 在叠衣服、协调拼车时间表和制止争吵的过程中，许多父母会迷失方向。由于感受到要做 "正确 "的事和培养 "好 "孩子的压力，我们很容易在寻求实用技巧和保证公式的过程中忽略了我们作为父母的最终目的。 在这本赐予生命的书中，保罗·区普为父母提供的远不止是一份待办事项清单。相反，他向我们展示了神对我们做父母的计划的大视野。他概述了以福音为中心的十四项基本原则，表明我们需要的不仅仅是最新的育儿策略或技巧清单。相反，我们需要上帝的拯救之恩--这种恩典有能力塑造我们对作为父母的一切的看法。  </p>
+                <div class="product-buttons">
+                  <button class="btn btn-outline-secondary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="父母之道：14个彻底改变家庭的真理原则(简)" data-toast-message="已成功加入收藏" data-toggle="tooltip" title="收藏"><i class="icon-heart"></i></button>
+                  <button class="btn btn-outline-primary btn-sm btn-round" data-toast data-toast-type="danger" data-toast-position="topRight" data-toast-title="父母之道：14个彻底改变家庭的真理原则(简)" data-toast-message="成功添加到购物车" data-toggle="tooltip" title="加入购物车"><i class="icon-bag"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- Site Footer-->
+      <footer class="site-footer-1">
+        <div class="container">
+          <div class="row padding-bottom-3x">
+            <div class="col-lg-10 col-md-10" style="margin-left: 20px;">
+              <span class="d-inline"><a class="navi-link" href="https://ebook.endao.co/blog-122#"> 往期读书会 &nbsp; | &nbsp;</a></span>
+              <!-- <span class="d-inline"><a class="navi-link" href="#"> 读书点滴  &nbsp; | &nbsp;</a></span> -->
+              <span class="d-inline"><a class="navi-link" href="https://ebook.endao.co/blog-103#"> 关于“读书伙伴”  &nbsp; | &nbsp;</a></span>
+              <span class="d-inline"><a class="navi-link" href="https://ebook.endao.co/index-Reader"> 电子书App </a></span>
+            </div>
+          </div>
+          <!-- Copyright-->
+          <!-- <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p> -->
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
