@@ -218,13 +218,15 @@
         </div>
       </section>
 
-      <!-- 奔走灵程 -->
+
+      
+      <!-- 2024上半年读书会书目 开始 -->
       <section class="container padding-top-2x padding-bottom-3x">
         <h3 class="text-center padding-top-1x padding-bottom-1x">2024上半年读书会书目<br></h3>
-        <div class="row card-deck">
-          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+        <div class="row" id="contentContainer">
+          <div class="col-md-12 col-lg-6" style="border: 0;" id="schedule1">
             <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-118#">
-              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1671764119818.png" alt="Product"></a>
+              <div class="product-badge text-danger text-left"></div><div class="product-badge text-danger text-left" id="content1" style="display: none;"><img src="https://dl.endao.co/fire.png" alt="new" style="width: 24px; height: auto; margin-bottom: 6px;;"><span style="letter-spacing: 0px;">全球共读报名中</span></div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1671764119818.png" alt="Product"></a>
               <div class="product-info" style="vertical-align:top;">
                 <h3 class="product-title"><a href="https://ebook.endao.co/blog-118#">亲爱的，别把上帝缩小了(简) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></h3><br>
                 <p>
@@ -239,9 +241,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+          <div class="col-md-12 col-lg-6" style="border: 0;" id="schedule2">
             <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-119#">
-              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1648540560964.jpg" alt="Product"></a>
+              <div class="product-badge text-danger text-left"></div><div class="product-badge text-danger text-left" id="content2" style="display: none;"><img src="https://dl.endao.co/fire.png" alt="new" style="width: 24px; height: auto; margin-bottom: 6px;;"><span style="letter-spacing: 0px;">全球共读报名中</span></div><img src="https://d1.endao.cloud/root/tmp/book_image/detail/1648540560964.jpg" alt="Product"></a>
               <div class="product-info" style="vertical-align:top;">
                 <h3 class="product-title"><a href="https://ebook.endao.co/blog-119#"> 工作魅力：連結你的工作與上帝的工作(繁)</a></h3><br>
                 <p>
@@ -256,11 +258,9 @@
               </div>
             </div>
           </div> 
-        </div>
-        <div class="row card-deck">
-          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+          <div class="col-md-12 col-lg-6" style="border: 0;" id="schedule3">
             <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-120#">
-              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/images/book_img/2309/IP128_web.jpg" alt="Product"></a>
+              <div class="product-badge text-danger text-left"></div><div class="product-badge text-danger text-left" id="content3" style="display: none;"><img src="https://dl.endao.co/fire.png" alt="new" style="width: 24px; height: auto; margin-bottom: 6px;;"><span style="letter-spacing: 0px;">全球共读报名中</span></div><img src="https://d1.endao.cloud/root/images/book_img/2309/IP128_web.jpg" alt="Product"></a>
               <div class="product-info" style="vertical-align:top;">
                 <h3 class="product-title"><a href="https://ebook.endao.co/blog-120#">沧州好医生——潘尔德书信集(简) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></h3><br>
                 <p>
@@ -275,9 +275,9 @@
               </div>
             </div>
           </div> 
-          <div class="col-md-12 col-sm-6 card" style="border: 0;">
+          <div class="col-md-12 col-lg-6" style="border: 0;" id="schedule4">
             <div class="product-card product-list card"><a class="product-thumb" href="https://ebook.endao.co/blog-121#">
-              <div class="product-badge text-danger text-left"></div><img src="https://d1.endao.cloud/root/images/book_img/2305/RIE509_web.jpg" alt="Product"></a>
+              <div class="product-badge text-danger text-left"></div><div class="product-badge text-danger text-left" id="content4" style="display: none;"><img src="https://dl.endao.co/fire.png" alt="new" style="width: 24px; height: auto; margin-bottom: 6px;;"><span style="letter-spacing: 0px;">全球共读报名中</span></div><img src="https://d1.endao.cloud/root/images/book_img/2305/RIE509_web.jpg" alt="Product"></a>
               <div class="product-info" style="vertical-align:top;">
                 <h3 class="product-title"><a href="https://ebook.endao.co/blog-121#">父母之道：14个彻底改变家庭的真理原则(简)</a></h3><br>
                 <p>
@@ -293,7 +293,50 @@
             </div>
           </div>
         </div>
-        
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const currentDate = new Date();
+            const contentContainer = document.getElementById('contentContainer');
+
+            // 定义多个日期范围和对应的内容
+            const dateRanges = [
+              {
+                startDate: new Date('2023-12-29'),
+                endDate: new Date('2024-01-07'),
+                contentId: 'content1',
+                scheduleId: 'schedule1'
+              },
+              {
+                startDate: new Date('2024-02-17'),
+                endDate: new Date('2024-03-03'),
+                contentId: 'content2',
+                scheduleId: 'schedule2'
+              },
+              {
+                startDate: new Date('2024-03-25'),
+                endDate: new Date('2024-04-14'),
+                contentId: 'content3',
+                scheduleId: 'schedule3'
+              },
+              {
+                startDate: new Date('2024-05-06'),
+                endDate: new Date('2024-05-26'),
+                contentId: 'content4',
+                scheduleId: 'schedule4'
+              }
+            ];
+            dateRanges.forEach(function(range) {
+                const contentDiv = document.getElementById(range.contentId);
+                const colDiv = document.getElementById(range.scheduleId); 
+                if (currentDate >= range.startDate && currentDate <= range.endDate) {
+                    contentDiv.style.display = 'block';
+                    // 将显示的 div 移动到容器的开始位置
+                    contentContainer.prepend(colDiv);
+                }
+            });
+          });
+  
+        </script>
       </section>
       <!-- Site Footer-->
       <footer class="site-footer-1">
@@ -310,6 +353,11 @@
           <!-- <p class="footer-copyright">Copyright ©恩道电子书 All Rights Reserved</p> -->
         </div>
       </footer>
+
+      <!-- 2024上半年读书会书目 结束 -->
+
+
+
     </div>
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
     <script src="js/vendor.min.js"></script>
