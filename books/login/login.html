@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>账号登录丨恩道电子书</title>
+		<!-- SEO Meta Tags-->
+		<meta name="description" content="恩道电子书">
+		<meta name="keywords" content="恩道电子书">
+		<!-- Mobile Specific Meta Tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Favicon Icons-->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="favicon.png">
+
+		<link rel="stylesheet" href="./css/style.css" th:href="@{/css/style.css}">
+	</head>
+	<body>
+		<div class="login-page">
+			<div class="form" id="login-form">
+				<h1 id="login-title">Please Log In</h1>
+				<div class="error" id="invalid-account" th:if="${param.error}">
+					Invalid username and password.</div>
+				<div class="error" id="log-out" th:if="${param.logout}">
+					You have been logged out.</div>
+				<form class="login-form" th:action="@{/login}" method="post">
+					<div>
+						<input type="text" name="username" id="username" placeholder="Username"/>
+					</div>
+					<div>
+						<input type="password" name="password" id="password" placeholder="Password"/>
+					</div><br>
+					<input class="button" type="submit" value="Login">
+				</form>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<footer class="site-footer">
+			<p class="footer-copyright">Copyright © 2024 Inspirata Publishing (Hong Kong) Limited</p>
+		</footer>
+	</body>
+</html>
