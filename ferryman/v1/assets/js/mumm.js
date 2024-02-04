@@ -99,13 +99,13 @@
 
 $(document).ready(function() {
 	"use strict";
-            $('#myContainer').multiscroll({
-            	sectionsColor: ['#2B2D35', '#F1E7C0', '#7BAABE'],
-            	anchors: ['1', '2', '3', '4', '5', '6', '7'],
-            	menu: '#menu',
-            	navigation: true,
-            	navigationTooltips: ['01', '02', '03', '04', '05', '06', '07'],
-            	loopBottom: true,
-            	loopTop: true
-            });
-        });
+		$('#myContainer').multiscroll({
+			sectionsColor: ['#2B2D35', '#F1E7C0', '#7BAABE'],
+			anchors: ['1-1', '1-2', '1-3', '1-4', '1-5', '1-6', '1-7'],
+			menu: '#menu',
+			navigation: true,
+			navigationTooltips: ['01', '02', '03', '04', '05', '06', '07'],
+			loopBottom: true,
+			loopTop: true
+		});
+});
