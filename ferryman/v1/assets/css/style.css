@@ -1050,6 +1050,10 @@ bouncedelay {
 		}
 
 
+		#multiscroll-nav li .active span {
+			background-color: rgba(255, 255, 255, 0.5) !important;
+		}
+
 }
 
 @media only screen and (max-width: 568px) {
@@ -1491,7 +1495,7 @@ bouncedelay {
 		#informations-contact h2 {
 			font-size: 22px;
 			font-weight: 300;
-			color: #F8F8F8;
+			color: #000000;
 			padding-top: 60px;
 		}
 
@@ -1500,6 +1504,8 @@ bouncedelay {
 			margin: 5px 0 0;
 			color: #F8F8F8;
 			font-weight: 300;
+			padding: 6px;
+			margin-top: 10px;
 		}
 
 		#formcontactus {
