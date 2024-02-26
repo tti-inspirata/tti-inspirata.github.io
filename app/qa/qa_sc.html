@@ -1,83 +1,334 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <title>常见问题</title>
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="恩道电子书">
-    <meta name="keywords" content="恩道电子书">
-    <!-- Mobile Specific Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <style data-inline style-ignore="true">
-      html *{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;text-align:justify;text-justify:inter-ideograph;}body{background-position:center;background-color:#ffffff;background-repeat:no-repeat;background-size:cover;color:#262626;font-family:"PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;font-size:13px;font-weight:normal;text-transform:none;line-height:1.5;display:block}a{color:#cc4646}a:hover{color:#cc4646;text-decoration:none}a:focus{outline:none}.text-decoration-none{text-decoration:none !important}*{box-sizing:border-box}*::before,*::after{box-sizing:border-box}::selection{background:#374250;color:#ffffff}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:0;color:#262626;font-family:inherit;font-style:normal;font-weight:500;text-transform:none}h2{display:block;margin-block-start:0.83em;margin-block-end:0.83em;margin-inline-start:0px;margin-inline-end:0px;font-weight:bold}h2,.h2{font-size:18px;margin-bottom:16px;line-height:1.2}.col-md-10,.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.padding-bottom-3x{padding-bottom:72px !important}.mb-2,.my-2{margin-bottom:.5rem !important}.justify-content-center{justify-content:center !important}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-10px;margin-left:-10px}.list-unstyled{padding-left:0;list-style:none}ul,ol{margin-top:0;margin-bottom:16px;padding-left:18px;line-height:1.8}ol{display:block;list-style-type:decimal;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin-inline-end:0px;padding-inline-start:40px}li{display:list-item;text-align:-webkit-match-parent}p{margin:0 0 16px;color:#262626}.text-medium{font-weight:bold !important}.text-center{text-align:center !important}.text-color{color:#262626}.text-primary{}
-    </style>
-  </head>
-  <!-- Body-->
-  <body>
-    <!-- Page Content-->
+<html lang="zh_CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>常见问题</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    body {
+    font-family: "PingFang SC","Noto Sans CJK","Source Han Sans","Microsoft Yahei",source-han-sans-simplified-c,sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    a {
+    color: #cc4646;
+    }
+    .text-medium {
+    font-weight: 500 !important;
+    }
+    .text-decoration-none {
+    text-decoration: none !important;
+    }
+    .text-center {
+    text-align: center !important;
+    }
+    .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    }
+    .accordion {
+    margin-top: 1.875rem;
+    }
+    .accordion-title {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    line-height: 1.2;
+    }
+    .accordion .accordion-item {
+    background-color: white;
+    color: #000000;
+    border-radius: 0.5rem;
+    }
+    .accordion .accordion-item.active .accordion-body {
+    max-height: max-content;
+    }
+    .accordion .accordion-item.active .accordion-header::after {
+    transform: rotate(0deg);
+    }
+    .accordion .accordion-item:last-child {
+    margin-bottom: 0;
+    }
+    .accordion .accordion-item .accordion-header {
+    padding: 0.68rem 20px;
+    font-size: 15px;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+	text-align:justify
+    }
+    .accordion .accordion-item .accordion-header::after {
+    content: "";
+    flex-shrink: 0;
+    width: 1.0rem;
+    aspect-ratio: 1;
+    margin-left: auto;
+    background: url(./iconDown.svg) no-repeat;
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(-90deg);
+    }
+	.accordion .accordion-item .accordion-header span{padding-right:12px}
+    .accordion .accordion-item .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    }
+    .accordion .accordion-item .accordion-body .accordion-body-content {
+    margin: 0 0.5rem;
+    font-size: 15px;
+    line-height: 1.6rem;
+	text-align:justify
+    }
+    .accordion .accordion-item.active .accordion-body .accordion-body-content {
+    background-color: rgba(96,105,117,0.05);
+    padding: 1.4rem 1.2rem;
+    }
+    .accordion .accordion-item p {
+    margin: 1.0rem 1.4rem;
+    font-size: 15px;
+    line-height: 1.6rem;
+    }
+    .accordion .accordion-item .accordion-header:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    }
+    * {
+        -webkit-touch-callout:none;
+        -webkit-text-size-adjust:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -webkit-user-select:none;
+    }
+  </style>
+</head>
+<body>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-10">
-          <h2 class="text-center">图书购买相关</h2>
-          <!-- 图书购买相关 -->
-          <ol class="list-unstyled">
-            <li class="text-medium"><span class="text-primary">1. </span>如何购买电子书？</li>
-            <p>（1）网页端购书网址：<a class="text-decoration-none" href="https://ebook.endao.co/">ebook.endao.co</a>； </p>
-            <p>（2）安卓端App支持应用内购书，<a class="text-decoration-none" href="https://ebook.endao.co/index-Reader">点击这里</a>下载安装。</p>
-            <p>注意：通过App Store（苹果应用商店）下载安装的恩道电子书App仅可浏览书籍信息，暂不支持购书。</p>
-            <li class="text-medium"><span class="text-primary">2. </span>购书时我可以选择哪些支付方式？ </li>
-            <p>恩道电子书支持支付宝及信用卡付款，支付宝付款目前仅面向中国大陆用户。</p>
-            <li class="text-medium"><span class="text-primary">3. </span>已购买的电子书是否可以申请退换/退款？</li>
-            <p>非常抱歉，电子书是数字阅读产品，购买成功后不可申请退换或退款。</p>
-            <li class="text-medium"><span class="text-primary">4. </span>如何阅读已经购买的电子书？可以使用Kindle阅读吗？</li>
-            <p>（1）您可以在iOS/安卓移动端、PC/Mac电脑端下载安装恩道电子书App阅读已购图书，<a class="text-decoration-none" href="https://ebook.endao.co/shop/index-Reader">点击这里</a>了解详情。 </p>
-            <p>*电脑端阅读器目前仅支持基础阅读和听书，后续将逐步新增其他功能，敬请期待。</p>
-            <p>（2）您无法通过kindle阅读在恩道购买的电子书（Kindle用户只能阅读在亚马逊平台上购买的电子书或不受DRM版权保护的电子书）。</p>
-            <li class="text-medium"><span class="text-primary">5. </span>我购买的是什么类型的电子书？ </li>
-            <p>您购买的是恩道提供的EPUB格式、受DRM版权保护的电子书。</p>
-            <li class="text-medium"><span class="text-primary">6. </span>我可以购买电子书送给朋友吗？</li>
-            <p>在书籍详情页点击“赠送”按钮，即可购书赠友；付款成功后，您可以在“我的>赠书管理”中填写受赠对象的邮箱，对方收到赠书兑换码后可在其“我的>使用兑换码”中兑换赠书。</p>
-          </ol><br />
-          <h2 class="text-center">图书管理相关</h2>
-          <!-- 图书管理相关 -->
-          <ol class="list-unstyled">
-            <li class="text-medium"><span class="text-primary">1. </span>App书架上为何看不到我购买的电子书？</li>
-            <p>App书架仅展示您已经下载的书籍。您可以在App“我的>图书”中找到已购买的电子书，点击“加入书架”即可下载。</p>
-            <li class="text-medium"><span class="text-primary">2. </span>如何管理书架中的电子书？</li>
-            <p>长按电子书封面或点击书架右上角“编辑”图标，即可进入书架管理模式，您可以对图书进行批量移出或分组操作。“移出图书”将删除相应电子书的本地文件，但不会删除您所做的笔记/划线。</p>
-            <li class="text-medium"><span class="text-primary">3. </span>我将已经购买的电子书从书架移出后，如何继续阅读这本书？</li>
-            <p>从书架移出的电子书仍然会显示在“我的>图书”当中，您只需前往该页面，重新将此书添加至书架即可。</p>
-            <li class="text-medium"><span class="text-primary">4. </span>在App中更新电子书时，为什么会提示“更新失败”？</li>
-            <p>一般情况下，“更新失败”均是网络原因导致的，请检查您的网络连接或稍后重试。</p>
-            <li class="text-medium"><span class="text-primary">5. </span>我可以在多台设备上用同一恩道账号登录App并阅读已经购买的电子书吗？</li>
-            <p>同一恩道账号最多可同时在5台设备中登录，超过5台设备将无法成功登录；也就是说，您最多可以在5台设备中阅读已经购买的电子书；您可通过网页端“我的>我的设备”来管理您绑定的设备。</p>
-            <li class="text-medium"><span class="text-primary">6. </span>在一台设备中阅读电子书时，我的阅读/灵修进度、书架分组以及所做的笔记、划线、书签，是否可以同步到其他设备当中？</li>
-            <p>可以的。您只需使用同一恩道账号登录App，在网络连接正常的情况下，以上数据即可自动同步更新；但在新的设备中，您仍需手动将这些电子书添加至书架。</p>
-          </ol><br />
-          <h2 class="text-center">图书阅读相关 </h2>
-          <!-- 图书阅读相关  -->
-          <ol class="list-unstyled">
-            <li class="text-medium"><span class="text-primary">1. </span>已经购买的电子书，可以离线阅读吗？</li>
-            <p>可以的，您只需将其添加至书架，电子书数据便已保存至本地；但离线阅读时，若电子书有更新，则无法下载更新。</p>
-            <li class="text-medium"><span class="text-primary">2. </span>如何在电子书中查看相应纸书页码？</li>
-            <p>点击阅读界面右上角的AA图标，在弹出的菜单栏最下方，开启“显示纸书页码”，阅读界面中出现的橙色标签即为纸书页码（例如，标签7至8之间的内容归属于纸书第7页）。</p>
-            <li class="text-medium"><span class="text-primary">3. </span>若遇到其他问题，该如何获得帮助？</li>
-            <p>恩道电子书客服邮箱：<a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=feedback">ebookservice@endao.co </a></p>
-            <p>恩道小管家微信号：Endao_books_ipcs</p>
-            <p>如有任何未在此提及的问题需要解决，均可通过以上方式进行反馈，请尽量详细描述您所遇到的问题，同工收到后将会尽快回复。</p>
-          </ol><br />
-          <h2 class="text-center">灵修功能相关 </h2>
-          <!-- 灵修功能相关  -->
-          <ol class="list-unstyled">
-            <li class="text-medium"><span class="text-primary">1. </span>如何使用灵修功能？</li>
-            <p>您可以在App“灵修>全部灵修”中选择感兴趣的灵修/读经材料，点击“添加至灵修计划”后即可在“我的灵修”中在线接收每日推送的灵修/读经内容，书写感悟笔记，并在完成后打卡。</p>
-            <li class="text-medium"><span class="text-primary">2. </span>为什么我只能阅读灵修计划当日的内容？</li>
-            <p>未购书时，您仅可查看当日灵修内容，无法补读或预览其他内容；购书后则可畅读所有内容，并能通过日历功能跳转到未打卡的日期，进行“补打卡”操作。</p>
-            <li class="text-medium"><span class="text-primary">3. </span>我的灵修笔记可以导出吗？</li>
-            <p>您可以在App“我的>笔记>灵修笔记”中，进入对应灵修材料的笔记详情页面，点击右上角“导出”按钮，批量导出您的灵修笔记。</p>
-          </ol>
+        <div class="accordion">
+            <!-- 图书购买相关 -->
+            <div class="accordion-title text-center">图书购买相关</div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>1. 如何购买电子书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        （1）网页端购书网址：<a class="text-medium text-decoration-none" href="https://ebook.endao.co">ebook.endao.co</a><br>
+                        （2）安卓端App支持应用内购书，<a class="text-medium text-decoration-none" href="index-Reader">点击这里</a>下载安装。<br>
+                        注意: 通过App Store（苹果应用商店）下载安装的恩道电子书App仅可浏览书籍信息，暂不支持购书。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>2. 购书时我可以选择哪些支付方式？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">恩道电子书支持支付宝及信用卡付款。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>3. 已购买的电子书是否可以申请退换/退款？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">非常抱歉，电子书是数字阅读产品，购买成功后不可申请退换或退款。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>4. 如何阅读已经购买的电子书？可以使用Kindle阅读吗？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        （1）您可以在iOS/安卓移动端、PC/Mac电脑端下载安装恩道电子书App阅读已购图书，<a class="text-medium text-decoration-none" href="#">点击这里</a>了解详情。<br>
+                        （2）您无法通过kindle阅读在恩道购买的电子书（Kindle用户只能阅读在亚马逊平台上购买的电子书或不受DRM版权保护的电子书）。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>5. 我购买的是什么类型的电子书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您购买的是恩道提供的EPUB格式、受DRM版权保护的电子书。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>6. 我可以购买电子书送给朋友吗？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        在书籍详情页点击“赠送”按钮，即可购书赠友；付款成功后，您可以在“我的>赠书管理”中填写受赠对象的邮箱，对方收到赠书兑换码后可在其“我的>使用兑换码”中兑换赠书。
+                    </div>
+                </div>
+            </div>
+            <!-- 图书管理相关 -->
+            <div class="accordion-title text-center">图书管理相关</div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>1. App书架上为何看不到我购买的电子书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        App书架仅展示您已经下载的书籍。您可以在App“我的>图书”中找到已购买的电子书，点击“加入书架”即可下载。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>2. 如何管理书架中的电子书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        长按电子书封面或点击书架右上角“编辑”图标，即可进入书架管理模式，您可以对图书进行批量移出或分组操作。“移出图书”将删除相应电子书的本地文件，但不会删除您所做的笔记/划线。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>3. 我将已经购买的电子书从书架移出后，如何继续阅读这本书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        从书架移出的电子书仍然会显示在“我的>图书”当中，您只需前往该页面，重新将此书添加至书架即可。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>4. 我可以在多台设备上用同一恩道账号登录App并阅读已经购买的电子书吗？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        同一恩道账号最多可同时在5台设备中登录，超过5台设备将无法成功登录；也就是说，您最多可以在5台设备中阅读已经购买的电子书；您可通过网页端“我的>我的设备”来管理您绑定的设备。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>5. 在一台设备中阅读电子书时，我的阅读/灵修进度、书架分组以及所做的笔记、划线、书签，是否可以同步到其他设备当中？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        可以的。您只需使用同一恩道账号登录App，在网络连接正常的情况下，以上数据即可自动同步更新；但在新的设备中，您仍需手动将这些电子书添加至书架。
+                    </div>
+                </div>
+            </div>
+            <!-- 图书阅读相关 -->
+            <div class="accordion-title text-center">图书阅读相关</div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>1. 已经购买的电子书，可以离线阅读吗？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        可以的，您只需将其添加至书架，电子书数据便已保存至本地；但离线阅读时，若电子书有更新，则无法下载更新。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>2. 如何在电子书中查看相应纸书页码？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        点击阅读界面右上角的AA图标，在弹出的菜单栏最下方，开启“显示纸书页码”，阅读界面中出现的橙色标签即为纸书页码（例如，标签7至8之间的内容对应纸书第7页）。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>3. 点击书架上的书籍，提示无法打开，怎么办？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您可以将无法打开的书籍移出书架后重新下载。
+                    </div>
+                </div>
+            </div>
+            <!-- 先租后买相关 -->
+            <div class="accordion-title text-center">先租后买相关</div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>1. 哪些电子书可以先租后买？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        目前仅房角石圣经注释丛书电子书（包括简体和繁体）可以使用先租后买服务。<br>
+                        了解详情：<a class="text-medium text-decoration-none" href="https://ebook.endao.co/rent-to-own">https://ebook.endao.co/rent-to-own</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>2. 订阅先租后买服务后，如何阅读套装中的电子书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您需要下载恩道电子书App，在“我的订阅/套装”中下载书籍到书架，即可阅读。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>3. 如何续订、退订或优惠购书？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您可以登录恩道电子书网页端（ebook.endao.co），在“我的>我的订阅”中进行续订、退订或优惠购书操作。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>4. 我忘记手动续订了，怎么办？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您将在订阅到期前5天收到邮件提醒，请留意您的恩道账户邮箱。<br>
+                        如果您未续订，订阅到期后1个自然月内，如果您还未使用购书优惠，则仍可续订（从到期时间开始计费）；若您已经使用购书优惠或退订时间超过1个自然月，则无法再续订。您可重新订阅任意套装，但上一次订阅的时长和优惠不会累计到新的订阅。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>5. 累计月费可以用来购买什么书籍？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        累计月费仅可以用于购买您所订阅套装中的电子书。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>6. 订阅过期后，能否看到之前在订阅书籍中做的笔记？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您的笔记将被保留，在您购买相应电子书或重新订阅包含该书籍的套装后，即可查看笔记。
+                    </div>
+                </div>
+            </div>
+            <!-- 灵修功能相关 -->
+            <div class="accordion-title text-center">灵修功能相关</div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>1. 如何使用灵修功能？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您可以在App“灵修>全部灵修”中选择感兴趣的灵修/读经材料，点击“添加至灵修计划”后即可在“我的灵修”中在线接收每日推送的灵修/读经内容，书写感悟笔记，并在完成后打卡。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>2. 为什么我只能阅读灵修计划当日的内容？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        未购书时，您仅可查看当日灵修内容，无法补读或预览其他内容；购书后则可畅读所有内容，并能通过日历功能跳转到未打卡的日期，进行“补打卡”操作。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>3. 我的灵修笔记可以导出吗？</span></div>
+                <div class="accordion-body">
+                    <div class="accordion-body-content">
+                        您可以在App“我的>笔记>灵修笔记”中，进入对应灵修材料的笔记详情页面，点击右上角“导出”按钮，批量导出您的灵修笔记。<br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <p>如遇到任何未在此提及的问题，均可在App“帮助与反馈”中提交反馈，或直接写信至客服邮箱（<a class="text-decoration-none" href="mailto:ebookservice@endao.co?subject=反馈问题">ebookservice@endao.co </a>）。请尽量详细描述您所遇到的问题，同工收到后将会尽快回复。</p>
+            </div> 
         </div>
-      </div>
     </div>
-  </body>
+    <script>
+        const accSingleTriggers = document.querySelectorAll(".accordion-header");
+        accSingleTriggers.forEach((trigger) =>
+        trigger.addEventListener("click", toggleAccordion)
+        );
+        function toggleAccordion() {
+        const items = document.querySelectorAll(".accordion-item");
+        const thisItem = this.parentNode;
+        items.forEach((item) => {
+            if (thisItem == item) {
+            thisItem.classList.toggle("active");
+            return;
+            }
+            item.classList.remove("active");
+        });
+        }
+    </script>
+</body>
 </html>
